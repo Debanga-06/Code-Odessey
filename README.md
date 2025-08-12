@@ -134,7 +134,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: [Create an issue](https://github.com/Debanga-06/Code-Odessey/issues)
 - **Discussions**: [Join our discussions](https://github.com/Debanga-06/Code-Odessey/discussions)
-- **Email**: syntaxsquad72@gmail.com
+- **Email**: squadsyntax72@gmail.com
 - **Discord**: [Join our community](https://discord.gg/code-odessey) *(coming soon)*
 
 ## 🌟 Show Your Support
