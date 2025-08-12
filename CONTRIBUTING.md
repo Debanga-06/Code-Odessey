@@ -240,7 +240,7 @@ If you have any questions about contributing, feel free to:
 
 - Open an issue with the `question` label
 - Reach out to maintainers
-- Check our [Discussions](https://github.com/ORIGINAL-OWNER/code-odyssey/discussions) page
+- Check our [Discussions](https://github.com/Debanga-06/Code-Odyssey/discussions) page
 
 ---
 
