@@ -36,35 +36,94 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 ## 📋 Projects List
 
-### Beginner Level Projects
-*Projects will be listed here as contributions are merged*
+## 🟢 BEGINNER LEVEL (1-100)
 
-<!-- Template for new entries:
-#### [Project Name](./path/to/project)
-**Description**: Brief description of what the project does
-**Technologies**: HTML, CSS, JavaScript
-**Contributor**: [@username](https://github.com/username)
--->
+**Goal:** Learn HTML, CSS, basic JavaScript, DOM, layouts, and responsiveness  
+**Tech Stack:** HTML, CSS, Vanilla JavaScript
 
-### Intermediate Level Projects
-*Projects will be listed here as contributions are merged*
+### Basics & UI Projects (1-30)
 
-<!-- Template for new entries:
-#### [Project Name](./path/to/project)
-**Description**: Brief description of what the project does
-**Technologies**: List of technologies used
-**Contributor**: [@username](https://github.com/username)
--->
+| ID | Project Name | Learning Outcome | Status |
+|----|--------------|------------------|--------|
+| 001 | Personal Portfolio Website | HTML structure, CSS styling, responsive design | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-001) |
+| 002 | Resume Builder (Static) | Forms, layout design, print CSS | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-002) |
+| 003 | Landing Page | Hero sections, CTA buttons, modern design | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-003) |
+| 004 | Restaurant Website | Multi-page layout, image optimization | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-004) |
+| 005 | Coffee Shop Website | CSS Grid, menu layouts, typography | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-005) |
+| 006 | Product Showcase Page | Product cards, hover effects, transitions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-006) |
+| 007 | Blog Homepage | Article cards, sidebar layout, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-007) |
+| 008 | Pricing Table | Table design, comparison layouts, buttons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-008) |
+| 009 | Image Gallery | Grid layout, lightbox effect, thumbnails | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-009) |
+| 010 | Login Page UI | Form design, input styling, validation UI | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-010) |
+| 011 | Signup Page UI | Multi-field forms, password fields, UX | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-011) |
+| 012 | Contact Form | Form elements, textarea, submit buttons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-012) |
+| 013 | About Us Page | Team sections, company info, storytelling | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-013) |
+| 014 | FAQ Page | Accordion-style layout, content structure | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-014) |
+| 015 | Testimonials Section | Card layout, quotes, customer reviews | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-015) |
+| 016 | Navbar Variations | Navigation design, dropdown menus, mobile nav | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-016) |
+| 017 | Footer Designs | Footer layouts, links, social icons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-017) |
+| 018 | Card Layout Gallery | Various card designs, shadows, borders | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-018) |
+| 019 | Hero Section Designs | Full-width headers, background images, CTAs | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-019) |
+| 020 | Button Hover Effects | CSS transitions, animations, interactions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-020) |
+| 021 | CSS Loader Collection | Animations, keyframes, loading indicators | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-021) |
+| 022 | Gradient Generator | Color theory, CSS gradients, tools | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-022) |
+| 023 | Color Palette Generator | Color schemes, design systems, palettes | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-023) |
+| 024 | Typography Showcase | Font pairing, text hierarchy, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-024) |
+| 025 | CSS Grid Playground | Grid layout, template areas, alignment | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-025) |
+| 026 | Flexbox Layout Builder | Flexbox properties, alignment, distribution | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-026) |
+| 027 | Mobile Responsive Page | Media queries, responsive design, breakpoints | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-027) |
+| 028 | Dark Mode Toggle | Theme switching, CSS variables, localStorage | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-028) |
+| 029 | 404 Error Page | Error handling UI, creative design, redirects | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-029) |
+| 030 | Coming Soon Page | Launch pages, countdown timers, email capture | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-030) |
 
-### Expert Level Projects
-*Projects will be listed here as contributions are merged*
 
-<!-- Template for new entries:
-#### [Project Name](./path/to/project)
-**Description**: Brief description of what the project does
-**Technologies**: List of technologies used
-**Contributor**: [@username](https://github.com/username)
--->
+
+---
+
+## 🟡 INTERMEDIATE LEVEL (101-200)
+
+**Coming Soon...**
+
+---
+
+## 🔵 EXPERT LEVEL (201-300)
+
+**Coming Soon...**
+
+---
+
+## 🔴 ADVANCED EXPERT LEVEL (301-400)
+
+**Coming Soon...**
+
+---
+
+## 📊 Progress Tracking
+
+### Overall Progress
+- **Beginner Projects:** 0/100 completed
+- **Intermediate Projects:** 0/100 completed
+- **Expert Projects:** 0/100 completed
+- **Advanced Expert Projects:** 0/100 completed
+- **Total Progress:** 0/400 completed (0%)
+  
+
+## 🛠️ Technologies You'll Master
+
+**Beginner Level:**
+- HTML5, CSS3, Flexbox, Grid
+- Vanilla JavaScript, DOM Manipulation
+- LocalStorage, Browser APIs
+- Responsive Design, Mobile-First
+
+**Intermediate Level:**
+- REST APIs, Fetch, Async/Await
+- React.js, Vue.js, Angular
+- State Management, Routing
+- Tailwind CSS, Bootstrap
+- Third-party APIs Integration
+
+---
 
 ## 🗂️ Repository Structure
 
@@ -134,8 +193,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: [Create an issue](https://github.com/Debanga-06/Code-Odessey/issues)
 - **Discussions**: [Join our discussions](https://github.com/Debanga-06/Code-Odessey/discussions)
-- **Email**: squadsyntax72@gmail.com
-- **Discord**: [Join our community](https://discord.gg/code-odessey) *(coming soon)*
+- **Email**: debanga078@gmail.com
+- **Discord**: [Join our community](https://discord.gg/tskR7uneZ)
 
 ## 🌟 Show Your Support
 
