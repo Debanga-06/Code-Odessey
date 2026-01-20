@@ -45,36 +45,36 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 | ID | Project Name | Learning Outcome | Status |
 |----|--------------|------------------|--------|
-| 001 | Personal Portfolio Website | HTML structure, CSS styling, responsive design | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Project-01) |
-| 002 | Resume Builder (Static) | Forms, layout design, print CSS | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-02) |
-| 003 | Landing Page | Hero sections, CTA buttons, modern design | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-03) |
-| 004 | Restaurant Website | Multi-page layout, image optimization | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-04) |
-| 005 | Coffee Shop Website | CSS Grid, menu layouts, typography | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-05) |
-| 006 | Product Showcase Page | Product cards, hover effects, transitions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-06) |
-| 007 | Blog Homepage | Article cards, sidebar layout, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-07) |
-| 008 | Pricing Table | Table design, comparison layouts, buttons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-08) |
-| 009 | Image Gallery | Grid layout, lightbox effect, thumbnails | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-09) |
-| 010 | [Login Page UI](https://login-page-ui-silk.vercel.app) | Form design, input styling, validation UI | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Project-10) |
-| 011 | Signup Page UI | Multi-field forms, password fields, UX | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-11) |
-| 012 | Contact Form | Form elements, textarea, submit buttons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-12) |
-| 013 | About Us Page | Team sections, company info, storytelling | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-13) |
-| 014 | FAQ Page | Accordion-style layout, content structure | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-14) |
-| 015 | Testimonials Section | Card layout, quotes, customer reviews | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-15) |
-| 016 | Navbar Variations | Navigation design, dropdown menus, mobile nav | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-16) |
-| 017 | Footer Designs | Footer layouts, links, social icons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-17) |
-| 018 | Card Layout Gallery | Various card designs, shadows, borders | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-18) |
-| 019 | Hero Section Designs | Full-width headers, background images, CTAs | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-19) |
-| 020 | Button Hover Effects | CSS transitions, animations, interactions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-20) |
-| 021 | [CSS Loader Collection]() | Animations, keyframes, loading indicators | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Project-21) |
-| 022 | Gradient Generator | Color theory, CSS gradients, tools | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-22) |
-| 023 | Color Palette Generator | Color schemes, design systems, palettes | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-23) |
-| 024 | Typography Showcase | Font pairing, text hierarchy, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-24) |
-| 025 | CSS Grid Playground | Grid layout, template areas, alignment | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-25) |
-| 026 | Flexbox Layout Builder | Flexbox properties, alignment, distribution | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-26) |
-| 027 | Mobile Responsive Page | Media queries, responsive design, breakpoints | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-27) |
-| 028 | Dark Mode Toggle | Theme switching, CSS variables, localStorage | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-28) |
-| 029 | 404 Error Page | Error handling UI, creative design, redirects | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-29) |
-| 030 | Coming Soon Page | Launch pages, countdown timers, email capture | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Project-30) |
+| 001 | Personal Portfolio Website | HTML structure, CSS styling, responsive design | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-01) |
+| 002 | Resume Builder (Static) | Forms, layout design, print CSS | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-02) |
+| 003 | Landing Page | Hero sections, CTA buttons, modern design | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-03) |
+| 004 | Restaurant Website | Multi-page layout, image optimization | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-04) |
+| 005 | Coffee Shop Website | CSS Grid, menu layouts, typography | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-05) |
+| 006 | Product Showcase Page | Product cards, hover effects, transitions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-06) |
+| 007 | Blog Homepage | Article cards, sidebar layout, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-07) |
+| 008 | Pricing Table | Table design, comparison layouts, buttons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-08) |
+| 009 | Image Gallery | Grid layout, lightbox effect, thumbnails | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-09) |
+| 010 | [Login Page UI](https://login-page-ui-silk.vercel.app) | Form design, input styling, validation UI | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-10) |
+| 011 | Signup Page UI | Multi-field forms, password fields, UX | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-11) |
+| 012 | Contact Form | Form elements, textarea, submit buttons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-12) |
+| 013 | About Us Page | Team sections, company info, storytelling | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-13) |
+| 014 | FAQ Page | Accordion-style layout, content structure | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-14) |
+| 015 | Testimonials Section | Card layout, quotes, customer reviews | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-15) |
+| 016 | Navbar Variations | Navigation design, dropdown menus, mobile nav | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-16) |
+| 017 | Footer Designs | Footer layouts, links, social icons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-17) |
+| 018 | Card Layout Gallery | Various card designs, shadows, borders | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-18) |
+| 019 | Hero Section Designs | Full-width headers, background images, CTAs | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-19) |
+| 020 | Button Hover Effects | CSS transitions, animations, interactions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-20) |
+| 021 | [CSS Loader Collection]() | Animations, keyframes, loading indicators | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-21) |
+| 022 | Gradient Generator | Color theory, CSS gradients, tools | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-22) |
+| 023 | Color Palette Generator | Color schemes, design systems, palettes | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-23) |
+| 024 | Typography Showcase | Font pairing, text hierarchy, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-24) |
+| 025 | CSS Grid Playground | Grid layout, template areas, alignment | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-25) |
+| 026 | Flexbox Layout Builder | Flexbox properties, alignment, distribution | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-26) |
+| 027 | Mobile Responsive Page | Media queries, responsive design, breakpoints | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-27) |
+| 028 | Dark Mode Toggle | Theme switching, CSS variables, localStorage | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-28) |
+| 029 | 404 Error Page | Error handling UI, creative design, redirects | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-29) |
+| 030 | Coming Soon Page | Launch pages, countdown timers, email capture | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/Beginner-Level/Project-30) |
 
 
 
