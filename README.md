@@ -65,7 +65,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 018 | Card Layout Gallery | Various card designs, shadows, borders | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/project-18) |
 | 019 | Hero Section Designs | Full-width headers, background images, CTAs | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/project-19) |
 | 020 | Button Hover Effects | CSS transitions, animations, interactions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/project-20) |
-| 021 | CSS Loader Collection | Animations, keyframes, loading indicators | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/project-21) |
+| 021 | [CSS Loader Collection]() | Animations, keyframes, loading indicators | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/project-21) |
 | 022 | Gradient Generator | Color theory, CSS gradients, tools | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/project-22) |
 | 023 | Color Palette Generator | Color schemes, design systems, palettes | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/project-23) |
 | 024 | Typography Showcase | Font pairing, text hierarchy, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/project-24) |
