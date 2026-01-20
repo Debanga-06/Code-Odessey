@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">User-name</label>
+        <input type="text" id="username" placeholder="Enter user-name">
+        <div class="error" id="usernameError">Username is required</div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <div class="error" id="emailError">Email is required</div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <div class="error" id="passwordError">Password must be at least 6 characters</div>
+      </div>
+
+      <button type="button" class="btn" onclick="handleSubmit()">Login</button>
+      <div id="successMessage" style="color: green; margin-top: 10px; display: none;">Login successful</div>
+    </form>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
