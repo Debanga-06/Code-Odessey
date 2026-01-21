@@ -24,7 +24,7 @@
 
 A modern, responsive login page with real-time form validation and user-friendly error messages. This project demonstrates clean form design, input validation, and interactive user feedback using vanilla JavaScript. The interface features a sleek, minimalist design with smooth transitions and proper error handling.
 
-**Live Demo:** [View Project](#) *(Add your live demo link)*
+**Live Demo:** [View Project](https://login-page-ui-silk.vercel.app)
 
 ## ✨ Features
 
@@ -242,7 +242,7 @@ This project is licensed under the MIT License - see the [LICENSE](../../LICENSE
 
 **DEBANGA** - [@Debanga-06](https://github.com/Debanga-06)
 
-Project Link: [https://github.com/Debanga-06/Code-Odessey](https://github.com/Debanga-06/Code-Odessey)
+Project Link: [Link](https://login-page-ui-silk.vercel.app)
 
 ---
 
