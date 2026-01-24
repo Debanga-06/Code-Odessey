@@ -27,7 +27,7 @@
 
 A comprehensive collection of **22 beautiful, pure CSS animated loading indicators** designed for modern web applications. This project showcases various animation techniques including keyframes, transforms, transitions, and advanced CSS properties. All loaders are created without any JavaScript - just pure CSS magic! Perfect for learning CSS animations and implementing professional loading states in your projects.
 
-**Live Demo:** [View Project](#) *(Add your live demo link)*
+**Live Demo:** [View Project](https://css-loader-collection.vercel.app)
 
 ## ✨ Features
 
