@@ -65,7 +65,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 018 | Card Layout Gallery | Various card designs, shadows, borders | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-18) |
 | 019 | Hero Section Designs | Full-width headers, background images, CTAs | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-19) |
 | 020 | Button Hover Effects | CSS transitions, animations, interactions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-20) |
-| 021 | [CSS Loader Collection]() | Animations, keyframes, loading indicators | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-21) |
+| 021 | [CSS Loader Collection](https://css-loader-collection.vercel.app) | Animations, keyframes, loading indicators | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-21) |
 | 022 | Gradient Generator | Color theory, CSS gradients, tools | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-22) |
 | 023 | Color Palette Generator | Color schemes, design systems, palettes | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-23) |
 | 024 | Typography Showcase | Font pairing, text hierarchy, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-24) |
@@ -171,7 +171,7 @@ This repository showcases projects built with various technologies including:
 
 ## 📈 Project Statistics
 
-- **Total Projects**: 300+
+- **Total Projects**: 400+
 - **Beginner Projects**: Coming soon
 - **Intermediate Projects**: Coming soon
 - **Expert Projects**: Coming soon
