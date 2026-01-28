@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .testimonials {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 300px;
+      flex: 1 1 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .quote {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .quote::before {
+      content: "“";
+      font-size: 2rem;
+      color: #ff6b6b;
+      position: absolute;
+      left: -10px;
+      top: -10px;
+    }
+
+    .quote::after {
+      content: "”";
+      font-size: 2rem;
+      color: #ff6b6b;
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+    }
+
+    .customer {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .role {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="card-container">
+      
+      <div class="card">
+        <p class="quote">This product completely changed the way I work. Highly recommended!</p>
+        <p class="customer">— Sarah Johnson</p>
+        <p class="role">Marketing Manager</p>
+      </div>
+
+      <div class="card">
+        <p class="quote">Excellent customer service and top-notch quality. I’m very satisfied.</p>
+        <p class="customer">— David Lee</p>
+        <p class="role">Entrepreneur</p>
+      </div>
+
+      <div class="card">
+        <p class="quote">Affordable, reliable, and easy to use. Couldn’t ask for more.</p>
+        <p class="customer">— Priya Sharma</p>
+        <p class="role">Software Engineer</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
