@@ -4,7 +4,7 @@ A modern, responsive "About Us" webpage built with HTML, CSS, and JavaScript. Th
 
 ## 🎯 Live Demo
 
-**[View the live demo here](https://code-odessey-h5az.vercel.app/))**
+**[View the live demo here]((https://code-odessey-h5az.vercel.app/))**
 
 Once you deploy this project to a hosting platform (GitHub Pages, Netlify, Vercel, etc.), update this link with your project's URL.
 
@@ -203,6 +203,7 @@ For issues or questions, refer to the main repository documentation or create an
 ---
 
 **Last Updated:** January 28, 2026
+
 
 
 
