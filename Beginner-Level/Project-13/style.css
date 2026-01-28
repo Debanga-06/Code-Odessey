@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Section Styling */
+section {
+  padding: 50px 20px;
+  text-align: center;
+  opacity: 0; /* for animation */
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Company Info */
+.company-info {
+  background: #004aad;
+  color: #fff;
+}
+
+.company-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.company-info p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+/* Storytelling */
+.storytelling {
+  background: #fff;
+  color: #333;
+}
+
+.storytelling h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.storytelling p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Team Section */
+.team {
+  background: #f0f0f0;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  margin: 15px 0 5px;
+  font-size: 1.3rem;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 1rem;
+}
