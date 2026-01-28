@@ -1,0 +1,564 @@
+/* ========== GENERAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== HEADER ========== */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ========== MAIN CONTENT ========== */
+.main-content {
+  padding: 20px 0;
+  min-height: calc(100vh - 300px);
+}
+
+/* ========== GALLERY SECTIONS ========== */
+.gallery-section {
+  margin-bottom: 60px;
+}
+
+.gallery-section h2 {
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* ========== CARDS GRID ========== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* ========== BASE CARD STYLES ========== */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ========== 1. BASIC CARDS ========== */
+.card-basic {
+  border: 1px solid #eee;
+  box-shadow: none;
+}
+
+.card-basic:hover {
+  border-color: #ddd;
+}
+
+/* ========== 2. SHADOW CARDS ========== */
+.card-shadow {
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ========== 3. BORDER CARDS ========== */
+.card-border {
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-border:hover {
+  border-color: #bbb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Colored Border */
+.card-border-colored {
+  border: 3px solid #667eea;
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.1);
+}
+
+.card-border-colored:hover {
+  border-color: #764ba2;
+  box-shadow: 0 6px 12px rgba(102, 126, 234, 0.2);
+}
+
+/* Top Border */
+.card-border-top {
+  border: 1px solid #eee;
+  border-top: 4px solid #ffd700;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-border-top:hover {
+  border-top-color: #ffed4e;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+/* ========== 4. HOVER EFFECT CARDS ========== */
+.card-hover-lift {
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+
+.card-hover-lift:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+}
+
+.card-hover-scale {
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+
+.card-hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Overlay Hover Effect */
+.card-hover-overlay {
+  position: relative;
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+
+.card-hover-overlay img {
+  position: relative;
+}
+
+.card-hover-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: rgba(102, 126, 234, 0);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.card-hover-overlay:hover::after {
+  background: rgba(102, 126, 234, 0.3);
+}
+
+/* ========== 5. GRADIENT CARDS ========== */
+.card-gradient-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+.card-gradient-1 .card-content h3,
+.card-gradient-1 .card-content p {
+  color: #fff;
+}
+
+.card-gradient-1 .card-content p {
+  opacity: 0.9;
+}
+
+.card-gradient-2 {
+  background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+  color: #fff;
+}
+
+.card-gradient-2 .card-content h3,
+.card-gradient-2 .card-content p {
+  color: #fff;
+}
+
+.card-gradient-2 .card-content p {
+  opacity: 0.9;
+}
+
+.card-gradient-3 {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffa94d 100%);
+  color: #fff;
+}
+
+.card-gradient-3 .card-content h3,
+.card-gradient-3 .card-content p {
+  color: #fff;
+}
+
+.card-gradient-3 .card-content p {
+  opacity: 0.9;
+}
+
+/* ========== 6. OVERLAY CARDS ========== */
+.card-overlay {
+  position: relative;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  border: none;
+  overflow: hidden;
+}
+
+.card-overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+  width: 100%;
+}
+
+.overlay-content h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.overlay-content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+/* Light Overlay */
+.card-overlay-light::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Gradient Overlay */
+.card-overlay-gradient::before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.card-overlay-light .overlay-content h3,
+.card-overlay-gradient .overlay-content h3 {
+  color: #fff;
+}
+
+/* ========== 7. ICON CARDS ========== */
+.card-icon {
+  text-align: center;
+  border: 2px solid #f0f0f0;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.card-icon:hover {
+  border-color: #667eea;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+  transform: translateY(-5px);
+}
+
+.card-icon img {
+  display: none;
+}
+
+.card-icon-container {
+  font-size: 3rem;
+  padding: 20px 0;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon .card-content {
+  padding: 15px 20px 20px;
+}
+
+.card-icon .card-content h3 {
+  margin-bottom: 8px;
+}
+
+.card-icon .card-content p {
+  font-size: 0.9rem;
+}
+
+/* ========== 8. PRODUCT CARDS ========== */
+.card-product {
+  box-shadow: none;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.card-product:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  border-color: #667eea;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.btn-add {
+  padding: 8px 15px;
+  background: #667eea;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+  background: #764ba2;
+  transform: scale(1.05);
+}
+
+/* ========== 9. BLOG CARDS ========== */
+.card-blog {
+  box-shadow: none;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.card-blog:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  border-color: #667eea;
+}
+
+.blog-meta {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  color: #764ba2;
+  transform: translateX(3px);
+}
+
+/* ========== 10. TEAM CARDS ========== */
+.card-team {
+  text-align: center;
+  box-shadow: none;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.card-team:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  border-color: #667eea;
+}
+
+.card-team img {
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-team .card-content {
+  padding: 25px 20px;
+}
+
+.card-team h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.card-team p {
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #667eea;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-overlay,
+  .card-overlay::before,
+  .card-overlay::after {
+    height: 250px;
+  }
+
+  .card-overlay img {
+    height: 250px;
+  }
+
+  .card-team img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 40px 15px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .gallery-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .product-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .btn-add {
+    width: 100%;
+    text-align: center;
+  }
+}
