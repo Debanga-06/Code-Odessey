@@ -32,8 +32,7 @@ A modern, secure signup form built with HTML, CSS, and JavaScript. This beginner
 The Signup Page project is a functional user registration form that collects essential user information with robust validation. It includes password strength validation, password confirmation matching, and terms agreement checkbox. This project is perfect for beginners learning about form validation, conditional logic, and user authentication workflows.
 
 ## 🌐 Live Demo
-
-#code-odessey.vercel.app
+**[View the live demo here](https://code-odessey.vercel.app)**
 
 ---
 
