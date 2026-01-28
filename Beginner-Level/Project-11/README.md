@@ -33,7 +33,7 @@ The Signup Page project is a functional user registration form that collects ess
 
 ## 🌐 Live Demo
 
-**[code-odessey.vercel.app](#)** ← *Paste your demo link here*
+code-odessey.vercel.app
 
 ---
 
@@ -452,4 +452,5 @@ If you get stuck:
 **Happy Coding!** 🎉
 
 Remember: Every expert was once a beginner. Take your time to understand each part of the code, experiment with changes, and build your skills step by step. Good luck with your web development journey!
+
 
