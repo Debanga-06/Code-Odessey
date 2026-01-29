@@ -1,12 +1,15 @@
 # 🌐 Navbar Variations
 
-> A modern, responsive navigation bar showcase featuring dropdown menus, mobile hamburger navigation, and multiple navigation patterns. Perfect for learning navbar design and responsive web development.
-
-![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Project Status](https://img.shields.io/badge/status-completed-success)
+![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+
+> A modern, responsive navigation bar showcase featuring dropdown menus, mobile hamburger navigation, and multiple navigation patterns. Perfect for learning navbar design and responsive web development.
+
 
 ---
 
@@ -24,9 +27,10 @@
 
 ## 🎯 Demo Link
 
-**Live Demo:** [Add your live demo link here]
+**Live Demo:** 
 
-Once you deploy this project to a hosting platform (GitHub Pages, Netlify, Vercel, etc.), update this link with your project's URL.
+[Demo Link]()
+
 
 ---
 

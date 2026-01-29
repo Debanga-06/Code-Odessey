@@ -1,12 +1,15 @@
 # 🎨 Footer Designs Showcase
 
-> A modern collection of 4 different footer design patterns and layouts, perfect for learning responsive footer design and UI/UX best practices.
-
-![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Project Status](https://img.shields.io/badge/status-completed-success)
+![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+
+
+> A modern collection of 4 different footer design patterns and layouts, perfect for learning responsive footer design and UI/UX best practices.
 
 ---
 
@@ -26,9 +29,8 @@
 
 ## 🎯 Demo Link
 
-**Live Demo:** [Add your live demo link here]
+ [Demo Link]()
 
-Once you deploy this project to a hosting platform (GitHub Pages, Netlify, Vercel, etc.), update this link with your project's URL.
 
 ---
 
@@ -530,6 +532,11 @@ After completing this project, you will understand:
 ---
 
 ## 📞 Support & Resources
+
+- **Issues**: [Create an issue](https://github.com/Debanga-06/Code-Odessey/issues)
+- **Discussions**: [Join our discussions](https://github.com/Debanga-06/Code-Odessey/discussions)
+- **Email**: debanga078@gmail.com
+- **Discord**: [Join our community](https://discord.gg/tskR7uneZ)
 
 ### Common Issues
 

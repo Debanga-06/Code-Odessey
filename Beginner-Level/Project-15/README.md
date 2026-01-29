@@ -1,11 +1,17 @@
 # 💬 Testimonials Section
 
-> A stunning, responsive testimonials/reviews showcase component that displays customer feedback with elegant card design and smooth hover animations.
 
-![HTML](https://img.shields.io/badge/HTML5-E34C26?style=flat-square&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Project Status](https://img.shields.io/badge/status-completed-success)
+![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![Responsive](https://img.shields.io/badge/Responsive-Mobile%20Ready-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+
+
+> A stunning, responsive testimonials/reviews showcase component that displays customer feedback with elegant card design and smooth hover animations.
+
 
 ---
 
@@ -38,7 +44,6 @@ Project-15/
 
  **[View the live demo here](https://testimonials-section-nu.vercel.app/)**
 
-Once you deploy this project to a hosting platform (GitHub Pages, Netlify, Vercel, etc.), update this link with your project's URL.
 
 ---
 
@@ -60,7 +65,7 @@ Once you deploy this project to a hosting platform (GitHub Pages, Netlify, Verce
 
 #### For Windows Users:
 1. **Download Python:**
-   - Visit [https://www.python.org/downloads/](https://www.python.org/downloads/)
+   - Visit ([Link](https://www.python.org/downloads/))
    - Download Python 3.10 or later
    - During installation, check "Add Python to PATH"
    - Click Install Now
@@ -355,7 +360,7 @@ This project is open source and available for educational purposes.
 
 ## 👤 Author
 
-**Code-Odessey** - Beginner Level Project 15
+**Code-Odessey** 
 
 ---
 

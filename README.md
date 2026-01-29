@@ -55,16 +55,16 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 008 | Pricing Table | Table design, comparison layouts, buttons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-08) |
 | 009 | Image Gallery | Grid layout, lightbox effect, thumbnails | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-09) |
 | 010 | [Login Page UI](https://login-page-ui-silk.vercel.app) | Form design, input styling, validation UI | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-10) |
-| 011 | Signup Page UI | Multi-field forms, password fields, UX | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-11) |
-| 012 | Contact Form | Form elements, textarea, submit buttons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-12) |
-| 013 | About Us Page | Team sections, company info, storytelling | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-13) |
-| 014 | FAQ Page | Accordion-style layout, content structure | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-14) |
-| 015 | Testimonials Section | Card layout, quotes, customer reviews | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-15) |
-| 016 | Navbar Variations | Navigation design, dropdown menus, mobile nav | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-16) |
-| 017 | Footer Designs | Footer layouts, links, social icons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-17) |
-| 018 | Card Layout Gallery | Various card designs, shadows, borders | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-18) |
-| 019 | Hero Section Designs | Full-width headers, background images, CTAs | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-19) |
-| 020 | Button Hover Effects | CSS transitions, animations, interactions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-20) |
+| 011 | [Signup Page UI](https://code-odessey.vercel.app) | Multi-field forms, password fields, UX | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-11) |
+| 012 | [Contact Form](https://code-odessey-e3q3.vercel.app) | Form elements, textarea, submit buttons | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-12) |
+| 013 | [About Us Page](https://code-odessey-h5az.vercel.app/) | Team sections, company info, storytelling | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-13) |
+| 014 | [FAQ Page](https://code-odessey-m8a5.vercel.app/) | Accordion-style layout, content structure | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-14) |
+| 015 | [Testimonials Section](https://testimonials-section-nu.vercel.app/) | Card layout, quotes, customer reviews | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-15) |
+| 016 | [Navbar Variations]() | Navigation design, dropdown menus, mobile nav | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-16) |
+| 017 | [Footer Designs]() | Footer layouts, links, social icons | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-17) |
+| 018 | [Card Layout Gallery]() | Various card designs, shadows, borders | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-18) |
+| 019 | [Hero Section Designs]() | Full-width headers, background images, CTAs | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-19) |
+| 020 | [Button Hover Effects]() | CSS transitions, animations, interactions | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-20) |
 | 021 | [CSS Loader Collection](https://css-loader-collection.vercel.app) | Animations, keyframes, loading indicators | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-21) |
 | 022 | Gradient Generator | Color theory, CSS gradients, tools | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-22) |
 | 023 | Color Palette Generator | Color schemes, design systems, palettes | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-23) |
@@ -101,7 +101,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 2/100 completed
+- **Beginner Projects:** 7/100 completed
 - **Intermediate Projects:** 0/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed

@@ -1,5 +1,12 @@
 # Contact Form Project
 
+![Project Status](https://img.shields.io/badge/status-completed-success)
+![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+
 A modern, responsive contact form built with HTML, CSS, and JavaScript. This beginner-level project demonstrates fundamental web development concepts including form handling, input validation, and user feedback mechanisms.
 
 ## 📋 Table of Contents
@@ -29,7 +36,7 @@ A modern, responsive contact form built with HTML, CSS, and JavaScript. This beg
 The Contact Form project is a straightforward yet functional web application that allows users to submit their contact information along with a message. The form includes real-time validation, user-friendly error messages, and success feedback. This project is ideal for beginners learning about form handling, event listeners, and DOM manipulation in JavaScript.
 
 ## 🌐 Live Demo
-**[View the live demo here](https://code-odessey-e3q3.vercel.app)**
+**[Demo Link](https://code-odessey-e3q3.vercel.app)**
 
 ---
 
@@ -346,7 +353,7 @@ If you're using this as part of a larger project:
 
 ## 📄 License
 
-This project is provided as an educational resource. Check the repository's main LICENSE file for specific terms.
+This project is provided as an educational resource. Check the repository's main [LICENSE](LICENSE) file for specific terms.
 
 ---
 

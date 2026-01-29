@@ -1,11 +1,17 @@
 # Signup Page Project
 
+![Project Status](https://img.shields.io/badge/status-completed-success)
+![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
 A modern, secure signup form built with HTML, CSS, and JavaScript. This beginner-level project demonstrates user registration functionality with password validation, form handling, and visual feedback mechanisms.
 
 ## 📋 Table of Contents
 
 - [Overview](#overview)
-- [Live Demo](#live-demo)
+- [Live Demo](https://code-odessey.vercel.app)
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
@@ -32,7 +38,7 @@ A modern, secure signup form built with HTML, CSS, and JavaScript. This beginner
 The Signup Page project is a functional user registration form that collects essential user information with robust validation. It includes password strength validation, password confirmation matching, and terms agreement checkbox. This project is perfect for beginners learning about form validation, conditional logic, and user authentication workflows.
 
 ## 🌐 Live Demo
-**[View the live demo here](https://code-odessey.vercel.app)**
+**[Demo Link](https://code-odessey.vercel.app)**
 
 ---
 
@@ -435,7 +441,7 @@ To improve this project:
 
 ## 📄 License
 
-This project is provided as an educational resource. Check the repository's main LICENSE file for specific usage terms.
+This project is provided as an educational resource. Check the repository's main [LICENSE](LICENSE) file for specific usage terms.
 
 ## 🎓 Getting Help
 

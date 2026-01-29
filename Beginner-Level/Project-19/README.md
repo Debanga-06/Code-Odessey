@@ -1,5 +1,11 @@
 # Project-19: Hero Section Designs
 
+![Project Status](https://img.shields.io/badge/status-completed-success)
+![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
 A comprehensive showcase of **10 different hero section design patterns** using HTML, CSS, and vanilla JavaScript. Perfect for learning modern web design techniques, animations, and responsive layouts.
 
 ---
@@ -16,6 +22,15 @@ A comprehensive showcase of **10 different hero section design patterns** using 
 - JavaScript event handling and DOM manipulation
 - Scroll effects and parallax animation
 - Intersection Observer API for scroll animations
+
+---
+
+## 🎯 Demo Link
+
+**Live Demo:** 
+
+[Demo Link]()
+
 
 ---
 
@@ -573,5 +588,5 @@ This project is free to use and modify for educational purposes.
 
 **Happy Learning! 🎉**
 
-*Last Updated: 2024*  
+*Last Updated: 2026*  
 *Version: 1.0*

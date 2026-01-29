@@ -1,95 +1,695 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f9;
-  margin: 0;
-  padding: 40px;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
 
-/* 1. Simple Color Transition */
-.btn1 {
-  background: #333;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-.btn1:hover {
-  background: #ff6b6b;
-}
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-/* 2. Scale & Shadow */
-.btn2 {
-  background: #4CAF50;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.btn2:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-}
+    header {
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
+    }
 
-/* 3. Sliding Underline */
-.btn3 {
-  background: none;
-  color: #333;
-  padding: 12px 24px;
-  border: 2px solid #333;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-.btn3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 3px;
-  background: #ff6b6b;
-  transition: width 0.3s ease;
-}
-.btn3:hover::after {
-  width: 100%;
-}
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
 
-/* 4. Gradient Animation */
-.btn4 {
-  background: linear-gradient(45deg, #ff6b6b, #feca57);
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-position 0.5s ease;
-  background-size: 200% 200%;
-}
-.btn4:hover {
-  background-position: right center;
-}
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
 
-/* 5. JS Interaction Button */
-.btn5 {
-  background: #007BFF;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-.btn5:hover {
-  background: #0056b3;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .button-card {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 220px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .button-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .button-card h3 {
+      margin-bottom: 30px;
+      color: #333;
+      font-size: 1.1rem;
+    }
+
+    /* Base button styles */
+    .btn {
+      padding: 15px 40px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+
+    /* 1. Slide from Left */
+    .btn-slide-left {
+      background: #667eea;
+      color: white;
+      border-radius: 50px;
+    }
+
+    .btn-slide-left::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: #764ba2;
+      transition: left 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn-slide-left:hover::before {
+      left: 0;
+    }
+
+    /* 2. Slide from Right */
+    .btn-slide-right {
+      background: #ff6b6b;
+      color: white;
+      border-radius: 50px;
+    }
+
+    .btn-slide-right::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background: #ee5a6f;
+      transition: right 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn-slide-right:hover::before {
+      right: 0;
+    }
+
+    /* 3. Slide from Top */
+    .btn-slide-top {
+      background: #00b894;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .btn-slide-top::before {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #00cec9;
+      transition: top 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn-slide-top:hover::before {
+      top: 0;
+    }
+
+    /* 4. Slide from Bottom */
+    .btn-slide-bottom {
+      background: #feca57;
+      color: #333;
+      border-radius: 10px;
+    }
+
+    .btn-slide-bottom::before {
+      content: '';
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff9f43;
+      transition: bottom 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn-slide-bottom:hover::before {
+      bottom: 0;
+    }
+
+    /* 5. Expand Circle */
+    .btn-expand-circle {
+      background: #c471f5;
+      color: white;
+      border-radius: 50px;
+    }
+
+    .btn-expand-circle::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: #fa71cd;
+      transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+      z-index: -1;
+    }
+
+    .btn-expand-circle:hover::before {
+      width: 300px;
+      height: 300px;
+      top: -100px;
+      left: -100px;
+    }
+
+    /* 6. Scale Up */
+    .btn-scale-up {
+      background: #4e54c8;
+      color: white;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-scale-up:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 25px rgba(78, 84, 200, 0.4);
+    }
+
+    /* 7. Rotate */
+    .btn-rotate {
+      background: #ff5858;
+      color: white;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .btn-rotate:hover {
+      transform: rotate(5deg) scale(1.1);
+    }
+
+    /* 8. Neon Glow */
+    .btn-neon {
+      background: transparent;
+      color: #00ff88;
+      border: 2px solid #00ff88;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-neon:hover {
+      color: #111;
+      background: #00ff88;
+      box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 60px #00ff88;
+    }
+
+    /* 9. Border Animation */
+    .btn-border-anim {
+      background: transparent;
+      color: #667eea;
+      border: 3px solid #667eea;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-border-anim:hover {
+      background: #667eea;
+      color: white;
+      border-radius: 50px;
+    }
+
+    /* 10. Shine Effect */
+    .btn-shine {
+      background: #667eea;
+      color: white;
+      border-radius: 50px;
+      position: relative;
+    }
+
+    .btn-shine::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn-shine:hover::after {
+      left: 100%;
+    }
+
+    /* 11. Split */
+    .btn-split {
+      background: transparent;
+      color: #764ba2;
+      border: 3px solid #764ba2;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .btn-split::before,
+    .btn-split::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 100%;
+      background: #764ba2;
+      transition: width 0.3s ease;
+      z-index: -1;
+    }
+
+    .btn-split::before {
+      top: 0;
+      left: 50%;
+    }
+
+    .btn-split::after {
+      top: 0;
+      right: 50%;
+    }
+
+    .btn-split:hover {
+      color: white;
+    }
+
+    .btn-split:hover::before,
+    .btn-split:hover::after {
+      width: 51%;
+    }
+
+    /* 12. Bounce */
+    .btn-bounce {
+      background: #ff6b6b;
+      color: white;
+      border-radius: 50px;
+      animation: none;
+    }
+
+    .btn-bounce:hover {
+      animation: bounce 0.5s ease;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      25% { transform: translateY(-10px); }
+      50% { transform: translateY(0); }
+      75% { transform: translateY(-5px); }
+    }
+
+    /* 13. Wobble */
+    .btn-wobble {
+      background: #00cec9;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .btn-wobble:hover {
+      animation: wobble 0.5s ease;
+    }
+
+    @keyframes wobble {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-5deg); }
+      75% { transform: rotate(5deg); }
+    }
+
+    /* 14. Pulse */
+    .btn-pulse {
+      background: #feca57;
+      color: #333;
+      border-radius: 50px;
+    }
+
+    .btn-pulse:hover {
+      animation: pulse 1s ease infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    /* 15. Shadow Drop */
+    .btn-shadow {
+      background: #667eea;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-shadow:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(102, 126, 234, 0.5);
+    }
+
+    /* 16. Outline to Filled */
+    .btn-outline-fill {
+      background: transparent;
+      color: #ff6b6b;
+      border: 3px solid #ff6b6b;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-fill:hover {
+      background: #ff6b6b;
+      color: white;
+    }
+
+    /* 17. Gradient Shift */
+    .btn-gradient-shift {
+      background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+      background-size: 200% auto;
+      color: white;
+      border-radius: 50px;
+      transition: background-position 0.5s ease;
+    }
+
+    .btn-gradient-shift:hover {
+      background-position: right center;
+    }
+
+    /* 18. 3D Push */
+    .btn-3d-push {
+      background: #00b894;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 0 #007d63;
+      transition: all 0.1s ease;
+    }
+
+    .btn-3d-push:hover {
+      box-shadow: 0 4px 0 #007d63;
+      transform: translateY(4px);
+    }
+
+    .btn-3d-push:active {
+      box-shadow: 0 0 0 #007d63;
+      transform: translateY(8px);
+    }
+
+    /* 19. Flip Horizontal */
+    .btn-flip-h {
+      background: #c471f5;
+      color: white;
+      border-radius: 10px;
+      transition: transform 0.6s ease;
+      transform-style: preserve-3d;
+    }
+
+    .btn-flip-h:hover {
+      transform: rotateX(360deg);
+    }
+
+    /* 20. Flip Vertical */
+    .btn-flip-v {
+      background: #fa71cd;
+      color: white;
+      border-radius: 10px;
+      transition: transform 0.6s ease;
+      transform-style: preserve-3d;
+    }
+
+    .btn-flip-v:hover {
+      transform: rotateY(360deg);
+    }
+
+    /* 21. Skew */
+    .btn-skew {
+      background: #4e54c8;
+      color: white;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-skew:hover {
+      transform: skewX(-10deg);
+    }
+
+    /* 22. Double Border */
+    .btn-double-border {
+      background: transparent;
+      color: #667eea;
+      border: 3px solid #667eea;
+      border-radius: 10px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .btn-double-border::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      right: -8px;
+      bottom: -8px;
+      border: 3px solid #764ba2;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn-double-border:hover {
+      color: white;
+      background: #667eea;
+    }
+
+    .btn-double-border:hover::before {
+      opacity: 1;
+    }
+
+    /* 23. Neon Border */
+    .btn-neon-border {
+      background: #1a1a1a;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-neon-border:hover {
+      box-shadow: 
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        inset 0 0 10px #00ffff;
+    }
+
+    /* 24. Corner Reveal */
+    .btn-corner {
+      background: #ff6b6b;
+      color: white;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .btn-corner::before,
+    .btn-corner::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 2px solid white;
+      transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    .btn-corner::before {
+      top: 0;
+      left: 0;
+      border-width: 2px 0 0 2px;
+    }
+
+    .btn-corner::after {
+      bottom: 0;
+      right: 0;
+      border-width: 0 2px 2px 0;
+    }
+
+    .btn-corner:hover::before,
+    .btn-corner:hover::after {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 25. Sweep to Right */
+    .btn-sweep-right {
+      background: linear-gradient(to right, #667eea 50%, #764ba2 50%);
+      background-size: 200% 100%;
+      background-position: left bottom;
+      color: white;
+      border-radius: 50px;
+      transition: background-position 0.3s ease;
+    }
+
+    .btn-sweep-right:hover {
+      background-position: right bottom;
+    }
+
+    /* 26. Icon Slide */
+    .btn-icon-slide {
+      background: #00b894;
+      color: white;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-icon-slide::after {
+      content: '→';
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-icon-slide:hover::after {
+      transform: translateX(5px);
+    }
+
+    /* 27. Loading Animation */
+    .btn-loading {
+      background: #667eea;
+      color: white;
+      border-radius: 50px;
+      position: relative;
+    }
+
+    .btn-loading:hover::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      border: 3px solid white;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-top: -10px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* 28. Text Shadow */
+    .btn-text-shadow {
+      background: #764ba2;
+      color: white;
+      border-radius: 10px;
+      transition: text-shadow 0.3s ease;
+    }
+
+    .btn-text-shadow:hover {
+      text-shadow: 0 0 10px white, 0 0 20px white;
+    }
+
+    /* 29. Border Grow */
+    .btn-border-grow {
+      background: transparent;
+      color: #ff6b6b;
+      border: 2px solid #ff6b6b;
+      border-radius: 10px;
+      transition: border-width 0.3s ease, padding 0.3s ease;
+    }
+
+    .btn-border-grow:hover {
+      border-width: 5px;
+      padding: 12px 37px;
+    }
+
+    /* 30. Rainbow Border */
+    .btn-rainbow {
+      background: white;
+      color: #333;
+      border: 3px solid transparent;
+      border-radius: 10px;
+      background-clip: padding-box;
+      position: relative;
+    }
+
+    .btn-rainbow::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+      border-radius: 10px;
+      z-index: -1;
+      background-size: 400%;
+      animation: rainbow 3s linear infinite;
+    }
+
+    @keyframes rainbow {
+      to { background-position: 400%; }
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      opacity: 0.9;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .button-card {
+        padding: 30px;
+        min-height: 180px;
+      }
+
+      .btn {
+        padding: 12px 30px;
+        font-size: 0.95rem;
+      }
+    }
