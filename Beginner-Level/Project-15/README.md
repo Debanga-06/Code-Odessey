@@ -36,7 +36,7 @@ Project-15/
 
 ## 🎯 Live Demo
 
-**Demo Link:** [Add your live demo link here]
+ **[View the live demo here](https://testimonials-section-nu.vercel.app/)**
 
 Once you deploy this project to a hosting platform (GitHub Pages, Netlify, Vercel, etc.), update this link with your project's URL.
 
@@ -396,3 +396,4 @@ For issues or questions:
 [⬆ Back to Top](#-testimonials-section)
 
 </div>
+
