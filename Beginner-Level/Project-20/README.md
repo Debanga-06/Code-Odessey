@@ -29,7 +29,7 @@
 
 A comprehensive collection of **30+ interactive button hover effects** showcasing modern CSS transitions, animations, and pseudo-elements. This project demonstrates various interaction patterns including slides, scales, rotations, glows, and 3D effects. Perfect for learning advanced CSS techniques and adding interactive elements to your web projects.
 
-**Live Demo:** [View Project](#) 
+Live Demo: **[View the live demo here](https://hero-section-designs-h2y3.vercel.app/)**
 
 ## ✨ Features
 
@@ -731,5 +731,6 @@ Project Link: [https://github.com/Debanga-06/Code-Odessey](https://github.com/De
 **Part of the [Code-Odessey](https://github.com/Debanga-06/Code-Odessey) Project Series** 🚀
 
 *Project 020 of 400+ web development projects for mastering CSS interactions*
+
 
 **Happy Coding!** 🎯✨
