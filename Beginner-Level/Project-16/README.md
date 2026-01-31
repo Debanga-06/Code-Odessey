@@ -29,7 +29,7 @@
 
 **Live Demo:** 
 
-[Demo Link]()
+**[View the live demo here](https://navbar-variations.vercel.app/)**
 
 
 ---
@@ -402,3 +402,4 @@ Created as part of **Code-Odessey: Beginner-Level Projects**
 ---
 
 **Happy Coding! 🚀** Feel free to modify, enhance, and learn from this project.
+
