@@ -27,10 +27,7 @@ A comprehensive showcase of **10 different hero section design patterns** using 
 
 ## 🎯 Demo Link
 
-**Live Demo:** 
-
-[Demo Link]()
-
+ **[View the live demo here](https://hero-section-designs-coral.vercel.app/)**
 
 ---
 
@@ -590,3 +587,4 @@ This project is free to use and modify for educational purposes.
 
 *Last Updated: 2026*  
 *Version: 1.0*
+
