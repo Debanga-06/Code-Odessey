@@ -29,7 +29,7 @@
 
 ## 🎯 Demo Link
 
-[Demo Link]()
+ **[View the live demo here](https://footer-designs-xdjf.vercel.app/)**
 
 ---
 
@@ -560,3 +560,4 @@ For questions or issues:
 ---
 
 **Happy Coding! 🚀** Explore these card designs and create beautiful layouts for your projects!
+
