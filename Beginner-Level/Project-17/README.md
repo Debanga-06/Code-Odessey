@@ -15,7 +15,7 @@
 
 ## 📋 Table of Contents
 
-- [Demo Link](#demo-link)
+- [Demo Link](https://footer-designs-theta.vercel.app)
 - [Features](#features)
 - [Footer Designs](#footer-designs)
 - [Installation & Setup](#installation--setup)
@@ -582,4 +582,5 @@ Created as part of **Code-Odessey: Beginner-Level Projects** - A comprehensive c
 ---
 
 **Happy Coding! 🚀** Feel free to modify, enhance, and learn from this project.
+
 
