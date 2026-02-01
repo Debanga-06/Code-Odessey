@@ -66,15 +66,15 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 019 | [Hero Section Designs](https://hero-section-designs-coral.vercel.app/) | Full-width headers, background images, CTAs | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-19) |
 | 020 | [Button Hover Effects](https://hero-section-designs-h2y3.vercel.app/) | CSS transitions, animations, interactions | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-20) |
 | 021 | [CSS Loader Collection](https://css-loader-collection.vercel.app) | Animations, keyframes, loading indicators | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-21) |
-| 022 | Gradient Generator | Color theory, CSS gradients, tools | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-22) |
-| 023 | Color Palette Generator | Color schemes, design systems, palettes | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-23) |
-| 024 | Typography Showcase | Font pairing, text hierarchy, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-24) |
-| 025 | CSS Grid Playground | Grid layout, template areas, alignment | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-25) |
-| 026 | Flexbox Layout Builder | Flexbox properties, alignment, distribution | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-26) |
-| 027 | Mobile Responsive Page | Media queries, responsive design, breakpoints | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-27) |
-| 028 | Dark Mode Toggle | Theme switching, CSS variables, localStorage | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-28) |
-| 029 | 404 Error Page | Error handling UI, creative design, redirects | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-29) |
-| 030 | Coming Soon Page | Launch pages, countdown timers, email capture | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-30) |
+| 022 | [Gradient Generator](https://gradient-generator-kappa-two.vercel.app/) | Color theory, CSS gradients, tools | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-22) |
+| 023 | [Color Palette Generator](https://color-seven-pied.vercel.app/) | Color schemes, design systems, palettes | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-23) |
+| 024 | [Typography Showcase](https://typography-kappa.vercel.app/) | Font pairing, text hierarchy, readability | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-24) |
+| 025 | [CSS Grid Playground](https://css-phi-snowy.vercel.app/) | Grid layout, template areas, alignment | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-25) |
+| 026 | [Flexbox Layout Builder](https://css-vju3.vercel.app/) | Flexbox properties, alignment, distribution | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-26) |
+| 027 | [Mobile Responsive Page]() | Media queries, responsive design, breakpoints | [![Working](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-27) |
+| 028 | [Dark Mode Toggle](https://dark-iota-ten.vercel.app/) | Theme switching, CSS variables, localStorage | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-28) |
+| 029 | [404 Error Page](https://404-mu-six.vercel.app/) | Error handling UI, creative design, redirects | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-29) |
+| 030 | [Coming Soon Page](https://coming-opal.vercel.app/) | Launch pages, countdown timers, email capture | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-30) |
 
 
 
@@ -101,7 +101,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 7/100 completed
+- **Beginner Projects:** 20/100 completed
 - **Intermediate Projects:** 0/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
