@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,700;0,900;1,300&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Roboto+Mono:wght@400;500;700&family=Bebas+Neue&family=Raleway:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@300;400;600;800;900&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Typography Showcase</h1>
+  <p>Explore font pairing, typographic hierarchy, and readability across a curated collection of modern typefaces.</p>
+</header>
+
+<!-- Nav Tabs -->
+<div class="nav-tabs">
+  <button class="nav-tab active" onclick="switchSection('pairings')">Font Pairings</button>
+  <button class="nav-tab" onclick="switchSection('hierarchy')">Hierarchy</button>
+  <button class="nav-tab" onclick="switchSection('scale')">Type Scale</button>
+  <button class="nav-tab" onclick="switchSection('readability')">Readability</button>
+  <button class="nav-tab" onclick="switchSection('specimens')">Specimens</button>
+</div>
+
+<!-- ════════════════════════════════════════════
+     SECTION 1 — FONT PAIRINGS
+     ════════════════════════════════════════════ -->
+<div class="section active" id="pairings">
+  <p class="section-title">Curated Font Pairings</p>
+  <div class="pair-grid">
+
+    <!-- Pair 1 -->
+    <div class="pair-card">
+      <div class="label">Pairing 01 — Serif + Sans-Serif</div>
+      <div class="heading-demo" style="font-family:'Playfair Display',serif;">The Art of Modern Design</div>
+      <div class="body-demo" style="font-family:'Inter',sans-serif;">Clean body text pairs beautifully with an elegant serif headline, creating strong visual contrast and hierarchy.</div>
+      <div class="tags">
+        <span class="tag">Playfair Display</span>
+        <span class="tag">Inter</span>
+        <span class="tag">Editorial</span>
+        <span class="tag">Blog</span>
+      </div>
+    </div>
+
+    <!-- Pair 2 -->
+    <div class="pair-card">
+      <div class="label">Pairing 02 — Geometric Sans + Mono</div>
+      <div class="heading-demo" style="font-family:'Poppins',sans-serif;">Building Better Products</div>
+      <div class="body-demo" style="font-family:'Roboto Mono',monospace;">Monospace body text adds a technical, developer-friendly feel when paired with a geometric sans-serif heading.</div>
+      <div class="tags">
+        <span class="tag">Poppins</span>
+        <span class="tag">Roboto Mono</span>
+        <span class="tag">Tech</span>
+        <span class="tag">Developer</span>
+      </div>
+    </div>
+
+    <!-- Pair 3 -->
+    <div class="pair-card">
+      <div class="label">Pairing 03 — Display + Humanist</div>
+      <div class="heading-demo" style="font-family:'Bebas Neue',sans-serif; letter-spacing:0.05em;">BOLD STATEMENTS</div>
+      <div class="body-demo" style="font-family:'Source Sans 3',sans-serif;">Humanist sans-serif body text softens the impact of a bold condensed display font, balancing energy with readability.</div>
+      <div class="tags">
+        <span class="tag">Bebas Neue</span>
+        <span class="tag">Source Sans 3</span>
+        <span class="tag">Marketing</span>
+        <span class="tag">Landing Page</span>
+      </div>
+    </div>
+
+    <!-- Pair 4 -->
+    <div class="pair-card">
+      <div class="label">Pairing 04 — Elegant Serif + Light Sans</div>
+      <div class="heading-demo" style="font-family:'Lora',serif; font-style:italic;">Stories Worth Telling</div>
+      <div class="body-demo" style="font-family:'Raleway',sans-serif; font-weight:300;">A light-weight sans-serif brings an airy, refined quality when paired with an italic serif headline.</div>
+      <div class="tags">
+        <span class="tag">Lora</span>
+        <span class="tag">Raleway</span>
+        <span class="tag">Magazine</span>
+        <span class="tag">Lifestyle</span>
+      </div>
+    </div>
+
+    <!-- Pair 5 -->
+    <div class="pair-card">
+      <div class="label">Pairing 05 — Transitional Serif + Modern Sans</div>
+      <div class="heading-demo" style="font-family:'Merriweather',serif; font-size:1.4rem;">Crafting Timeless Experiences</div>
+      <div class="body-demo" style="font-family:'Montserrat',sans-serif; font-weight:300; font-size:0.85rem;">Modern geometric sans body text gives structure and clarity to deep, traditional serif headings.</div>
+      <div class="tags">
+        <span class="tag">Merriweather</span>
+        <span class="tag">Montserrat</span>
+        <span class="tag">Corporate</span>
+        <span class="tag">Professional</span>
+      </div>
+    </div>
+
+    <!-- Pair 6 -->
+    <div class="pair-card">
+      <div class="label">Pairing 06 — All Sans-Serif</div>
+      <div class="heading-demo" style="font-family:'Montserrat',sans-serif; font-weight:900; letter-spacing:-0.01em;">Simplicity is Key</div>
+      <div class="body-demo" style="font-family:'Inter',sans-serif; font-weight:400;">Weight contrast within the same font family creates clear hierarchy without mixing typefaces.</div>
+      <div class="tags">
+        <span class="tag">Montserrat</span>
+        <span class="tag">Inter</span>
+        <span class="tag">Minimal</span>
+        <span class="tag">SaaS</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     SECTION 2 — HIERARCHY
+     ════════════════════════════════════════════ -->
+<div class="section" id="hierarchy">
+  <p class="section-title">Typographic Hierarchy in Action</p>
+
+  <!-- Demo 1 -->
+  <div class="hierarchy-card">
+    <div class="meta"><div class="meta-dot"></div><span class="meta-text">Demo — Editorial Layout · Playfair Display + Inter</span></div>
+    <div class="h-row">
+      <span class="h-tag">H1</span>
+      <span class="h-size">2.8rem</span>
+      <span class="h-text" style="font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:900; line-height:1.15; color:#fff;">Rethinking the Future of Web</span>
+    </div>
+    <div class="h-row">
+      <span class="h-tag">H2</span>
+      <span class="h-size">1.6rem</span>
+      <span class="h-text" style="font-family:'Playfair Display',serif; font-size:1.6rem; font-weight:700; font-style:italic; color:var(--text-secondary);">Why design systems matter more than ever</span>
+    </div>
+    <div class="h-row">
+      <span class="h-tag">H3</span>
+      <span class="h-size">1.15rem</span>
+      <span class="h-text" style="font-family:'Inter',sans-serif; font-size:1.15rem; font-weight:600; color:var(--text-secondary);">Building a consistent visual language</span>
+    </div>
+    <div class="h-row">
+      <span class="h-tag">Body</span>
+      <span class="h-size">0.9rem</span>
+      <span class="h-text" style="font-family:'Inter',sans-serif; font-size:0.9rem; font-weight:400; color:var(--text-muted); line-height:1.8;">Great typography guides the reader through content effortlessly. Each level of the hierarchy signals importance and draws attention in a predictable, comfortable way.</span>
+    </div>
+    <div class="h-row">
+      <span class="h-tag">Caption</span>
+      <span class="h-size">0.72rem</span>
+      <span class="h-text" style="font-family:'Inter',sans-serif; font-size:0.72rem; font-weight:500; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted);">Published 12 Jan 2025 · 6 min read</span>
+    </div>
+  </div>
+
+  <!-- Demo 2 -->
+  <div class="hierarchy-card">
+    <div class="meta"><div class="meta-dot"></div><span class="meta-text">Demo — Product Page · Bebas Neue + Source Sans</span></div>
+    <div class="h-row">
+      <span class="h-tag">H1</span>
+      <span class="h-size">3rem</span>
+      <span class="h-text" style="font-family:'Bebas Neue',sans-serif; font-size:3rem; letter-spacing:0.04em; color:#fff;">ELEVATE YOUR WORKFLOW</span>
+    </div>
+    <div class="h-row">
+      <span class="h-tag">H2</span>
+      <span class="h-size">1.4rem</span>
+      <span class="h-text" style="font-family:'Source Sans 3',sans-serif; font-size:1.4rem; font-weight:300; color:var(--text-secondary);">Tools built for modern teams who demand clarity</span>
+    </div>
+    <div class="h-row">
+      <span class="h-tag">H3</span>
+      <span class="h-size">1rem</span>
+      <span class="h-text" style="font-family:'Source Sans 3',sans-serif; font-size:1rem; font-weight:600; color:var(--text-secondary);">Real-time collaboration</span>
+    </div>
+    <div class="h-row">
+      <span class="h-tag">Body</span>
+      <span class="h-size">0.88rem</span>
+      <span class="h-text" style="font-family:'Source Sans 3',sans-serif; font-size:0.88rem; font-weight:400; color:var(--text-muted); line-height:1.8;">Work alongside your team in real time. See edits as they happen, leave comments, and ship faster than ever before.</span>
+    </div>
+    <div class="h-row">
+      <span class="h-tag">CTA</span>
+      <span class="h-size">0.78rem</span>
+      <span class="h-text" style="font-family:'Source Sans 3',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent);">Get started for free →</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     SECTION 3 — TYPE SCALE
+     ════════════════════════════════════════════ -->
+<div class="section" id="scale">
+  <p class="section-title">Modular Type Scales</p>
+
+  <!-- Scale 1 — Major Third -->
+  <div class="scale-card">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; flex-wrap:wrap; gap:10px;">
+      <span style="font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent);">Major Third — Ratio 1.250</span>
+      <span class="tag">Playfair Display</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">Display</span>
+      <span class="scale-value">3.815rem</span>
+      <span class="scale-text" style="font-family:'Playfair Display',serif; font-size:clamp(2rem,4vw,3.815rem); font-weight:900; color:#fff; line-height:1.1;">Display</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">H1</span>
+      <span class="scale-value">3.052rem</span>
+      <span class="scale-text" style="font-family:'Playfair Display',serif; font-size:clamp(1.8rem,3.2vw,3.052rem); font-weight:700; color:#fff; line-height:1.15;">Heading 1</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">H2</span>
+      <span class="scale-value">2.441rem</span>
+      <span class="scale-text" style="font-family:'Playfair Display',serif; font-size:clamp(1.5rem,2.6vw,2.441rem); font-weight:700; color:var(--text-secondary);">Heading 2</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">H3</span>
+      <span class="scale-value">1.953rem</span>
+      <span class="scale-text" style="font-family:'Inter',sans-serif; font-size:clamp(1.3rem,2vw,1.953rem); font-weight:600; color:var(--text-secondary);">Heading 3</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">H4</span>
+      <span class="scale-value">1.563rem</span>
+      <span class="scale-text" style="font-family:'Inter',sans-serif; font-size:1.563rem; font-weight:600; color:var(--text-secondary);">Heading 4</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">Body</span>
+      <span class="scale-value">1rem</span>
+      <span class="scale-text" style="font-family:'Inter',sans-serif; font-size:1rem; font-weight:400; color:var(--text-muted);">Body text — the foundation of your content hierarchy</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">Small</span>
+      <span class="scale-value">0.8rem</span>
+      <span class="scale-text" style="font-family:'Inter',sans-serif; font-size:0.8rem; font-weight:400; color:var(--text-muted);">Small text for captions, labels, and supporting detail</span>
+    </div>
+  </div>
+
+  <!-- Scale 2 — Perfect Fourth -->
+  <div class="scale-card">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; flex-wrap:wrap; gap:10px;">
+      <span style="font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent);">Perfect Fourth — Ratio 1.333</span>
+      <span class="tag">Montserrat</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">Display</span>
+      <span class="scale-value">4.209rem</span>
+      <span class="scale-text" style="font-family:'Montserrat',sans-serif; font-size:clamp(2rem,4.2vw,4.209rem); font-weight:900; color:#fff; line-height:1.1; letter-spacing:-0.02em;">Display</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">H1</span>
+      <span class="scale-value">3.157rem</span>
+      <span class="scale-text" style="font-family:'Montserrat',sans-serif; font-size:clamp(1.8rem,3.2vw,3.157rem); font-weight:800; color:#fff; line-height:1.15; letter-spacing:-0.01em;">Heading 1</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">H2</span>
+      <span class="scale-value">2.369rem</span>
+      <span class="scale-text" style="font-family:'Montserrat',sans-serif; font-size:clamp(1.5rem,2.4vw,2.369rem); font-weight:700; color:var(--text-secondary);">Heading 2</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">H3</span>
+      <span class="scale-value">1.777rem</span>
+      <span class="scale-text" style="font-family:'Montserrat',sans-serif; font-size:clamp(1.3rem,1.8vw,1.777rem); font-weight:600; color:var(--text-secondary);">Heading 3</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">H4</span>
+      <span class="scale-value">1.333rem</span>
+      <span class="scale-text" style="font-family:'Montserrat',sans-serif; font-size:1.333rem; font-weight:600; color:var(--text-secondary);">Heading 4</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">Body</span>
+      <span class="scale-value">1rem</span>
+      <span class="scale-text" style="font-family:'Inter',sans-serif; font-size:1rem; font-weight:400; color:var(--text-muted);">Body text — the foundation of your content hierarchy</span>
+    </div>
+    <div class="scale-row">
+      <span class="scale-label">Small</span>
+      <span class="scale-value">0.75rem</span>
+      <span class="scale-text" style="font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:400; color:var(--text-muted);">Small text for captions, labels, and supporting detail</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     SECTION 4 — READABILITY
+     ════════════════════════════════════════════ -->
+<div class="section" id="readability">
+  <p class="section-title">Readability Comparison</p>
+  <div class="read-grid">
+
+    <div class="read-card">
+      <div class="read-card-header">
+        <span>Optimal Reading</span>
+        <span class="score">Best</span>
+      </div>
+      <div class="read-card-body" style="font-family:'Inter',sans-serif;">
+        <p>Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. The arrangement of type involves selecting typefaces, point sizes, line lengths, and line-spacing.</p>
+        <div class="font-info">
+          <div class="info-item"><strong>Font</strong> Inter 400</div>
+          <div class="info-item"><strong>Size</strong> 0.88rem</div>
+          <div class="info-item"><strong>Line-height</strong> 1.85</div>
+          <div class="info-item"><strong>Color</strong> #8889a0</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="read-card">
+      <div class="read-card-header">
+        <span>Serif Reading</span>
+        <span class="score">Great</span>
+      </div>
+      <div class="read-card-body" style="font-family:'Merriweather',serif; font-size:0.82rem;">
+        <p>Serif typefaces have small decorative strokes at the ends of the main strokes of each letter. They are traditionally considered easier to read in long passages due to the way the serifs guide the eye along the line of text.</p>
+        <div class="font-info">
+          <div class="info-item"><strong>Font</strong> Merriweather 300</div>
+          <div class="info-item"><strong>Size</strong> 0.82rem</div>
+          <div class="info-item"><strong>Line-height</strong> 1.9</div>
+          <div class="info-item"><strong>Color</strong> #8889a0</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="read-card">
+      <div class="read-card-header">
+        <span>Geometric Sans</span>
+        <span class="score">Good</span>
+      </div>
+      <div class="read-card-body" style="font-family:'Poppins',sans-serif; font-size:0.85rem; font-weight:300;">
+        <p>Geometric sans-serif fonts are constructed using simple geometric shapes like circles and squares. They offer a clean, modern appearance that works extremely well on screens and digital displays at various sizes.</p>
+        <div class="font-info">
+          <div class="info-item"><strong>Font</strong> Poppins 300</div>
+          <div class="info-item"><strong>Size</strong> 0.85rem</div>
+          <div class="info-item"><strong>Line-height</strong> 1.85</div>
+          <div class="info-item"><strong>Color</strong> #8889a0</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="read-card">
+      <div class="read-card-header">
+        <span>Humanist Sans</span>
+        <span class="score">Good</span>
+      </div>
+      <div class="read-card-body" style="font-family:'Source Sans 3',sans-serif;">
+        <p>Humanist sans-serif fonts blend the clean look of sans-serif typefaces with subtle organic variation. They tend to have open counters and varying stroke widths, making them feel warmer and more approachable for body copy.</p>
+        <div class="font-info">
+          <div class="info-item"><strong>Font</strong> Source Sans 3</div>
+          <div class="info-item"><strong>Size</strong> 0.88rem</div>
+          <div class="info-item"><strong>Line-height</strong> 1.85</div>
+          <div class="info-item"><strong>Color</strong> #8889a0</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="read-card">
+      <div class="read-card-header">
+        <span>Monospace</span>
+        <span class="score">Code</span>
+      </div>
+      <div class="read-card-body" style="font-family:'Roboto Mono',monospace; font-size:0.78rem;">
+        <p>Monospace fonts assign the same width to every character. While less readable for long prose, they are essential for code blocks, terminal output, and any context where character alignment and predictable spacing matter.</p>
+        <div class="font-info">
+          <div class="info-item"><strong>Font</strong> Roboto Mono 400</div>
+          <div class="info-item"><strong>Size</strong> 0.78rem</div>
+          <div class="info-item"><strong>Line-height</strong> 1.9</div>
+          <div class="info-item"><strong>Color</strong> #8889a0</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="read-card">
+      <div class="read-card-header">
+        <span>Refined Serif</span>
+        <span class="score">Great</span>
+      </div>
+      <div class="read-card-body" style="font-family:'Lora',serif; font-size:0.85rem;">
+        <p>Lora is a well-hinted literary serif designed for comfortable reading on screen. Its moderate x-height and open letterforms make it an excellent choice for long-form articles, essays, and editorial content layouts.</p>
+        <div class="font-info">
+          <div class="info-item"><strong>Font</strong> Lora 400</div>
+          <div class="info-item"><strong>Size</strong> 0.85rem</div>
+          <div class="info-item"><strong>Line-height</strong> 1.85</div>
+          <div class="info-item"><strong>Color</strong> #8889a0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     SECTION 5 — SPECIMENS
+     ════════════════════════════════════════════ -->
+<div class="section" id="specimens">
+  <p class="section-title">Full Type Specimens</p>
+
+  <!-- Specimen 1 -->
+  <div class="specimen-card">
+    <div class="sp-name">Playfair Display — Serif · Google Fonts</div>
+    <div class="sp-alpha" style="font-family:'Playfair Display',serif; font-weight:700;">The Quick Brown Fox Jumps<br>Over The Lazy Dog</div>
+    <div class="sp-numbers" style="font-family:'Playfair Display',serif; font-weight:700;">0123456789 &amp; #@!</div>
+    <div class="sp-symbols" style="font-family:'Playfair Display',serif;">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz</div>
+    <div class="sp-weights">
+      <div class="sp-weight-item">
+        <div class="w-label">400</div>
+        <div class="w-sample" style="font-family:'Playfair Display',serif; font-weight:400;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">700</div>
+        <div class="w-sample" style="font-family:'Playfair Display',serif; font-weight:700;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">900</div>
+        <div class="w-sample" style="font-family:'Playfair Display',serif; font-weight:900;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">400 Italic</div>
+        <div class="w-sample" style="font-family:'Playfair Display',serif; font-weight:400; font-style:italic;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">700 Italic</div>
+        <div class="w-sample" style="font-family:'Playfair Display',serif; font-weight:700; font-style:italic;">Aa</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Specimen 2 -->
+  <div class="specimen-card">
+    <div class="sp-name">Inter — Sans-Serif · Google Fonts</div>
+    <div class="sp-alpha" style="font-family:'Inter',sans-serif; font-weight:600;">The Quick Brown Fox Jumps<br>Over The Lazy Dog</div>
+    <div class="sp-numbers" style="font-family:'Inter',sans-serif; font-weight:600;">0123456789 &amp; #@!</div>
+    <div class="sp-symbols" style="font-family:'Inter',sans-serif;">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz</div>
+    <div class="sp-weights">
+      <div class="sp-weight-item">
+        <div class="w-label">300</div>
+        <div class="w-sample" style="font-family:'Inter',sans-serif; font-weight:300;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">400</div>
+        <div class="w-sample" style="font-family:'Inter',sans-serif; font-weight:400;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">500</div>
+        <div class="w-sample" style="font-family:'Inter',sans-serif; font-weight:500;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">600</div>
+        <div class="w-sample" style="font-family:'Inter',sans-serif; font-weight:600;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">700</div>
+        <div class="w-sample" style="font-family:'Inter',sans-serif; font-weight:700;">Aa</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Specimen 3 -->
+  <div class="specimen-card">
+    <div class="sp-name">Montserrat — Geometric Sans · Google Fonts</div>
+    <div class="sp-alpha" style="font-family:'Montserrat',sans-serif; font-weight:800; letter-spacing:-0.01em;">The Quick Brown Fox Jumps<br>Over The Lazy Dog</div>
+    <div class="sp-numbers" style="font-family:'Montserrat',sans-serif; font-weight:800;">0123456789 &amp; #@!</div>
+    <div class="sp-symbols" style="font-family:'Montserrat',sans-serif; font-weight:400;">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz</div>
+    <div class="sp-weights">
+      <div class="sp-weight-item">
+        <div class="w-label">300</div>
+        <div class="w-sample" style="font-family:'Montserrat',sans-serif; font-weight:300;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">400</div>
+        <div class="w-sample" style="font-family:'Montserrat',sans-serif; font-weight:400;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">600</div>
+        <div class="w-sample" style="font-family:'Montserrat',sans-serif; font-weight:600;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">800</div>
+        <div class="w-sample" style="font-family:'Montserrat',sans-serif; font-weight:800;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">900</div>
+        <div class="w-sample" style="font-family:'Montserrat',sans-serif; font-weight:900;">Aa</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Specimen 4 -->
+  <div class="specimen-card">
+    <div class="sp-name">Bebas Neue — Display Condensed · Google Fonts</div>
+    <div class="sp-alpha" style="font-family:'Bebas Neue',sans-serif; letter-spacing:0.06em; font-size:clamp(2rem,5vw,3rem);">The Quick Brown Fox Jumps<br>Over The Lazy Dog</div>
+    <div class="sp-numbers" style="font-family:'Bebas Neue',sans-serif; letter-spacing:0.06em; font-size:1.6rem;">0123456789 &amp; #@!</div>
+    <div class="sp-symbols" style="font-family:'Bebas Neue',sans-serif; letter-spacing:0.04em;">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="sp-weights">
+      <div class="sp-weight-item">
+        <div class="w-label">Regular</div>
+        <div class="w-sample" style="font-family:'Bebas Neue',sans-serif; letter-spacing:0.04em;">Aa</div>
+      </div>
+      <div class="sp-weight-item">
+        <div class="w-label">Use Case</div>
+        <div class="w-sample" style="font-family:'Bebas Neue',sans-serif; letter-spacing:0.04em; font-size:0.9rem; color:var(--text-muted);">Headlines</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

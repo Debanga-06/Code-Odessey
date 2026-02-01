@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Generator | Create Beautiful CSS Gradients</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Gradient Generator</h1>
+        <p class="subtitle">Create beautiful CSS gradients with ease</p>
+
+        <div class="preview-box" id="preview"></div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>🎨 Colors</label>
+                <div class="color-inputs">
+                    <div class="color-input-wrapper">
+                        <input type="color" id="color1" value="#667eea">
+                        <input type="text" id="color1Text" value="#667eea">
+                    </div>
+                    <div class="color-input-wrapper">
+                        <input type="color" id="color2" value="#764ba2">
+                        <input type="text" id="color2Text" value="#764ba2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>📐 Gradient Type</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="type" value="linear" checked>
+                        <span>Linear</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="type" value="radial">
+                        <span>Radial</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="type" value="conic">
+                        <span>Conic</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>🔄 Angle / Direction</label>
+                <div class="slider-wrapper">
+                    <input type="range" id="angle" min="0" max="360" value="135">
+                    <span class="value-display" id="angleValue">135°</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-output" id="codeOutput">background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</div>
+
+        <div class="button-group">
+            <button class="copy-btn" onclick="copyCode()">📋 Copy CSS</button>
+            <button class="random-btn" onclick="randomGradient()">🎲 Random</button>
+            <button class="reset-btn" onclick="resetGradient()">🔄 Reset</button>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Copied to clipboard! ✓</div>
+    <script src="script.js"></script>
+</body>
+</html>
