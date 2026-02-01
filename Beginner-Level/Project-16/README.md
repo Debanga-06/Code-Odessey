@@ -15,7 +15,7 @@
 
 ## 📋 Table of Contents
 
-- [Demo Link](#demo-link)
+- [Demo Link](https://navbar-variations.vercel.app/)
 - [Features](#features)
 - [Installation & Setup](#installation--setup)
 - [How to Use](#how-to-use)
@@ -402,4 +402,5 @@ Created as part of **Code-Odessey: Beginner-Level Projects**
 ---
 
 **Happy Coding! 🚀** Feel free to modify, enhance, and learn from this project.
+
 
