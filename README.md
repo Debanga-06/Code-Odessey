@@ -46,9 +46,9 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | ID | Project Name | Learning Outcome | Status |
 |----|--------------|------------------|--------|
 | 001 | Personal Portfolio Website | HTML structure, CSS styling, responsive design | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-01) |
-| 002 | Resume Builder (Static) | Forms, layout design, print CSS | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-02) |
-| 003 | Landing Page | Hero sections, CTA buttons, modern design | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-03) |
-| 004 | Restaurant Website | Multi-page layout, image optimization | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-04) |
+| 002 | Resume Builder (Static) | Forms, layout design, print CSS | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-02) |
+| 003 | Landing Page | Hero sections, CTA buttons, modern design | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-03) |
+| 004 | Restaurant Website | Multi-page layout, image optimization | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-04) |
 | 005 | Coffee Shop Website | CSS Grid, menu layouts, typography | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-05) |
 | 006 | Product Showcase Page | Product cards, hover effects, transitions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-06) |
 | 007 | Blog Homepage | Article cards, sidebar layout, readability | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-07) |
