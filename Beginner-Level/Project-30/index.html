@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Something Amazing is on the Way!</title>
+    <meta name="description" content="We're launching something amazing! Subscribe to get notified when we go live.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">🚀</div>
+
+        <!-- Header -->
+        <h1>Something Amazing is Coming Soon!</h1>
+        <p class="subtitle">We're working hard to bring you an incredible experience. Stay tuned!</p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-section">
+            <h3 class="countdown-title">⏱️ Launch Countdown</h3>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-section">
+            <p class="progress-label">🎯 Development Progress: <strong id="progressPercent">75%</strong></p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 75%"></div>
+            </div>
+        </div>
+
+        <!-- Features Preview -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Lightning Fast</h3>
+                <p class="feature-description">Optimized for speed and performance from day one.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-title">Beautiful Design</h3>
+                <p class="feature-description">Crafted with attention to every detail for the best user experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">Secure & Private</h3>
+                <p class="feature-description">Your data is protected with industry-leading security measures.</p>
+            </div>
+        </div>
+
+        <!-- Email Subscription -->
+        <div class="subscribe-section">
+            <h2>📬 Get Notified at Launch</h2>
+            <p>Be the first to know when we go live. No spam, just the good stuff!</p>
+            
+            <form class="subscribe-form" id="subscribeForm" onsubmit="handleSubmit(event)">
+                <input 
+                    type="email" 
+                    class="email-input" 
+                    id="emailInput"
+                    placeholder="Enter your email address"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                >
+                <button type="submit" class="subscribe-btn">
+                    Notify Me 🔔
+                </button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                ✅ Thank you for subscribing! We'll notify you when we launch.
+            </div>
+
+            <div class="subscriber-count">
+                <span class="count-number" id="subscriberCount">1,247</span> people already subscribed!
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-section">
+            <p class="social-title">Follow our journey:</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                <a href="#" class="social-link" aria-label="GitHub">💻</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

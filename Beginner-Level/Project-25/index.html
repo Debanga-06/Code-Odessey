@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Playground | Interactive Learning Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📐 CSS Grid Playground</h1>
+            <p class="subtitle">Learn and experiment with CSS Grid interactively</p>
+        </header>
+
+        <div class="main-layout">
+            <div class="controls-panel">
+                <h2>⚙️ Grid Controls</h2>
+
+                <div class="info-box">
+                    <h4>💡 Quick Tip</h4>
+                    <p>Try different presets to see how CSS Grid properties work together. Hover over grid items to see them scale!</p>
+                </div>
+
+                <div class="button-group">
+                    <button class="preset-btn" onclick="applyPreset('basic')">Basic 2x2</button>
+                    <button class="preset-btn" onclick="applyPreset('blog')">Blog Layout</button>
+                    <button class="preset-btn" onclick="applyPreset('dashboard')">Dashboard</button>
+                    <button class="preset-btn" onclick="applyPreset('holy-grail')">Holy Grail</button>
+                    <button class="preset-btn" onclick="applyPreset('masonry')">Masonry</button>
+                    <button class="preset-btn" onclick="applyPreset('sidebar')">Sidebar</button>
+                    <button class="reset-btn" onclick="resetGrid()">🔄 Reset</button>
+                    <button class="copy-btn" onclick="copyCode()">📋 Copy CSS</button>
+                </div>
+
+                <div class="control-section">
+                    <h3>📏 Grid Structure</h3>
+                    
+                    <div class="control-group">
+                        <label for="columns">Columns</label>
+                        <input type="text" id="columns" value="1fr 1fr 1fr" oninput="updateGrid()">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="rows">Rows</label>
+                        <input type="text" id="rows" value="auto auto" oninput="updateGrid()">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="gap">Gap (px)</label>
+                        <input type="number" id="gap" value="15" min="0" max="50" oninput="updateGrid()">
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <h3>🎯 Alignment</h3>
+                    
+                    <div class="control-group">
+                        <label for="justifyItems">Justify Items</label>
+                        <select id="justifyItems" onchange="updateGrid()">
+                            <option value="stretch">Stretch</option>
+                            <option value="start">Start</option>
+                            <option value="center">Center</option>
+                            <option value="end">End</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="alignItems">Align Items</label>
+                        <select id="alignItems" onchange="updateGrid()">
+                            <option value="stretch">Stretch</option>
+                            <option value="start">Start</option>
+                            <option value="center">Center</option>
+                            <option value="end">End</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="justifyContent">Justify Content</label>
+                        <select id="justifyContent" onchange="updateGrid()">
+                            <option value="normal">Normal</option>
+                            <option value="start">Start</option>
+                            <option value="center">Center</option>
+                            <option value="end">End</option>
+                            <option value="space-between">Space Between</option>
+                            <option value="space-around">Space Around</option>
+                            <option value="space-evenly">Space Evenly</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="alignContent">Align Content</label>
+                        <select id="alignContent" onchange="updateGrid()">
+                            <option value="normal">Normal</option>
+                            <option value="start">Start</option>
+                            <option value="center">Center</option>
+                            <option value="end">End</option>
+                            <option value="space-between">Space Between</option>
+                            <option value="space-around">Space Around</option>
+                            <option value="space-evenly">Space Evenly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <h3>🎨 Grid Items</h3>
+                    
+                    <div class="control-group">
+                        <label for="itemCount">Number of Items</label>
+                        <input type="number" id="itemCount" value="6" min="1" max="12" oninput="updateGrid()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-panel">
+                <div class="preview-header">
+                    <h2>🎨 Live Preview</h2>
+                    <div class="toggle-group">
+                        <button class="toggle-btn" id="gridLinesBtn" onclick="toggleGridLines()">Grid Lines</button>
+                    </div>
+                </div>
+
+                <div class="grid-container" id="gridContainer">
+                    <div class="grid-wrapper" id="gridWrapper">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+
+                <div class="code-output">
+                    <button class="code-copy-btn" onclick="copyCode()">📋 Copy</button>
+                    <pre id="codeOutput">.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 15px;
+  justify-items: stretch;
+  align-items: stretch;
+}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Code copied to clipboard! ✓</div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle | Theme Switcher Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🌓</span>
+                <span>Dark Mode Demo</span>
+            </div>
+            <div class="theme-toggle" id="themeToggle">
+                <div class="toggle-slider"></div>
+                <span class="theme-icon sun-icon">☀️</span>
+                <span class="theme-icon moon-icon">🌙</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <!-- HERO -->
+        <section class="hero">
+            <span class="theme-badge" id="currentThemeBadge">Light Mode</span>
+            <h1>Dark Mode Toggle</h1>
+            <p>Experience seamless theme switching with CSS variables and localStorage persistence. Your preference is saved automatically!</p>
+        </section>
+
+        <!-- THEME OPTIONS -->
+        <section class="theme-options">
+            <h2>🎨 Quick Theme Selection</h2>
+            <div class="theme-buttons">
+                <button class="theme-btn active" onclick="setTheme('light')">
+                    ☀️ Light Mode
+                </button>
+                <button class="theme-btn" onclick="setTheme('dark')">
+                    🌙 Dark Mode
+                </button>
+                <button class="theme-btn" onclick="setTheme('auto')">
+                    🔄 Auto (System)
+                </button>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">💾</div>
+                <h3>Persistent Storage</h3>
+                <p>Your theme preference is saved using localStorage and restored on every visit.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>CSS Variables</h3>
+                <p>All colors are defined using CSS custom properties for easy theme switching.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Switch</h3>
+                <p>Smooth transitions between themes with no page reload required.</p>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Color Themes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">CSS Variables</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">0.3s</div>
+                <div class="stat-label">Transition Time</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Coverage</div>
+            </div>
+        </div>
+
+        <!-- DEMO FORM -->
+        <section class="demo-section">
+            <h2>📝 Interactive Demo Components</h2>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" placeholder="Write your message here..."></textarea>
+            </div>
+            <button class="btn">Submit Form</button>
+        </section>
+
+        <!-- CODE EXAMPLE -->
+        <section class="demo-section">
+            <h2>💻 CSS Variables Code</h2>
+            <div class="code-block">
+                <button class="copy-code-btn" onclick="copyCode()">📋 Copy</button>
+                <pre id="codeContent">:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --accent-primary: #3b82f6;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --accent-primary: #60a5fa;
+}</pre>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dark Mode Toggle Demo. Part of Code-Odyssey Project #028</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Built with CSS Variables & localStorage</p>
+        </div>
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">Theme changed!</div>
+    <script src="script.js"></script>
+</body>
+</html>

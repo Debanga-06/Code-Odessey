@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Background Shapes -->
+    <div class="floating-shape shape-1">🔍</div>
+    <div class="floating-shape shape-2">🚀</div>
+    <div class="floating-shape shape-3">💫</div>
+
+    <div class="container">
+        <!-- Large 404 Text -->
+        <div class="error-code">404</div>
+
+        <!-- Main Error Content -->
+        <div class="error-content">
+            <div class="error-icon">🤔</div>
+            <h1>Oops! Page Not Found</h1>
+            <p class="error-message">
+                The page you're looking for seems to have wandered off into the digital wilderness. 
+                Don't worry, we'll help you find your way back!
+            </p>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-box" 
+                    placeholder="Search for what you're looking for..."
+                    id="searchInput"
+                    onkeypress="handleSearch(event)"
+                >
+                <button class="search-btn" onclick="performSearch()">🔍 Search</button>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="quick-links">
+                <h3>Popular Pages</h3>
+                <div class="links-grid">
+                    <a href="/" class="link-card">
+                        <span class="link-icon">🏠</span>
+                        <span class="link-text">Home</span>
+                    </a>
+                    <a href="/about" class="link-card">
+                        <span class="link-icon">ℹ️</span>
+                        <span class="link-text">About</span>
+                    </a>
+                    <a href="/contact" class="link-card">
+                        <span class="link-icon">📧</span>
+                        <span class="link-text">Contact</span>
+                    </a>
+                    <a href="/blog" class="link-card">
+                        <span class="link-icon">📝</span>
+                        <span class="link-text">Blog</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="button-group">
+                <a href="/" class="btn btn-primary">
+                    ⬅️ Go to Homepage
+                </a>
+                <button class="btn btn-secondary" onclick="goBack()">
+                    ↩️ Go Back
+                </button>
+                <button class="btn btn-secondary" onclick="enableAutoRedirect()">
+                    ⏱️ Auto Redirect (5s)
+                </button>
+            </div>
+
+            <!-- Redirect Countdown -->
+            <div class="redirect-info" id="redirectInfo">
+                ⏱️ Redirecting to homepage in <span class="countdown" id="countdown">5</span> seconds...
+                <button onclick="cancelRedirect()" style="margin-left: 10px; background: none; border: none; color: #b45309; cursor: pointer; text-decoration: underline;">Cancel</button>
+            </div>
+
+            <!-- Help Section -->
+            <div class="help-section">
+                <h3>💡 What you can do:</h3>
+                <ul class="help-list">
+                    <li>Check the URL for typos</li>
+                    <li>Use the search bar above to find what you need</li>
+                    <li>Visit our homepage and navigate from there</li>
+                    <li>Contact us if you think this is an error</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

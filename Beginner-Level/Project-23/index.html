@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator | Design System Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Color Palette Generator</h1>
+            <p class="subtitle">Create beautiful color schemes for your design projects</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-row">
+                <div class="control-group">
+                    <label for="baseColor">🎯 Base Color</label>
+                    <input type="color" id="baseColor" value="#3b82f6">
+                </div>
+                <div class="control-group">
+                    <label for="colorScheme">📐 Color Scheme</label>
+                    <select id="colorScheme">
+                        <option value="monochromatic">Monochromatic</option>
+                        <option value="analogous">Analogous</option>
+                        <option value="complementary">Complementary</option>
+                        <option value="triadic">Triadic</option>
+                        <option value="tetradic">Tetradic (Square)</option>
+                        <option value="split-complementary">Split Complementary</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="scheme-info" id="schemeInfo">
+                <h3>Monochromatic</h3>
+                <p>Uses variations in lightness and saturation of a single color. Perfect for creating elegant and cohesive designs.</p>
+            </div>
+
+            <div class="button-group">
+                <button class="generate-btn" onclick="generatePalette()">✨ Generate Palette</button>
+                <button class="export-btn" onclick="toggleExport()">💾 Export Code</button>
+                <button class="lock-all-btn" onclick="toggleLockAll()">🔓 Lock/Unlock All</button>
+            </div>
+        </div>
+
+        <div class="palette-container" id="paletteContainer"></div>
+
+        <div class="export-panel" id="exportPanel" style="display: none;">
+            <h2>📦 Export Your Palette</h2>
+            
+            <h3 style="margin-top: 20px; margin-bottom: 10px;">CSS Variables</h3>
+            <div class="code-block">
+                <button class="copy-code-btn" onclick="copyCode('cssCode')">📋 Copy</button>
+                <pre id="cssCode"></pre>
+            </div>
+
+            <h3 style="margin-bottom: 10px;">JavaScript Array</h3>
+            <div class="code-block">
+                <button class="copy-code-btn" onclick="copyCode('jsCode')">📋 Copy</button>
+                <pre id="jsCode"></pre>
+            </div>
+
+            <h3 style="margin-bottom: 10px;">JSON Format</h3>
+            <div class="code-block">
+                <button class="copy-code-btn" onclick="copyCode('jsonCode')">📋 Copy</button>
+                <pre id="jsonCode"></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Copied to clipboard! ✓</div>
+    <script src="script.js"></script>
+</body>
+</html>
