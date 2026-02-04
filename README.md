@@ -106,7 +106,15 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 ## 🟡 INTERMEDIATE LEVEL (101-200)
 
-**Coming Soon...**
+**Goal:** Master APIs, state management, frameworks, and build real applications  
+**Tech Stack:** JavaScript, APIs, React/Vue, LocalStorage, Advanced CSS
+
+### API & Logic Based (101-140)
+
+| ID | Project Name | Learning Outcome | Status |
+|----|--------------|------------------|--------|
+| 101 | [Weather App (API)]() | Fetch API, async/await, API keys, data handling | [![Not Started](https://img.shields.io/badge/Status-Pending-Yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/project-101) |
+| 102 | [News App]() | News API integration, articles display, filtering | [![Not Started](https://img.shields.io/badge/Status-Pending-Yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/project-102) |
 
 ---
 

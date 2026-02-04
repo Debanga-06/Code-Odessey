@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - API Integration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>☁️ Weather App</h1>
+      <p>Real-time weather data powered by OpenWeatherMap API</p>
+    </header>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <div class="search-box">
+        <input 
+          type="text" 
+          class="search-input" 
+          id="cityInput" 
+          placeholder="Enter city name (e.g., London, New York, Tokyo)"
+          autocomplete="off"
+        >
+        <button class="search-btn" id="searchBtn">Search</button>
+        <button class="location-btn" id="locationBtn" title="Use my location">📍</button>
+      </div>
+    </div>
+
+    <!-- Loading State -->
+    <div class="loading hidden" id="loading">
+      <div class="loading-spinner"></div>
+      <p>Fetching weather data...</p>
+    </div>
+
+    <!-- Error State -->
+    <div class="error-message hidden" id="errorMessage"></div>
+
+    <!-- Weather Content -->
+    <div class="weather-content hidden" id="weatherContent">
+      <!-- Main Weather Card -->
+      <div class="weather-main">
+        <div class="weather-header">
+          <div class="location-info">
+            <h2 id="cityName">Loading...</h2>
+            <p class="country" id="countryName">—</p>
+          </div>
+          <div class="weather-date">
+            <p id="currentDate">—</p>
+            <p id="currentTime">—</p>
+          </div>
+        </div>
+
+        <div class="weather-current">
+          <div>
+            <div class="temp-display">
+              <span id="temperature">—</span>
+              <span class="unit">°C</span>
+            </div>
+          </div>
+          <div>
+            <div class="weather-icon-main" id="weatherIcon">☀️</div>
+            <div class="weather-description" id="weatherDescription">Loading...</div>
+            <div class="feels-like">Feels like <span id="feelsLike">—</span>°C</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather Details -->
+      <div class="weather-details">
+        <div class="detail-card">
+          <div class="label"><span class="icon">💨</span> Wind Speed</div>
+          <div class="value" id="windSpeed">—</div>
+          <div class="subtext">km/h</div>
+        </div>
+        <div class="detail-card">
+          <div class="label"><span class="icon">💧</span> Humidity</div>
+          <div class="value" id="humidity">—</div>
+          <div class="subtext">percentage</div>
+        </div>
+        <div class="detail-card">
+          <div class="label"><span class="icon">🌡️</span> Pressure</div>
+          <div class="value" id="pressure">—</div>
+          <div class="subtext">hPa</div>
+        </div>
+        <div class="detail-card">
+          <div class="label"><span class="icon">👁️</span> Visibility</div>
+          <div class="value" id="visibility">—</div>
+          <div class="subtext">km</div>
+        </div>
+        <div class="detail-card">
+          <div class="label"><span class="icon">🌅</span> Sunrise</div>
+          <div class="value" id="sunrise">—</div>
+          <div class="subtext">local time</div>
+        </div>
+        <div class="detail-card">
+          <div class="label"><span class="icon">🌇</span> Sunset</div>
+          <div class="value" id="sunset">—</div>
+          <div class="subtext">local time</div>
+        </div>
+      </div>
+
+      <!-- 5-Day Forecast -->
+      <div class="forecast-section">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast-grid" id="forecastGrid"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
