@@ -31,7 +31,7 @@
 
 A **professional news aggregator application** that demonstrates advanced API integration, dynamic filtering, search functionality, and real-time data display. Built with NewsAPI, this intermediate-level project features category filtering, country selection, sorting options, and a responsive card-based layout. Perfect for learning how to build data-driven applications with external APIs.
 
-**Live Demo:** [View Project](#) *(Add your live demo link)*
+**Live Demo:** **[View Project](https://weather-app-api-eight-lovat.vercel.app/)**
 
 ## ✨ Features
 
