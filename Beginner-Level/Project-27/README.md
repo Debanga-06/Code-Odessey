@@ -226,8 +226,9 @@ This project is open source and available under the **MIT License**.
 ## 👨‍💻 Author
 
 Created by **Jiban**  
-Student at Brainware University, passionate about **responsive design, cryptography, and practical project building**.
+Passionate about **responsive design, cryptography, and practical project building**.
 
 ---
+
 
 **Happy Coding! 🚀** Feel free to modify, enhance, and learn from this project.
