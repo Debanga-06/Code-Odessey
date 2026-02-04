@@ -30,7 +30,7 @@
 
 A **production-ready weather application** that demonstrates professional API integration, async/await patterns, error handling, and real-time data processing. This intermediate-level project fetches live weather data from OpenWeatherMap API, displays current conditions, detailed metrics, and a 5-day forecast. Features geolocation support, search functionality, and a polished dark-themed UI.
 
-**Live Demo:** [View Project](#) *(Add your live demo link)*
+**Live Demo:**  **[View Project](https://code-odessey-8ch6.vercel.app/)**
 
 ## ✨ Features
 
