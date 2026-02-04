@@ -156,27 +156,80 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 ---
 
-## 🗂️ Repository Structure
+## 👥 Contributors
 
-```
-Code-Odessey/
-├── beginner/
-│   ├── project-1/
-│   ├── project-2/
-│   └── ...
-├── intermediate/
-│   ├── project-1/
-│   ├── project-2/
-│   └── ...
-├── expert/
-│   ├── project-1/
-│   ├── project-2/
-│   └── ...
-├── CONTRIBUTING.md
-├── LICENSE
-└── README.md
-```
+This project exists thanks to all the amazing people who contribute! 🎉
 
+### 🏆 Core Team
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Debanga-06">
+        <img src="https://github.com/Debanga-06.png" width="100px;" alt="Debanga"/>
+        <br />
+        <sub><b>Debanga</b></sub>
+      </a>
+      <br />
+      <span title="Project Creator">🌟 Creator</span>
+      <br />
+      <br />
+      <span title="Code">💻 5 Projects</span>
+      <br />
+      <span title="Documentation">📖 Docs</span>
+      <span title="Maintenance">🔧 Maintainer</span>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Jiban0507">
+        <img src="https://github.com/Jiban0507.png" width="100px;" alt="Jiban"/>
+        <br />
+        <sub><b>Jiban</b></sub>
+      </a>
+      <br />
+      <span title="Controller">🕹️ Repo Controller </span>
+      <br />
+      <span title="Code">💻 12 Projects</span>
+  </tr>
+</table>
+
+### 🌟 Top Contributors
+
+<!-- This section will be automatically updated -->
+<a href="https://github.com/Debanga-06/Project-Python-100/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Debanga-06/Project-Python-100" />
+</a>
+
+### 🎖️ Hall of Fame
+
+#### 🥇 Gold Contributors (10+ Projects)
+- **[@Jiban0507](https://github.com/Jiban-0507)** - 12 projects completed across all levels
+
+#### 🥈 Silver Contributors (5-9 Projects)
+- **[@Debanga-06](https://github.com/Debanga-06)** - 7 projects completed across all levels
+- **[@Debanga-06](https://github.com/Debanga-06)** - 5 projects completed across all levels
+
+#### 🥉 Bronze Contributors (1-4 Projects)
+- *Join the contributor list!*
+
+### 💝 Special Thanks
+
+Special recognition to contributors who have made significant non-code contributions:
+
+- 🐛 **Bug Hunters** - Helping identify and report issues
+- 📝 **Documentation Heroes** - Improving project documentation
+- 💡 **Idea Contributors** - Suggesting new projects and features
+- 🎨 **Design Contributors** - Enhancing UI/UX and visual elements
+- 🌍 **Community Builders** - Helping others learn and grow
+
+### 🎯 Contribution Milestones
+
+- ✅ **Project Launch** - August 2025
+- ✅ **First 10 Projects** - January 2026
+- ✅ **First 25 Projects** - February 2026
+- 🎯 **50 Projects** - Target: April 2026
+- 🎯 **100 Projects** - Target: June 2026
+
+---
 ## 🚀 Getting Started
 
 1. **Clone** the repository:
