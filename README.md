@@ -133,8 +133,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 20/100 completed
-- **Intermediate Projects:** 0/100 completed
+- **Beginner Projects:** 21/100 completed
+- **Intermediate Projects:** 2/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
   
