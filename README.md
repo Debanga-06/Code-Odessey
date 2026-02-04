@@ -113,7 +113,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 | ID | Project Name | Learning Outcome | Status |
 |----|--------------|------------------|--------|
-| 101 | [Weather App (API)]() | Fetch API, async/await, API keys, data handling | [![Not Started](https://img.shields.io/badge/Status-Pending-Yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/project-101) |
+| 101 | [Weather App (API)](https://code-odessey-8ch6.vercel.app/) | Fetch API, async/await, API keys, data handling | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/project-101) |
 | 102 | [News App]() | News API integration, articles display, filtering | [![Not Started](https://img.shields.io/badge/Status-Pending-Yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/project-102) |
 
 ---
