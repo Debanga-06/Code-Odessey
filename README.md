@@ -205,7 +205,7 @@ This project exists thanks to all the amazing people who contribute! 🎉
 - **[@Jiban0507](https://github.com/Jiban-0507)** - 12 projects completed across all levels
 
 #### 🥈 Silver Contributors (5-9 Projects)
-- **[@Debanga-06](https://github.com/Debanga-06)** - 7 projects completed across all levels
+- **[@ARPAN7797](https://github.com/ARPAN7797)** - 7 projects completed across all levels
 - **[@Debanga-06](https://github.com/Debanga-06)** - 5 projects completed across all levels
 
 #### 🥉 Bronze Contributors (1-4 Projects)
