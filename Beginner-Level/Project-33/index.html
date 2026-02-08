@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch with FIFO Lap & Clear Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stopwatch-container">
+    <h1>Stopwatch</h1>
+    <div id="display">00:00:00</div>
+    
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
+      <button id="record">Record</button>
+      <button id="clear-records">Clear Records</button>
+    </div>
+
+    <h2>Last 5 Records</h2>
+    <ul id="records">
+      <!-- Recorded times appear here -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

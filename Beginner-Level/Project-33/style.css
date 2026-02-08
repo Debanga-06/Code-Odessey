@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.stopwatch-container {
+  text-align: center;
+  background: #222;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff6f61;
+}
+
+#display {
+  font-size: 4rem;
+  margin: 20px 0;
+  color: #ff6f61;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.buttons button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#start { background-color: #28a745; color: #fff; }
+#stop { background-color: #dc3545; color: #fff; }
+#reset { background-color: #007bff; color: #fff; }
+#record { background-color: #ffc107; color: #000; }
+#clear-records { background-color: #6c757d; color: #fff; }
+
+.buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #fff;
+}
+
+#records {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  color: #00ffcc;
+  font-size: 1.5rem;
+}
+
+#records li {
+  padding: 5px 0;
+  border-bottom: 1px solid #555;
+}
