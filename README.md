@@ -82,7 +82,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | ID | Project Name | Learning Outcome | Status |
 |----|--------------|------------------|--------|
 | 031 | [Counter App](https://counter-app-beta-ten-89.vercel.app/)| DOM manipulation, event listeners, state | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-031) |
-| 032 | Digital Clock | Date object, setInterval, time formatting | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-032) |
+| 032 | [Digital Clock](https://counter-app-m84h.vercel.app/) | Date object, setInterval, time formatting | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-032) |
 | 033 | Stopwatch | Timing functions, start/stop logic, display | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-033) |
 | 034 | Countdown Timer | Time calculations, countdown logic, alerts | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-034) |
 | 035 | Random Quote Generator | Arrays, random selection, DOM updates | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-035) |
