@@ -1,0 +1,62 @@
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container Box */
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  min-width: 300px;
+}
+
+/* Counter Number */
+#counter {
+  font-size: 60px;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Buttons Styling */
+button {
+  padding: 15px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+}
+
+/* Individual Buttons Colors */
+#increment {
+  background-color: #28a745;
+}
+#decrement {
+  background-color: #dc3545;
+}
+#reset {
+  background-color: #007bff;
+}
+
+/* Hover Effects */
+button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
