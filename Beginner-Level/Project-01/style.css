@@ -1,0 +1,87 @@
+/* ---------- General Page Styling ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Simple, readable font */
+    background-color: #f4f6f8;               /* Light background */
+    color: #333;                             /* Dark text */
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Header ---------- */
+header {
+    text-align: center;
+    background-color: #4b2cc5; /* Primary color */
+    color: white;
+    padding: 30px 20px;
+}
+
+header img {
+    border-radius: 50%;     /* Makes image circular */
+    margin-top: 15px;
+    border: 3px solid white;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* ---------- Sections ---------- */
+section {
+    background-color: white;
+    width: 80%;
+    margin: 25px auto;      /* Center the section */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Section headings */
+h2 {
+    color: #4b2cc5;
+    margin-bottom: 10px;
+}
+
+/* ---------- Lists ---------- */
+ul {
+    list-style-type: none;  /* Remove bullets */
+    padding: 0;
+}
+
+ul li {
+    background-color: #eef1ff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #222;
+    color: rgb(8, 5, 5);
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #0b0b0d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Horizontal Line ---------- */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+
+/* ---------- Responsive (Mobile Friendly) ---------- */
+@media (max-width: 600px) {
+    section {
+        width: 95%;
+    }
+}
