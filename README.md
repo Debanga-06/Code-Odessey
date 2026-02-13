@@ -196,7 +196,7 @@ This project exists thanks to all the amazing people who contribute! 🎉
 
 <!-- This section will be automatically updated -->
 <a href="https://github.com/Debanga-06/Project-Python-100/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Debanga-06/Project-Python-100" />
+  <img src="https://contrib.rocks/image?repo=Debanga-06/Code-Odessey" />
 </a>
 
 ### 🎖️ Hall of Fame
