@@ -32,7 +32,7 @@
 
 A **fully responsive personal portfolio website** designed to showcase skills, projects, and professional experience. This is the foundational project in the Code-Odessey series, demonstrating core web development principles including HTML structure, CSS styling, responsive design, and basic JavaScript interactions. Perfect for beginners starting their web development journey.
 
-**Live Demo:** [View Portfolio](#) 
+**Live Demo:** [View Portfolio](https://project-01-sigma-eight.vercel.app/) 
 
 ## ✨ Features
 
