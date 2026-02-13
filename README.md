@@ -81,26 +81,26 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 | ID | Project Name | Learning Outcome | Status |
 |----|--------------|------------------|--------|
-| 031 | [Counter App](https://counter-app-beta-ten-89.vercel.app/)| DOM manipulation, event listeners, state | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-031) |
-| 032 | [Digital Clock](https://counter-app-m84h.vercel.app/) | Date object, setInterval, time formatting | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-032) |
-| 033 | [Stopwatch](https://stopwatch-three-rho.vercel.app/) | Timing functions, start/stop logic, display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-033) |
-| 034 | Countdown Timer | Time calculations, countdown logic, alerts | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-034) |
-| 035 | Random Quote Generator | Arrays, random selection, DOM updates | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-035) |
-| 036 | Number Guessing Game | Game logic, conditionals, user input | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-036) |
-| 037 | Dice Roller | Random numbers, animations, game mechanics | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-037) |
-| 038 | Password Strength Checker | String validation, regex, security concepts | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-038) |
-| 039 | Tip Calculator | Math operations, input handling, calculations | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-039) |
-| 040 | BMI Calculator | Formula implementation, input validation, results | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-040) |
-| 041 | Temperature Converter | Unit conversion, formulas, user interface | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-041) |
-| 042 | Unit Converter | Multiple conversions, dropdown menus, logic | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-042) |
-| 043 | Random Color Generator | RGB/HEX colors, randomization, display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-043) |
-| 044 | Background Color Changer | Event handling, style manipulation, colors | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-044) |
-| 045 | Simple Calculator | Arithmetic operations, calculator logic, UI | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-045) |
-| 046 | Form Validation App | Input validation, error messages, UX | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-046) |
-| 047 | To-Do List (Basic) | CRUD operations, array methods, local state | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-047) |
-| 048 | Notes App (LocalStorage) | LocalStorage API, data persistence, CRUD | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-048) |
-| 049 | Accordion Component | Toggle functionality, dynamic content, UI | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-049) |
-| 050 | Tabs Component | Tab switching, content display, navigation | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-050) |
+| 031 | [Counter App](https://counter-app-beta-ten-89.vercel.app/)| DOM manipulation, event listeners, state | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-31) |
+| 032 | [Digital Clock](https://counter-app-m84h.vercel.app/) | Date object, setInterval, time formatting | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-32) |
+| 033 | [Stopwatch](https://stopwatch-three-rho.vercel.app/) | Timing functions, start/stop logic, display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-33) |
+| 034 | Countdown Timer | Time calculations, countdown logic, alerts | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-34) |
+| 035 | Random Quote Generator | Arrays, random selection, DOM updates | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-35) |
+| 036 | Number Guessing Game | Game logic, conditionals, user input | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-36) |
+| 037 | Dice Roller | Random numbers, animations, game mechanics | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-37) |
+| 038 | Password Strength Checker | String validation, regex, security concepts | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-38) |
+| 039 | Tip Calculator | Math operations, input handling, calculations | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-39) |
+| 040 | BMI Calculator | Formula implementation, input validation, results | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-40) |
+| 041 | Temperature Converter | Unit conversion, formulas, user interface | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-41) |
+| 042 | Unit Converter | Multiple conversions, dropdown menus, logic | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-42) |
+| 043 | Random Color Generator | RGB/HEX colors, randomization, display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-43) |
+| 044 | Background Color Changer | Event handling, style manipulation, colors | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-44) |
+| 045 | Simple Calculator | Arithmetic operations, calculator logic, UI | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-45) |
+| 046 | Form Validation App | Input validation, error messages, UX | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-46) |
+| 047 | [To-Do List (Basic)]() | CRUD operations, array methods, local state | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-47) |
+| 048 | [Notes App (LocalStorage)]() | LocalStorage API, data persistence, CRUD | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-48) |
+| 049 | [Accordion Component]() | Toggle functionality, dynamic content, UI | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-49) |
+| 050 | [Tabs Component]() | Tab switching, content display, navigation | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-50) |
 
 ---
 
@@ -133,7 +133,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 25/100 completed
+- **Beginner Projects:** 29/100 completed
 - **Intermediate Projects:** 2/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
