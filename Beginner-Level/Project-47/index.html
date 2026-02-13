@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List - CRUD Operations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>✅ To-Do List</h1>
+      <p>Master CRUD operations and array methods</p>
+    </header>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat-card">
+        <div class="label">Total</div>
+        <div class="value" id="totalCount">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Active</div>
+        <div class="value" id="activeCount">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Completed</div>
+        <div class="value" id="completedCount">0</div>
+      </div>
+    </div>
+
+    <!-- Add Todo -->
+    <div class="add-todo">
+      <div class="input-group">
+        <input 
+          type="text" 
+          class="todo-input" 
+          id="todoInput" 
+          placeholder="What needs to be done?"
+          autocomplete="off"
+        >
+        <button class="add-btn" id="addBtn">Add Task</button>
+      </div>
+      <div class="priority-selector">
+        <button class="priority-btn low active" data-priority="low">Low</button>
+        <button class="priority-btn medium" data-priority="medium">Medium</button>
+        <button class="priority-btn high" data-priority="high">High</button>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All Tasks</button>
+      <button class="filter-tab" data-filter="active">Active</button>
+      <button class="filter-tab" data-filter="completed">Completed</button>
+    </div>
+
+    <!-- Todo List -->
+    <div class="todo-list" id="todoList"></div>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="emptyState" style="display: none;">
+      <div class="icon">📝</div>
+      <h3>No tasks yet</h3>
+      <p>Add a task to get started!</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

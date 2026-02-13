@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App - LocalStorage Persistence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-left">
+        <h1>📝 Notes App</h1>
+        <p id="notesCount">0 notes saved in LocalStorage</p>
+      </div>
+      <div class="header-right">
+        <button class="btn btn-primary" id="newNoteBtn">+ New Note</button>
+        <button class="btn btn-secondary" id="clearAllBtn">Clear All</button>
+      </div>
+    </header>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <input 
+        type="text" 
+        class="search-input" 
+        id="searchInput" 
+        placeholder="Search notes by title or content..."
+        autocomplete="off"
+      >
+    </div>
+
+    <!-- Notes Grid -->
+    <div class="notes-grid" id="notesGrid"></div>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="emptyState" style="display: none;">
+      <div class="icon">📓</div>
+      <h3>No notes yet</h3>
+      <p>Create your first note to get started!</p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="noteModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modalTitle">New Note</h2>
+        <button class="close-btn" id="closeModalBtn">×</button>
+      </div>
+      <form id="noteForm">
+        <div class="form-group">
+          <label for="noteTitle">Title</label>
+          <input 
+            type="text" 
+            class="form-input" 
+            id="noteTitle" 
+            placeholder="Enter note title..."
+            required
+          >
+        </div>
+        <div class="form-group">
+          <label for="noteCategory">Category</label>
+          <select class="form-input form-select" id="noteCategory">
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="ideas">Ideas</option>
+            <option value="todo">To-Do</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="noteContent">Content</label>
+          <textarea 
+            class="form-input form-textarea" 
+            id="noteContent" 
+            placeholder="Write your note here..."
+            required
+          ></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="saveBtn">Save Note</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

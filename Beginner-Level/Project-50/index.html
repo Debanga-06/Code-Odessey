@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs Component - Navigation & Content Display</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>📑 Tabs Component</h1>
+      <p>Tab switching, content navigation, and dynamic display patterns</p>
+    </header>
+
+    <!-- Basic Tabs -->
+    <section class="section">
+      <h2 class="section-title">Basic Horizontal Tabs</h2>
+      <div class="tabs-container">
+        <div class="tabs-list" role="tablist">
+          <button class="tab-button active" data-tab="overview" role="tab">Overview</button>
+          <button class="tab-button" data-tab="features" role="tab">Features</button>
+          <button class="tab-button" data-tab="pricing" role="tab">Pricing</button>
+          <button class="tab-button" data-tab="support" role="tab">Support</button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-panel active" id="overview" role="tabpanel">
+            <h3>Product Overview</h3>
+            <p>Our platform provides a comprehensive solution for modern web development. Built with cutting-edge technologies, it offers unparalleled performance, scalability, and developer experience.</p>
+            <p>Whether you're building a simple landing page or a complex web application, our tools streamline your workflow and help you ship faster.</p>
+          </div>
+          <div class="tab-panel" id="features" role="tabpanel">
+            <h3>Key Features</h3>
+            <p>Discover the powerful features that make our platform the best choice for developers:</p>
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4>⚡ Lightning Fast</h4>
+                <p>Optimized for speed and performance</p>
+              </div>
+              <div class="feature-item">
+                <h4>🔒 Secure by Default</h4>
+                <p>Enterprise-grade security built-in</p>
+              </div>
+              <div class="feature-item">
+                <h4>📱 Fully Responsive</h4>
+                <p>Works seamlessly on all devices</p>
+              </div>
+              <div class="feature-item">
+                <h4>🎨 Customizable</h4>
+                <p>Adapt to your brand and style</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="pricing" role="tabpanel">
+            <h3>Flexible Pricing</h3>
+            <p>Choose a plan that fits your needs. All plans include our core features with varying levels of support and resources.</p>
+            <p>Start with our free tier and upgrade as you grow. No hidden fees, cancel anytime.</p>
+          </div>
+          <div class="tab-panel" id="support" role="tabpanel">
+            <h3>24/7 Support</h3>
+            <p>Our dedicated support team is here to help you succeed. Get answers to your questions through multiple channels:</p>
+            <p>• Live chat support<br>• Email support within 24 hours<br>• Comprehensive documentation<br>• Community forums<br>• Video tutorials</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pill Tabs -->
+    <section class="section">
+      <h2 class="section-title">Pill Style Tabs</h2>
+      <div class="tabs-container tabs-pill">
+        <div class="tabs-list" role="tablist">
+          <button class="tab-button active" data-tab="html" role="tab">HTML</button>
+          <button class="tab-button" data-tab="css" role="tab">CSS</button>
+          <button class="tab-button" data-tab="javascript" role="tab">JavaScript</button>
+          <button class="tab-button" data-tab="react" role="tab">React</button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-panel active" id="html" role="tabpanel">
+            <h3>HTML Fundamentals</h3>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure and content of a web page using a system of tags and attributes.</p>
+            <p>Learn semantic HTML5 elements, accessibility best practices, and modern HTML features to build robust web applications.</p>
+          </div>
+          <div class="tab-panel" id="css" role="tabpanel">
+            <h3>CSS Styling</h3>
+            <p>CSS (Cascading Style Sheets) controls the visual presentation of HTML elements. Master Flexbox, Grid, animations, and responsive design to create beautiful, modern interfaces.</p>
+            <p>Explore CSS custom properties, preprocessors like Sass, and modern layout techniques for professional web design.</p>
+          </div>
+          <div class="tab-panel" id="javascript" role="tabpanel">
+            <h3>JavaScript Programming</h3>
+            <p>JavaScript brings interactivity to web pages. Learn ES6+ features, async programming, DOM manipulation, and modern JavaScript patterns to build dynamic applications.</p>
+            <p>Master promises, async/await, modules, and object-oriented programming in JavaScript.</p>
+          </div>
+          <div class="tab-panel" id="react" role="tabpanel">
+            <h3>React Framework</h3>
+            <p>React is a powerful library for building user interfaces. Learn component-based architecture, hooks, state management, and React best practices.</p>
+            <p>Build scalable, maintainable applications with React's declarative approach and virtual DOM.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Icon Tabs with Counters -->
+    <section class="section">
+      <h2 class="section-title">Tabs with Icons & Counters</h2>
+      <div class="tabs-container">
+        <div class="tabs-list" role="tablist">
+          <button class="tab-button active" data-tab="inbox" role="tab">
+            <span class="tab-icon">
+              <span class="tab-icon-emoji">📥</span>
+              <span>Inbox</span>
+              <span class="tab-counter">12</span>
+            </span>
+          </button>
+          <button class="tab-button" data-tab="starred" role="tab">
+            <span class="tab-icon">
+              <span class="tab-icon-emoji">⭐</span>
+              <span>Starred</span>
+              <span class="tab-counter">3</span>
+            </span>
+          </button>
+          <button class="tab-button" data-tab="sent" role="tab">
+            <span class="tab-icon">
+              <span class="tab-icon-emoji">📤</span>
+              <span>Sent</span>
+              <span class="tab-counter">45</span>
+            </span>
+          </button>
+          <button class="tab-button" data-tab="drafts" role="tab">
+            <span class="tab-icon">
+              <span class="tab-icon-emoji">📝</span>
+              <span>Drafts</span>
+              <span class="tab-counter">7</span>
+            </span>
+          </button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-panel active" id="inbox" role="tabpanel">
+            <h3>Inbox (12 unread)</h3>
+            <p>You have 12 new messages waiting for your attention. Review and respond to keep your inbox organized and maintain clear communication with your team.</p>
+          </div>
+          <div class="tab-panel" id="starred" role="tabpanel">
+            <h3>Starred Messages (3)</h3>
+            <p>Your most important messages are here. Use stars to mark critical emails that need follow-up or reference later.</p>
+          </div>
+          <div class="tab-panel" id="sent" role="tabpanel">
+            <h3>Sent Items (45)</h3>
+            <p>View all messages you've sent. Keep track of your outgoing communication and follow up on pending replies.</p>
+          </div>
+          <div class="tab-panel" id="drafts" role="tabpanel">
+            <h3>Draft Messages (7)</h3>
+            <p>Finish and send your draft messages. Don't let important emails sit unfinished—complete them when you have time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Style Tabs -->
+    <section class="section">
+      <h2 class="section-title">Card Style Tabs</h2>
+      <div class="tabs-container tabs-card">
+        <div class="tabs-list" role="tablist">
+          <button class="tab-button active" data-tab="monthly" role="tab">Monthly</button>
+          <button class="tab-button" data-tab="annual" role="tab">Annual <span style="color: #10b981; font-size: 0.75rem;">(Save 20%)</span></button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-panel active" id="monthly" role="tabpanel">
+            <h3>Monthly Billing - $49/month</h3>
+            <p>Flexible monthly subscription with no long-term commitment. Perfect for trying out our service or short-term projects.</p>
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4>✓ All Features</h4>
+                <p>Full access to platform</p>
+              </div>
+              <div class="feature-item">
+                <h4>✓ 24/7 Support</h4>
+                <p>Round-the-clock assistance</p>
+              </div>
+              <div class="feature-item">
+                <h4>✓ Cancel Anytime</h4>
+                <p>No strings attached</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="annual" role="tabpanel">
+            <h3>Annual Billing - $470/year</h3>
+            <p>Save $118 per year with our annual plan. Best value for long-term users and growing teams.</p>
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h4>✓ All Features</h4>
+                <p>Full access to platform</p>
+              </div>
+              <div class="feature-item">
+                <h4>✓ Priority Support</h4>
+                <p>Faster response times</p>
+              </div>
+              <div class="feature-item">
+                <h4>✓ Save 20%</h4>
+                <p>Best value option</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Example -->
+    <div class="code-section">
+      <h3>💻 HTML Structure</h3>
+      <div class="code-block">
+        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        <code>&lt;div class="tabs-container"&gt;
+  &lt;div class="tabs-list" role="tablist"&gt;
+    &lt;button class="tab-button active" data-tab="tab1"&gt;Tab 1&lt;/button&gt;
+    &lt;button class="tab-button" data-tab="tab2"&gt;Tab 2&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="tabs-content"&gt;
+    &lt;div class="tab-panel active" id="tab1"&gt;Content 1&lt;/div&gt;
+    &lt;div class="tab-panel" id="tab2"&gt;Content 2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

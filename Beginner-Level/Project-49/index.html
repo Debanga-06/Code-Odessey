@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Component - Dynamic Toggle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>📂 Accordion Component</h1>
+      <p>Interactive toggle functionality with dynamic content display and smooth animations</p>
+    </header>
+
+    <!-- Basic Accordion -->
+    <section class="section">
+      <h2 class="section-title">Basic Accordion</h2>
+      <div class="accordion" id="basicAccordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>What is an accordion component?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              An accordion is a vertically stacked list of items where each item can be expanded or collapsed to reveal content associated with that item. It's commonly used in FAQs, documentation, and settings panels to organize content in a compact, scannable format.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>When should I use an accordion?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Use accordions when you have multiple sections of content that users may want to access independently. They're perfect for FAQs, feature lists, product specifications, and any scenario where vertical space is limited but you need to present detailed information.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Are accordions accessible?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Yes! When built correctly, accordions are fully accessible. They should use proper ARIA attributes (aria-expanded, aria-controls), be keyboard navigable with Enter/Space, and provide clear visual focus indicators. This implementation follows accessibility best practices.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Can multiple items be open at once?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              It depends on your implementation! Some accordions allow multiple panels to be open simultaneously (like this one), while others close the previous panel when a new one opens. The choice depends on your use case and user needs.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Styled Accordion with Plus/Minus -->
+    <section class="section">
+      <h2 class="section-title">Styled with Plus/Minus Icons</h2>
+      <div class="accordion accordion-styled accordion-plus">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>HTML Structure</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              The HTML structure uses semantic button elements for headers and div containers for content. Each accordion item is wrapped in a parent div with appropriate ARIA attributes for accessibility.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>CSS Animations</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              CSS transitions control the smooth opening and closing of panels. We use max-height transitions with overflow: hidden to create the collapsing effect while maintaining performance.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>JavaScript Logic</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              JavaScript handles click events, toggles active classes, and manages the open/close state. Event delegation is used for better performance when dealing with multiple accordion items.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Numbered Accordion -->
+    <section class="section">
+      <h2 class="section-title">Numbered Accordion</h2>
+      <div class="accordion accordion-styled accordion-numbered">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span class="accordion-number">01</span>
+            <span>Discovery Phase</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              We start by understanding your goals, target audience, and project requirements through in-depth discussions and research. This phase lays the foundation for a successful project.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span class="accordion-number">02</span>
+            <span>Design & Prototype</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Our design team creates wireframes and high-fidelity mockups based on your brand guidelines and user experience best practices. We iterate based on your feedback until the design is perfect.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span class="accordion-number">03</span>
+            <span>Development & Testing</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              We build your project using modern technologies and best practices. Rigorous testing ensures everything works flawlessly across all devices and browsers before launch.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span class="accordion-number">04</span>
+            <span>Launch & Support</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              After launch, we provide ongoing support and maintenance to ensure your project continues to perform optimally. We're here to help you grow and adapt as your needs evolve.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Style -->
+    <section class="section">
+      <h2 class="section-title">FAQ Style Accordion</h2>
+      <div class="accordion accordion-faq">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>How do I customize the accordion colors?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              You can customize colors by editing the CSS custom properties (variables) defined in the :root selector. Change --accent for the primary color, --bg-card for the background, and --text-primary for text colors.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Is this component responsive?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Yes! The accordion is fully responsive and adapts to all screen sizes. On mobile devices, padding is reduced and font sizes adjust to ensure optimal readability and touch targets.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Can I add custom icons?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Absolutely! You can replace the default chevron icons with custom SVGs, Font Awesome icons, or any other icon library. Simply modify the .accordion-icon content in your HTML or CSS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Example -->
+    <div class="code-section">
+      <h3>💻 HTML Structure</h3>
+      <div class="code-block">
+        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        <code>&lt;div class="accordion"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;button class="accordion-header"&gt;
+      &lt;span&gt;Question Title&lt;/span&gt;
+      &lt;span class="accordion-icon"&gt;▼&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;div class="accordion-body"&gt;
+        Answer content goes here...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

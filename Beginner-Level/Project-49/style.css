@@ -1,0 +1,294 @@
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+    :root {
+      --bg-primary: #0f1419;
+      --bg-secondary: #1a1f28;
+      --bg-card: #242b36;
+      --border: #2f3845;
+      --accent: #7c6ef5;
+      --accent-hover: #6d5fe6;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --success: #10b981;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Section Titles */
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title::before {
+      content: '';
+      width: 4px;
+      height: 24px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    /* Basic Accordion */
+    .accordion {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .accordion-item:last-child {
+      border-bottom: none;
+    }
+
+    .accordion-header {
+      width: 100%;
+      padding: 20px 24px;
+      background: transparent;
+      border: none;
+      color: var(--text-primary);
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all var(--transition);
+      font-family: inherit;
+    }
+
+    .accordion-header:hover {
+      background: rgba(124, 110, 245, 0.05);
+    }
+
+    .accordion-header.active {
+      color: var(--accent);
+      background: rgba(124, 110, 245, 0.08);
+    }
+
+    .accordion-icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform var(--transition);
+      font-size: 1.2rem;
+      color: var(--text-muted);
+    }
+
+    .accordion-header.active .accordion-icon {
+      transform: rotate(180deg);
+      color: var(--accent);
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height var(--transition), padding var(--transition);
+    }
+
+    .accordion-content.active {
+      max-height: 500px;
+      padding: 0 24px 20px;
+    }
+
+    .accordion-body {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    /* Styled Accordion */
+    .accordion-styled .accordion-item {
+      background: var(--bg-card);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .accordion-styled .accordion-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .accordion-styled .accordion-header {
+      padding: 18px 20px;
+    }
+
+    /* Icon Variants */
+    .accordion-plus .accordion-icon::before {
+      content: '+';
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    .accordion-plus .accordion-header.active .accordion-icon::before {
+      content: '−';
+    }
+
+    .accordion-plus .accordion-header.active .accordion-icon {
+      transform: rotate(0deg);
+    }
+
+    /* With Numbers */
+    .accordion-numbered .accordion-header {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 16px;
+    }
+
+    .accordion-number {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(124, 110, 245, 0.1);
+      border-radius: 8px;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    /* FAQ Style */
+    .accordion-faq {
+      background: transparent;
+      border: none;
+    }
+
+    .accordion-faq .accordion-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      transition: all var(--transition);
+    }
+
+    .accordion-faq .accordion-item:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px rgba(124, 110, 245, 0.15);
+    }
+
+    .accordion-faq .accordion-header {
+      padding: 24px;
+      font-size: 1.05rem;
+    }
+
+    .accordion-faq .accordion-content.active {
+      padding: 0 24px 24px;
+    }
+
+    /* Code Block */
+    .code-section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    .code-section h3 {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .code-block {
+      background: #1e1e1e;
+      border-radius: 8px;
+      padding: 20px;
+      overflow-x: auto;
+      position: relative;
+    }
+
+    .code-block code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      color: #d4d4d4;
+      line-height: 1.6;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 6px 12px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .copy-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .accordion-header {
+        padding: 16px 18px;
+        font-size: 0.95rem;
+      }
+
+      .accordion-content.active {
+        padding: 0 18px 16px;
+      }
+
+      .accordion-faq .accordion-header {
+        padding: 20px 18px;
+      }
+    }
