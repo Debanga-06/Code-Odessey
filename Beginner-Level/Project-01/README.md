@@ -8,7 +8,7 @@
 
 ## 👤 Created By
 
-**Ritwik** - [@Ritwik-Mridha704](https://github.com/Ritwik-Mridha704) Full Stack Developer in Training
+**Ritwik** - [@Ritwik-Mridha704](https://github.com/Ritwik-Mridha704) [Full Stack Developer in Training]
 
 ## 📋 Table of Contents
 - [Overview](#overview)
@@ -498,7 +498,7 @@ This project is licensed under the MIT License - see the [LICENSE](../../LICENSE
 
 ## 📞 Contact
 
-**Ritwik** - [@Ritwik-Mridha704](https://github.com/Ritwik-Mridha704) Full Stack Developer
+**Ritwik** - [@Ritwik-Mridha704](https://github.com/Ritwik-Mridha704) [Full Stack Developer]
 
 - **GitHub:** [@Debanga-06](https://github.com/Debanga-06)
 
