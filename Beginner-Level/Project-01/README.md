@@ -8,7 +8,7 @@
 
 ## 👤 Created By
 
-**Ritwik** - []() Full Stack Developer in Training
+**Ritwik** - [@Ritwik-Mridha704](https://github.com/Ritwik-Mridha704) Full Stack Developer in Training
 
 ## 📋 Table of Contents
 - [Overview](#overview)
@@ -486,7 +486,7 @@ This project is licensed under the MIT License - see the [LICENSE](../../LICENSE
 
 - [Project 002 - Resume Builder](../Project-02/)
 - [Project 003 - Landing Page](../Project-03/)
-- [Project 027 - Mobile Responsive Page](../../Intermediate-Level/Project-27/)
+- [Project 027 - Mobile Responsive Page](../Project-27/)
 
 ## 🎓 Learning Resources
 
@@ -498,7 +498,7 @@ This project is licensed under the MIT License - see the [LICENSE](../../LICENSE
 
 ## 📞 Contact
 
-**Ritwik** -[]() Full Stack Developer
+**Ritwik** - [@Ritwik-Mridha704](https://github.com/Ritwik-Mridha704) Full Stack Developer
 
 - **GitHub:** [@Debanga-06](https://github.com/Debanga-06)
 
