@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* FORM SECTION */
+.form-section {
+    padding: 40px;
+    background: #f9fafc;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.4);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* RESUME PREVIEW */
+.resume-section {
+    padding: 40px;
+    background: #ffffff;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+.resume-header p {
+    font-size: 14px;
+    color: #777;
+}
+
+.resume-content h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.resume-content p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #444;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
