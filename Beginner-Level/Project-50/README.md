@@ -25,7 +25,7 @@
 
 A comprehensive **Tabs Component** collection featuring 5 unique design patterns for content navigation. Includes horizontal tabs, pill-style tabs, icon tabs with counters, card-style tabs, and vertical tabs. Built with semantic HTML, smooth CSS animations, and vanilla JavaScript for optimal performance.
 
-**Live Demo:** [View Project](#)
+**Live Demo:** **[View Project](https://tabcomponent.vercel.app/)**
 
 ## ✨ Features
 
