@@ -22,7 +22,7 @@
 
 A feature-rich **Notes Application** with persistent data storage using the LocalStorage API. Create, edit, delete, and search notes that survive page refreshes. Features categories, timestamps, a modal interface, and a modern card-based layout.
 
-**Live Demo:** [View Project](#)
+**Live Demo:** **[View Project](https://notes-app-lake-five.vercel.app/)**
 
 ## ✨ Features
 
