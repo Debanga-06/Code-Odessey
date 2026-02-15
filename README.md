@@ -98,9 +98,9 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 045 | Simple Calculator | Arithmetic operations, calculator logic, UI | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-45) |
 | 046 | Form Validation App | Input validation, error messages, UX | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/Project-46) |
 | 047 | [To-Do List (Basic)](https://to-do-list-basic-two.vercel.app/) | CRUD operations, array methods, local state | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-47) |
-| 048 | [Notes App (LocalStorage)]() | LocalStorage API, data persistence, CRUD | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/p\Project-48) |
-| 049 | [Accordion Component]() | Toggle functionality, dynamic content, UI | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-49) |
-| 050 | [Tabs Component]() | Tab switching, content display, navigation | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-50) |
+| 048 | [Notes App (LocalStorage)](https://notes-app-lake-five.vercel.app/) | LocalStorage API, data persistence, CRUD | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/p\Project-48) |
+| 049 | [Accordion Component](https://according-component.vercel.app/) | Toggle functionality, dynamic content, UI | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-49) |
+| 050 | [Tabs Component](https://tabcomponent.vercel.app/) | Tab switching, content display, navigation | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-50) |
 
 ---
 
