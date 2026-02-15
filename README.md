@@ -46,7 +46,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | ID | Project Name | Learning Outcome | Status |
 |----|--------------|------------------|--------|
 | 001 | [Personal Portfolio Website](https://project-01-sigma-eight.vercel.app/) | HTML structure, CSS styling, responsive design | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-01) |
-| 002 | [Resume Builder (Static)]() | Forms, layout design, print CSS | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-02) |
+| 002 | [Resume Builder (Static)](https://resume-builder-ashy-seven.vercel.app/) | Forms, layout design, print CSS | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-02) |
 | 003 | Landing Page | Hero sections, CTA buttons, modern design | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-03) |
 | 004 | Restaurant Website | Multi-page layout, image optimization | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-04) |
 | 005 | Coffee Shop Website | CSS Grid, menu layouts, typography | [![Pending](https://img.shields.io/badge/Status-Pending-orange)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-05) |
