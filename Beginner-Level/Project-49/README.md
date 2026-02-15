@@ -25,7 +25,7 @@
 
 A fully-featured **Accordion Component** showcasing multiple design variations and interaction patterns. Includes basic accordions, styled variants with plus/minus icons, numbered accordions, and FAQ-style layouts. Built with semantic HTML, smooth CSS transitions, and vanilla JavaScript for maximum compatibility and performance.
 
-**Live Demo:** [View Project](#)
+**Live Demo:** **[View Project](https://according-component.vercel.app/)**
 
 ## ✨ Features
 
