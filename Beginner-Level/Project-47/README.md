@@ -26,9 +26,7 @@
 
 A fully-functional **To-Do List application** demonstrating CRUD (Create, Read, Update, Delete) operations with JavaScript array methods. Features task prioritization, filtering, real-time statistics, and a modern dark-themed UI. Perfect for learning state management and array manipulation.
 
-**Live Demo:**
-
-**[View Project](https://to-do-list-basic-two.vercel.app/)**
+**Live Demo:** **[View Project](https://to-do-list-basic-two.vercel.app/)**
 
 ## ✨ Features
 
