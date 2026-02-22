@@ -209,8 +209,12 @@ clearInterval(countdownInterval);
 **Jiban Maji**
 GitHub: [@Jiban0507](https://github.com/Jiban0507)
 
+Project Link: **[https://github.com/Jiban0507/Countdown Timer](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-34)**
+---
+
 ---
 
 ## 📜 License
 
 This project is licensed under the MIT License.
+
