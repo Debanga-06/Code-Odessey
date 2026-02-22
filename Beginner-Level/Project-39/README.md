@@ -139,7 +139,8 @@ This project is licensed under the MIT License.
 
 **Jiban Maji** — [@Jiban0507](https://github.com/Jiban0507)
 
-Project Link: [https://github.com/Jiban0507/Tip-Calculator](https://github.com/Jiban0507/Tip-Calculator)
-
+Project Link: **[https://github.com/Jiban0507/Tip Calculator](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-39)**
+---
 *Beginner-friendly Tip Calculator Project – interactive and easy to use!* 💰✨
+
 
