@@ -127,7 +127,9 @@ This project is licensed under the MIT License.
 
 **Jiban Maji** — [@Jiban0507](https://github.com/Jiban0507)
 
-Project Link: [https://github.com/Jiban0507/BMI-Calculator](https://github.com/Jiban0507/BMI-Calculator)
 
+Project Link: **[https://github.com/Jiban0507/BMI Calculator](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-40)**
+---
 *Beginner-friendly BMI Calculator – easy, interactive, and responsive!* 🏋️‍♂️✨
+
 
