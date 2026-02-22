@@ -133,3 +133,6 @@ Open `index.html` in your browser.
 
 **Jiban Maji**
 GitHub: [https://github.com/Jiban0507](https://github.com/Jiban0507)
+Project Link: **[https://github.com/Jiban0507/Number guessing game](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-36)**
+---
+
