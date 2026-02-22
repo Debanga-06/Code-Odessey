@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter 📏</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter-container">
+    <h1>📏 Unit Converter</h1>
+
+    <div class="input-group">
+      <label for="valueInput">Enter Value:</label>
+      <input type="number" id="valueInput" placeholder="Enter value">
+    </div>
+
+    <div class="input-group">
+      <label for="fromUnit">From Unit:</label>
+      <select id="fromUnit">
+        <optgroup label="Length">
+          <option value="meter">Meter (m)</option>
+          <option value="centimeter">Centimeter (cm)</option>
+          <option value="kilometer">Kilometer (km)</option>
+          <option value="inch">Inch (in)</option>
+          <option value="foot">Foot (ft)</option>
+          <option value="mile">Mile (mi)</option>
+        </optgroup>
+        <optgroup label="Weight">
+          <option value="kilogram">Kilogram (kg)</option>
+          <option value="gram">Gram (g)</option>
+          <option value="pound">Pound (lb)</option>
+          <option value="ounce">Ounce (oz)</option>
+        </optgroup>
+        <optgroup label="Volume">
+          <option value="liter">Liter (L)</option>
+          <option value="milliliter">Milliliter (mL)</option>
+          <option value="gallon">Gallon (gal)</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="toUnit">To Unit:</label>
+      <select id="toUnit">
+        <optgroup label="Length">
+          <option value="meter">Meter (m)</option>
+          <option value="centimeter">Centimeter (cm)</option>
+          <option value="kilometer">Kilometer (km)</option>
+          <option value="inch">Inch (in)</option>
+          <option value="foot">Foot (ft)</option>
+          <option value="mile">Mile (mi)</option>
+        </optgroup>
+        <optgroup label="Weight">
+          <option value="kilogram">Kilogram (kg)</option>
+          <option value="gram">Gram (g)</option>
+          <option value="pound">Pound (lb)</option>
+          <option value="ounce">Ounce (oz)</option>
+        </optgroup>
+        <optgroup label="Volume">
+          <option value="liter">Liter (L)</option>
+          <option value="milliliter">Milliliter (mL)</option>
+          <option value="gallon">Gallon (gal)</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <button id="convertBtn">Convert</button>
+    <button id="resetBtn">Reset</button>
+
+    <div id="result" class="hidden">
+      <h2>Converted Value:</h2>
+      <p id="convertedValue"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
