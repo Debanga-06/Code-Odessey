@@ -202,9 +202,11 @@ Add animations or transitions for smoother effects.
 
 **Jiban Maji**
 GitHub: [https://github.com/Jiban0507](https://github.com/Jiban0507)
-
+Project Link: **[https://github.com/Jiban0507/Random Quote Generator](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-35)**
+---
 ---
 
 ## 📜 License
 
 This project is licensed under the MIT License.
+
