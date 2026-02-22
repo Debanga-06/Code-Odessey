@@ -114,9 +114,10 @@ This project is licensed under the **MIT License** — see the [LICENSE](../../L
 ## **📞 Contact**
 
 **Jiban Maji** — [@Jiban0507](https://github.com/Jiban0507)
-Project Link: [https://github.com/Jiban0507/Random-Color-Generator](https://github.com/Jiban0507/Random-Color-Generator)
 
+Project Link: **[https://github.com/Jiban0507/Random-colour-generator](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-43)**
 ---
 
 **Happy Coding!** 🎨✨
+
 
