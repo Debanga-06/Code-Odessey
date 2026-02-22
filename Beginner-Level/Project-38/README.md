@@ -141,6 +141,7 @@ This project is licensed under the MIT License.
 
 **Jiban Maji** — [@Jiban0507](https://github.com/Jiban0507)
 
-Project Link: [https://github.com/Jiban0507/Password-Strength-Checker](https://github.com/Jiban0507/Password-Strength-Checker)
-
+Project Link: **[https://github.com/Jiban0507/Password Strength Checker](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-38)**
+---
 *Intermediate-level Password Strength Checker Project – interactive and secure!* 🔐✨
+
