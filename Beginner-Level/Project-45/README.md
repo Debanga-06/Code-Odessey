@@ -105,8 +105,9 @@ This project is licensed under the **MIT License** — see the [LICENSE](../../L
 **Jiban Maji** — [@Jiban0507](https://github.com/Jiban0507)
 
 
-Project Link: **[https://github.com/Jiban0507/Form-Validation-App](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-45)**
+Project Link: **[https://github.com/Jiban0507/Simple Calculator](https://github.com/Jiban0507/Code-Odessey/tree/main/Beginner-Level/Project-45)**
 ---
 
 **Happy Coding!** 🧮✨
+
 
