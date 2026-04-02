@@ -3,7 +3,7 @@
 [![Contributors](https://img.shields.io/github/contributors/Debanga-06/Code-Odessey)](https://github.com/Debanga-06/Code-Odessey/graphs/contributors)
 [![Issues](https://img.shields.io/github/issues/Debanga-06/Code-Odessey)](https://github.com/Debanga-06/Code-Odessey/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Debanga-06/Code-Odessey)](https://github.com/Debanga-06/Code-Odessey/pulls)
-[![License](https://img.shields.io/github/license/Debanga-06/Code-Odessey)](https://github.com/Debanga-06/Code-Odessey/blob/main/LICENSE)
+![License](https://img.shields.io/github/license/Debanga-06/Code-Odessey?style=flat-square&color=e8b84b)
 
 ## Overview
 
