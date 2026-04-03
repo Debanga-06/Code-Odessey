@@ -177,6 +177,11 @@ MIT License — free to use, learn from, and modify.
 
 ---
 
+## 🔗 Demo
+
+**Live Demo:** 
+**[View Project](https://website-clone-static.vercel.app/)**
+
 ## ⚠️ Disclaimer
 
 This project is built **for educational purposes only**. Spotify™, its logo, name, and design are trademarks of Spotify AB. This clone is not affiliated with or endorsed by Spotify.
