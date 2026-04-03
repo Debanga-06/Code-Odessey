@@ -155,8 +155,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 096 | Simple Dashboard UI | Dashboard layout, widgets, data cards | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-96) |
 | 097 | Portfolio v2 | Enhanced portfolio, animations, projects | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-97) |
 | 098 | Blog Page v2 | Improved blog, categories, tags | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-98) |
-| 099 | [Website Clone (Static)]() | Replicate existing site, learning from real sites | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-99) |
-| 100 | [Mini Project Collection Page]() | Showcase all projects, gallery, navigation | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-100) |
+| 099 | [Website Clone (Static)]() | Replicate existing site, learning from real sites | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-99) |
+| 100 | [Mini Project Collection Page]() | Showcase all projects, gallery, navigation | [![Pending](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-100) |
 
 ---
 
