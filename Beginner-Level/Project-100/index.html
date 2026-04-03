@@ -1,1 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Odyssey — Mini Projects</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080c10;
+    --bg2: #0d1117;
+    --bg3: #111820;
+    --panel: #0f1923;
+    --border: #1e2d3d;
+    --border2: #243547;
+    --accent: #00ff88;
+    --accent2: #00d4ff;
+    --accent3: #ff6b35;
+    --text: #c9d4e0;
+    --text2: #6b8299;
+    --text3: #3d5268;
+    --mono: 'Share Tech Mono', monospace;
+    --display: 'Orbitron', monospace;
+    --body: 'DM Sans', sans-serif;
+  }
 
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    min-height: 100vh;
+    overflow-x: hidden;
+    cursor: crosshair;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,136,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,136,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Scanlines */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.08) 2px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8,12,16,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 60px;
+  }
+
+  .nav-logo {
+    font-family: var(--display);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-logo::before {
+    content: '>';
+    color: var(--accent2);
+    animation: blink 1.2s step-end infinite;
+  }
+
+  @keyframes blink {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text2);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .nav-links a::before { content: './'; color: var(--text3); }
+  .nav-links a:hover { color: var(--accent); }
+
+  .nav-cta {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 7px 16px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    background: transparent;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--accent);
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    z-index: -1;
+  }
+
+  .nav-cta:hover { color: #080c10; }
+  .nav-cta:hover::before { transform: translateX(0); }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent2);
+    letter-spacing: 0.3em;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-eyebrow::before,
+  .hero-eyebrow::after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: var(--accent2);
+    opacity: 0.5;
+  }
+
+  .hero h1 {
+    font-family: var(--display);
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--accent);
+    position: relative;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    color: var(--text2);
+    max-width: 480px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .stat-pill {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 8px 20px;
+    font-family: var(--mono);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text2);
+  }
+
+  .stat-pill strong {
+    color: var(--accent);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /* Corner decorations */
+  .corner-decor {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-color: var(--accent);
+    border-style: solid;
+    opacity: 0.3;
+  }
+
+  .corner-decor.tl { top: 24px; left: 24px; border-width: 2px 0 0 2px; }
+  .corner-decor.tr { top: 24px; right: 24px; border-width: 2px 2px 0 0; }
+  .corner-decor.bl { bottom: 24px; left: 24px; border-width: 0 0 2px 2px; }
+  .corner-decor.br { bottom: 24px; right: 24px; border-width: 0 2px 2px 0; }
+
+  /* TOOLBAR */
+  .toolbar {
+    position: relative;
+    z-index: 1;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .search-wrap {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+  }
+
+  .search-wrap input {
+    width: 100%;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 13px;
+    padding: 9px 12px 9px 36px;
+    outline: none;
+    transition: border-color 0.2s;
+    letter-spacing: 0.04em;
+  }
+
+  .search-wrap input::placeholder { color: var(--text3); }
+  .search-wrap input:focus { border-color: var(--accent); box-shadow: 0 0 12px rgba(0,255,136,0.1); }
+
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text3);
+    font-family: var(--mono);
+    font-size: 14px;
+    pointer-events: none;
+  }
+
+  .filters {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 7px 14px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text2);
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    transition: all 0.15s;
+    position: relative;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(0,255,136,0.05);
+  }
+
+  .cat-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .view-btns {
+    display: flex;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .vbtn {
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    border: none;
+    color: var(--text2);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vbtn:first-child { border-right: 1px solid var(--border); }
+  .vbtn.active, .vbtn:hover { background: rgba(0,255,136,0.08); color: var(--accent); }
+
+  /* GRID */
+  .main {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+  }
+
+  .result-bar {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text3);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .result-bar::before {
+    content: '$';
+    color: var(--accent);
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2px;
+  }
+
+  .cards-grid.list-view {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  /* PROJECT CARD */
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 1.25rem;
+    position: relative;
+    transition: border-color 0.2s, transform 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+    animation: fadeUp 0.4s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .card:hover {
+    border-color: var(--card-accent, var(--accent));
+    z-index: 2;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--card-accent, var(--accent));
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .card:hover::before { opacity: 1; }
+
+  /* Glow on hover */
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, var(--card-accent, var(--accent)), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+
+  .card:hover::after { opacity: 0.04; }
+
+  .card-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--card-accent, var(--accent));
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .card-icon {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .cat-badge {
+    font-family: var(--mono);
+    font-size: 9px;
+    padding: 3px 8px;
+    border: 1px solid;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+  }
+
+  .card h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #e8f0fa;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    letter-spacing: 0.01em;
+  }
+
+  .card-desc {
+    font-size: 12px;
+    color: var(--text2);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 14px;
+  }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 9px;
+    padding: 2px 8px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    color: var(--text3);
+    letter-spacing: 0.06em;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text3);
+  }
+
+  .status-led {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text3);
+    box-shadow: 0 0 4px currentColor;
+  }
+
+  .status-led.active { background: var(--accent); box-shadow: 0 0 6px var(--accent); animation: pulse 2s infinite; }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .gh-btn {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text3);
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    letter-spacing: 0.06em;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .gh-btn:hover {
+    border-color: var(--card-accent, var(--accent));
+    color: var(--card-accent, var(--accent));
+  }
+
+  /* LIST VIEW */
+  .list-view .card {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+
+  .list-view .card-side {
+    padding: 1rem;
+    border-right: 1px solid var(--border);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .list-view .card-body {
+    padding: 0.875rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+  }
+
+  .list-view .card h3 {
+    margin: 0;
+    font-size: 13px;
+    min-width: 220px;
+  }
+
+  .list-view .card-desc {
+    margin: 0;
+    font-size: 11px;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .list-view .tags { margin: 0; }
+  .list-view .card-footer { border: none; padding: 0; }
+  .list-view .card-num { margin: 0; }
+
+  .list-view .card-actions {
+    padding: 1rem;
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 100%;
+  }
+
+  /* NO RESULTS */
+  .no-results {
+    text-align: center;
+    padding: 5rem 2rem;
+    font-family: var(--mono);
+    color: var(--text3);
+    font-size: 13px;
+    display: none;
+  }
+
+  .no-results::before {
+    content: '// ';
+    color: var(--accent);
+  }
+
+  /* FOOTER */
+  footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: gap;
+    background: var(--bg2);
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-left {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text3);
+  }
+
+  .footer-left span { color: var(--accent); }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-links a {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text3);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    transition: color 0.15s;
+  }
+
+  .footer-links a:hover { color: var(--accent); }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border2); }
+
+  /* Selection */
+  ::selection { background: rgba(0,255,136,0.2); color: var(--accent); }
+
+  @media (max-width: 640px) {
+    nav { padding: 0 1rem; }
+    .nav-links { display: none; }
+    .hero { padding: 3rem 1rem 2.5rem; }
+    .toolbar { padding: 0.75rem 1rem; }
+    .main { padding: 1.25rem 1rem; }
+    .hero h1 { font-size: 2rem; }
+    .list-view .card { grid-template-columns: 1fr; }
+    .list-view .card-side { display: none; }
+    .list-view .card-body { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    .list-view .card-actions { border: none; border-top: 1px solid var(--border); flex-direction: row; padding: 0.75rem 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">CODE_ODYSSEY</a>
+  <ul class="nav-links">
+    <li><a href="#projects">projects</a></li>
+    <li><a href="https://github.com/Debanga-06/Code-Odessey" target="_blank">github</a></li>
+    <li><a href="https://github.com/Debanga-06/Code-Odessey/blob/main/CONTRIBUTING.md" target="_blank">contribute</a></li>
+  </ul>
+  <a class="nav-cta" href="https://github.com/Debanga-06/Code-Odessey" target="_blank">[ STAR REPO ]</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="corner-decor tl"></div>
+  <div class="corner-decor tr"></div>
+  <div class="corner-decor bl"></div>
+  <div class="corner-decor br"></div>
+
+  <div class="hero-eyebrow">BEGINNER LEVEL · 001–030</div>
+  <h1>Mini Project<br><span>Collection</span></h1>
+  <p class="hero-sub">30 hands-on web projects. HTML, CSS & vanilla JavaScript. Build real things, learn real skills.</p>
+
+  <div class="hero-stats">
+    <div class="stat-pill"><strong>30</strong> Projects</div>
+    <div class="stat-pill"><strong>4</strong> Categories</div>
+    <div class="stat-pill"><strong>300+</strong> Total Planned</div>
+    <div class="stat-pill"><strong>MIT</strong> License</div>
+  </div>
+</section>
+
+<!-- TOOLBAR -->
+<div class="toolbar" id="projects">
+  <div class="search-wrap">
+    <span class="search-icon">⌕</span>
+    <input type="text" id="search" placeholder="search projects, tags, skills..." oninput="render()">
+  </div>
+  <div class="filters">
+    <button class="filter-btn active" data-cat="all" onclick="setFilter('all',this)">ALL</button>
+    <button class="filter-btn" data-cat="Layout & UI" onclick="setFilter('Layout & UI',this)">
+      <span class="cat-dot" style="background:#00ff88;"></span>LAYOUT
+    </button>
+    <button class="filter-btn" data-cat="CSS & Animations" onclick="setFilter('CSS & Animations',this)">
+      <span class="cat-dot" style="background:#a78bfa;"></span>CSS
+    </button>
+    <button class="filter-btn" data-cat="Forms" onclick="setFilter('Forms',this)">
+      <span class="cat-dot" style="background:#ff6b35;"></span>FORMS
+    </button>
+    <button class="filter-btn" data-cat="JavaScript" onclick="setFilter('JavaScript',this)">
+      <span class="cat-dot" style="background:#00d4ff;"></span>JS
+    </button>
+  </div>
+  <div class="view-btns">
+    <button class="vbtn active" id="vgrid" onclick="setView('grid')" title="Grid">⊞</button>
+    <button class="vbtn" id="vlist" onclick="setView('list')" title="List">≡</button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="result-bar" id="result-bar">ls -la projects/ &nbsp;—— &nbsp;<span id="count-txt">30 items found</span></div>
+  <div class="cards-grid" id="grid"></div>
+  <div class="no-results" id="no-results">no matching projects found.</div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    &copy; 2025 <span>Code Odyssey</span> &nbsp;//&nbsp; Built with HTML · CSS · JS
+  </div>
+  <div class="footer-links">
+    <a href="https://github.com/Debanga-06/Code-Odessey" target="_blank">GitHub</a>
+    <a href="https://github.com/Debanga-06/Code-Odessey/issues" target="_blank">Issues</a>
+    <a href="https://github.com/Debanga-06/Code-Odessey/discussions" target="_blank">Discuss</a>
+    <a href="mailto:debanga078@gmail.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+const CAT_COLOR = {
+  'Layout & UI':    { accent: '#00ff88', badge: 'rgba(0,255,136,0.15)',    border: 'rgba(0,255,136,0.5)' },
+  'CSS & Animations':{ accent: '#a78bfa', badge: 'rgba(167,139,250,0.15)', border: 'rgba(167,139,250,0.5)' },
+  'Forms':          { accent: '#ff6b35', badge: 'rgba(255,107,53,0.15)',   border: 'rgba(255,107,53,0.5)' },
+  'JavaScript':     { accent: '#00d4ff', badge: 'rgba(0,212,255,0.15)',    border: 'rgba(0,212,255,0.5)' },
+};
+
+const projects = [
+  { id:'001', name:'Personal Portfolio Website', desc:'HTML structure, CSS styling, responsive design fundamentals', cat:'Layout & UI', tags:['HTML','CSS','Responsive'], icon:'🌐', done:false },
+  { id:'002', name:'Resume Builder (Static)', desc:'Forms, layout design, print CSS for clean printouts', cat:'Forms', tags:['HTML','CSS','Print CSS'], icon:'📄', done:false },
+  { id:'003', name:'Landing Page', desc:'Hero sections, CTA buttons, modern design principles', cat:'Layout & UI', tags:['HTML','CSS','Design'], icon:'🚀', done:false },
+  { id:'004', name:'Restaurant Website', desc:'Multi-page layout, image optimization, navigation', cat:'Layout & UI', tags:['HTML','CSS','Multi-page'], icon:'🍽️', done:false },
+  { id:'005', name:'Coffee Shop Website', desc:'CSS Grid, menu layouts, strong typography choices', cat:'Layout & UI', tags:['CSS Grid','Typography','Layout'], icon:'☕', done:false },
+  { id:'006', name:'Product Showcase Page', desc:'Product cards, hover effects, CSS transitions', cat:'CSS & Animations', tags:['CSS','Hover','Cards'], icon:'🛍️', done:false },
+  { id:'007', name:'Blog Homepage', desc:'Article cards, sidebar layout, readability design', cat:'Layout & UI', tags:['CSS','Grid','Sidebar'], icon:'✍️', done:false },
+  { id:'008', name:'Pricing Table', desc:'Table design, comparison layouts, call-to-action buttons', cat:'Layout & UI', tags:['HTML','CSS','UI'], icon:'💰', done:false },
+  { id:'009', name:'Image Gallery', desc:'CSS Grid layout, lightbox effect, thumbnail previews', cat:'CSS & Animations', tags:['CSS Grid','JS','Lightbox'], icon:'🖼️', done:false },
+  { id:'010', name:'Login Page UI', desc:'Form design, input styling, basic validation UX', cat:'Forms', tags:['HTML','CSS','Forms'], icon:'🔐', done:false },
+  { id:'011', name:'Signup Page UI', desc:'Multi-field forms, password fields, user experience flow', cat:'Forms', tags:['HTML','CSS','UX'], icon:'📝', done:false },
+  { id:'012', name:'Contact Form', desc:'Form elements, textarea, submit handling, validation', cat:'Forms', tags:['HTML','JS','Validation'], icon:'📬', done:false },
+  { id:'013', name:'About Us Page', desc:'Team sections, company storytelling, image+text layouts', cat:'Layout & UI', tags:['HTML','CSS','Grid'], icon:'👥', done:false },
+  { id:'014', name:'FAQ Page', desc:'Accordion-style layout, JS toggling, content structure', cat:'JavaScript', tags:['JS','DOM','Accordion'], icon:'❓', done:false },
+  { id:'015', name:'Testimonials Section', desc:'Card layout, blockquotes, customer review design', cat:'Layout & UI', tags:['HTML','CSS','Cards'], icon:'💬', done:false },
+  { id:'016', name:'Navbar Variations', desc:'Navigation design, dropdown menus, hamburger mobile nav', cat:'CSS & Animations', tags:['CSS','JS','Mobile Nav'], icon:'🧭', done:false },
+  { id:'017', name:'Footer Designs', desc:'Footer layouts, link columns, social icon rows', cat:'Layout & UI', tags:['HTML','CSS','Flexbox'], icon:'🔗', done:false },
+  { id:'018', name:'Card Layout Gallery', desc:'Various card designs, shadows, border styles', cat:'Layout & UI', tags:['CSS','Cards','Shadows'], icon:'🃏', done:false },
+  { id:'019', name:'Hero Section Designs', desc:'Full-width headers, background images, overlay CTAs', cat:'CSS & Animations', tags:['CSS','Design','Animation'], icon:'🦸', done:false },
+  { id:'020', name:'Button Hover Effects', desc:'CSS transitions, keyframe animations, micro-interactions', cat:'CSS & Animations', tags:['CSS','Transitions','Keyframes'], icon:'🖱️', done:false },
+  { id:'021', name:'CSS Loader Collection', desc:'Spinners, progress bars, keyframe loading animations', cat:'CSS & Animations', tags:['CSS','Keyframes','Animation'], icon:'⏳', done:false },
+  { id:'022', name:'Gradient Generator', desc:'Color theory, CSS gradients, copy-to-clipboard tool', cat:'JavaScript', tags:['JS','CSS','Color Tool'], icon:'🎨', done:false },
+  { id:'023', name:'Color Palette Generator', desc:'Color schemes, palette UI, design system basics', cat:'JavaScript', tags:['JS','Color','DOM'], icon:'🌈', done:false },
+  { id:'024', name:'Typography Showcase', desc:'Font pairing, text hierarchy, readability design', cat:'CSS & Animations', tags:['CSS','Typography','Design'], icon:'🅰️', done:false },
+  { id:'025', name:'CSS Grid Playground', desc:'Grid template areas, alignment, gap, responsive columns', cat:'CSS & Animations', tags:['CSS Grid','Layout','Interactive'], icon:'📐', done:false },
+  { id:'026', name:'Flexbox Layout Builder', desc:'Flexbox alignment, distribution, direction properties', cat:'CSS & Animations', tags:['Flexbox','CSS','Layout'], icon:'📦', done:false },
+  { id:'027', name:'Mobile Responsive Page', desc:'Media queries, breakpoints, mobile-first workflow', cat:'Layout & UI', tags:['CSS','Responsive','Media Queries'], icon:'📱', done:false },
+  { id:'028', name:'Dark Mode Toggle', desc:'CSS variables, theme switching, localStorage persistence', cat:'JavaScript', tags:['JS','CSS Vars','LocalStorage'], icon:'🌙', done:false },
+  { id:'029', name:'404 Error Page', desc:'Creative error UI, redirect handling, fun design', cat:'Layout & UI', tags:['HTML','CSS','Creative'], icon:'🚧', done:false },
+  { id:'030', name:'Coming Soon Page', desc:'Countdown timer, email capture, launch hype design', cat:'JavaScript', tags:['JS','Timer','Forms'], icon:'⏰', done:false },
+];
+
+let activeFilter = 'all';
+let activeView   = 'grid';
+
+function setFilter(cat, el) {
+  activeFilter = cat;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  render();
+}
+
+function setView(v) {
+  activeView = v;
+  const grid = document.getElementById('grid');
+  grid.classList.toggle('list-view', v === 'list');
+  document.getElementById('vgrid').classList.toggle('active', v === 'grid');
+  document.getElementById('vlist').classList.toggle('active', v === 'list');
+}
+
+function render() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  const visible = projects.filter(p => {
+    const matchCat = activeFilter === 'all' || p.cat === activeFilter;
+    const matchQ   = !q || p.name.toLowerCase().includes(q)
+                       || p.desc.toLowerCase().includes(q)
+                       || p.tags.some(t => t.toLowerCase().includes(q))
+                       || p.cat.toLowerCase().includes(q);
+    return matchCat && matchQ;
+  });
+
+  const countTxt = visible.length === projects.length
+    ? `${projects.length} items found`
+    : `${visible.length} of ${projects.length} items`;
+  document.getElementById('count-txt').textContent = countTxt;
+
+  const grid = document.getElementById('grid');
+  const noRes = document.getElementById('no-results');
+
+  if (visible.length === 0) {
+    grid.innerHTML = '';
+    noRes.style.display = 'block';
+    return;
+  }
+  noRes.style.display = 'none';
+
+  grid.innerHTML = visible.map((p, i) => cardHTML(p, i)).join('');
+}
+
+function cardHTML(p, i) {
+  const c = CAT_COLOR[p.cat];
+  const ghUrl = `https://github.com/Debanga-06/Code-Odessey`;
+  const delay = Math.min(i * 30, 300);
+
+  if (activeView === 'list') {
+    return `
+    <div class="card" style="--card-accent:${c.accent}; animation-delay:${delay}ms;">
+      <div class="card-side">
+        <div class="card-num">#${p.id}</div>
+        <div style="font-size:18px">${p.icon}</div>
+      </div>
+      <div class="card-body">
+        <h3>${p.name}</h3>
+        <p class="card-desc">${p.desc}</p>
+        <div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      </div>
+      <div class="card-actions">
+        <span class="cat-badge" style="background:${c.badge};border-color:${c.border};color:${c.accent};">${p.cat.split(' ')[0].toUpperCase()}</span>
+        <a class="gh-btn" href="${ghUrl}" target="_blank">↗ VIEW</a>
+      </div>
+    </div>`;
+  }
+
+  return `
+  <div class="card" style="--card-accent:${c.accent}; animation-delay:${delay}ms;">
+    <div class="card-num">[ ${p.id} ]</div>
+    <div class="card-top">
+      <span class="card-icon">${p.icon}</span>
+      <span class="cat-badge" style="background:${c.badge};border-color:${c.border};color:${c.accent};">${p.cat.split(' ')[0].toUpperCase()}</span>
+    </div>
+    <h3>${p.name}</h3>
+    <p class="card-desc">${p.desc}</p>
+    <div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    <div class="card-footer">
+      <div class="status">
+        <span class="status-led ${p.done ? 'active' : ''}"></span>
+        ${p.done ? 'COMPLETE' : 'PENDING'}
+      </div>
+      <a class="gh-btn" href="${ghUrl}" target="_blank">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        GITHUB
+      </a>
+    </div>
+  </div>`;
+}
+
+render();
+</script>
+</body>
+</html>
