@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>010 · Image Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #111111;
+      --surface: #1a1a1a;
+      --border: rgba(255,255,255,0.06);
+      --text: #e8e6e1;
+      --muted: #6a6a6a;
+      --accent: #f0c040;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
+
+    /* NAV */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 3rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(17,17,17,0.92); backdrop-filter: blur(12px);
+    }
+    .logo {
+      font-family: 'Space Mono', monospace;
+      font-size: 1rem; letter-spacing: -0.02em;
+      color: var(--text);
+    }
+    .logo span { color: var(--accent); }
+    .nav-right { display: flex; align-items: center; gap: 2rem; }
+    nav a { text-decoration: none; color: var(--muted); font-size: 0.82rem; transition: color 0.2s; }
+    nav a:hover { color: var(--text); }
+    .upload-btn {
+      background: var(--accent); color: var(--bg);
+      padding: 0.5rem 1.2rem; border-radius: 4px; border: none;
+      font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 600;
+      cursor: pointer; text-decoration: none; display: inline-block;
+      transition: opacity 0.2s;
+    }
+    .upload-btn:hover { opacity: 0.85; }
+
+    /* HEADER */
+    .gallery-header { padding: 3rem 3rem 2rem; }
+    .header-row { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 2rem; }
+    .header-tag {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.68rem; color: var(--accent); letter-spacing: 0.1em;
+      text-transform: uppercase; margin-bottom: 0.6rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 500;
+      letter-spacing: -0.03em; line-height: 1;
+    }
+    .count { font-size: 0.82rem; color: var(--muted); }
+    .count strong { color: var(--accent); }
+
+    /* FILTERS */
+    .filters { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .filter-btn {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem; padding: 0.4rem 1rem;
+      border: 1px solid var(--border); background: transparent;
+      color: var(--muted); cursor: pointer; border-radius: 2px;
+      letter-spacing: 0.06em; transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--accent); color: var(--bg); border-color: var(--accent);
+    }
+
+    /* GRID LAYOUT */
+    .gallery-grid {
+      padding: 1.5rem 3rem 4rem;
+      columns: 4; column-gap: 1rem;
+    }
+    .gallery-item {
+      break-inside: avoid; margin-bottom: 1rem;
+      position: relative; overflow: hidden;
+      border-radius: 4px; cursor: pointer;
+      background: var(--surface);
+      display: block;
+    }
+    .gallery-item:hover .overlay { opacity: 1; }
+    .gallery-item:hover .thumb-img { transform: scale(1.04); }
+    .thumb-img {
+      width: 100%; display: block;
+      transition: transform 0.4s ease;
+    }
+    /* Placeholder image using gradient art */
+    .thumb-placeholder {
+      width: 100%; display: block;
+      transition: transform 0.4s ease;
+      position: relative;
+    }
+    .overlay {
+      position: absolute; inset: 0;
+      background: rgba(17,17,17,0.75);
+      display: flex; flex-direction: column;
+      align-items: flex-start; justify-content: flex-end;
+      padding: 1.2rem; opacity: 0; transition: opacity 0.3s;
+    }
+    .overlay-cat {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem; color: var(--accent);
+      letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem;
+    }
+    .overlay-title { font-size: 0.88rem; font-weight: 500; line-height: 1.3; color: var(--white); }
+    .overlay-meta { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin-top: 0.4rem; }
+    .overlay-expand {
+      position: absolute; top: 1rem; right: 1rem;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: rgba(255,255,255,0.1); backdrop-filter: blur(4px);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; color: var(--white);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    /* LIGHTBOX */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 200;
+      background: rgba(10,10,10,0.95); backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+    }
+    .lightbox:target { opacity: 1; visibility: visible; }
+    .lb-close {
+      position: absolute; top: 2rem; right: 2rem;
+      text-decoration: none; color: var(--muted); font-size: 1.5rem;
+      width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
+      border: 1px solid var(--border); border-radius: 50%;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .lb-close:hover { color: var(--accent); border-color: var(--accent); }
+    .lb-content {
+      text-align: center; max-width: 800px; width: 90%; padding: 2rem;
+    }
+    .lb-art {
+      width: 100%; border-radius: 8px; margin-bottom: 1.5rem;
+      display: block;
+    }
+    .lb-title { font-size: 1.2rem; font-weight: 500; margin-bottom: 0.4rem; }
+    .lb-meta { font-size: 0.82rem; color: var(--muted); display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .lb-tag {
+      font-family: 'Space Mono', monospace; font-size: 0.65rem;
+      color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 2rem 3rem; border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 0.75rem; color: var(--muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    .footer-logo { font-family: 'Space Mono', monospace; color: var(--text); }
+    .footer-logo span { color: var(--accent); }
+
+    @media (max-width: 1100px) { .gallery-grid { columns: 3; } }
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-right a:not(.upload-btn) { display: none; }
+      .gallery-header { padding: 2rem 1.5rem; }
+      .gallery-grid { columns: 2; padding: 1rem 1.5rem 3rem; }
+      .header-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; }
+    }
+    @media (max-width: 480px) { .gallery-grid { columns: 1; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Frame<span>.</span></div>
+    <div class="nav-right">
+      <a href="#">Explore</a>
+      <a href="#">Collections</a>
+      <a href="#">Photographers</a>
+      <a href="#" class="upload-btn">+ Upload</a>
+    </div>
+  </nav>
+
+  <div class="gallery-header">
+    <div class="header-row">
+      <div>
+        <div class="header-tag">// Gallery — 2025</div>
+        <h1>Visual<br>Archive</h1>
+      </div>
+      <div class="count">Showing <strong>24</strong> of <strong>1,240</strong> works</div>
+    </div>
+    <div class="filters">
+      <button class="filter-btn active">All Works</button>
+      <button class="filter-btn">Architecture</button>
+      <button class="filter-btn">Nature</button>
+      <button class="filter-btn">Abstract</button>
+      <button class="filter-btn">Portrait</button>
+      <button class="filter-btn">Street</button>
+      <button class="filter-btn">Macro</button>
+    </div>
+  </div>
+
+  <div class="gallery-grid">
+
+    <!-- Item 1 - tall -->
+    <a class="gallery-item" href="#lb1">
+      <div class="thumb-placeholder" style="height:320px; background: linear-gradient(160deg, #0f2027, #203a43, #2c5364);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Architecture</div>
+        <div class="overlay-title">Glass Cathedral, Oslo</div>
+        <div class="overlay-meta">Lena Mühl · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb2">
+      <div class="thumb-placeholder" style="height:200px; background: linear-gradient(135deg, #f5af19, #f12711);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Abstract</div>
+        <div class="overlay-title">Thermal Bloom</div>
+        <div class="overlay-meta">K. Osei · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb3">
+      <div class="thumb-placeholder" style="height:260px; background: linear-gradient(160deg, #1a2a6c, #b21f1f, #fdbb2d);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Nature</div>
+        <div class="overlay-title">Dusk at Lofoten</div>
+        <div class="overlay-meta">M. Ravn · 2024</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb4">
+      <div class="thumb-placeholder" style="height:280px; background: linear-gradient(135deg, #134e5e, #71b280);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Macro</div>
+        <div class="overlay-title">Leaf Network</div>
+        <div class="overlay-meta">Sara H. · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb5">
+      <div class="thumb-placeholder" style="height:180px; background: linear-gradient(135deg, #e96c2c, #f7971e);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Street</div>
+        <div class="overlay-title">Afternoon Light, Tokyo</div>
+        <div class="overlay-meta">T. Nakamura · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb6">
+      <div class="thumb-placeholder" style="height:350px; background: linear-gradient(160deg, #0d0d0d, #434343);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Portrait</div>
+        <div class="overlay-title">Study in Shadow</div>
+        <div class="overlay-meta">A. Diallo · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb7">
+      <div class="thumb-placeholder" style="height:220px; background: linear-gradient(135deg, #4a00e0, #8e2de2);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Abstract</div>
+        <div class="overlay-title">Chromatic Drift</div>
+        <div class="overlay-meta">N. Petrov · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb8">
+      <div class="thumb-placeholder" style="height:190px; background: linear-gradient(160deg, #005c97, #363795);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Architecture</div>
+        <div class="overlay-title">Brutalist Interior No. 7</div>
+        <div class="overlay-meta">E. Strand · 2024</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb9">
+      <div class="thumb-placeholder" style="height:300px; background: linear-gradient(135deg, #56ab2f, #a8e063);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Nature</div>
+        <div class="overlay-title">Forest Canopy, Oregon</div>
+        <div class="overlay-meta">Y. Chen · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb10">
+      <div class="thumb-placeholder" style="height:240px; background: linear-gradient(135deg, #c94b4b, #4b134f);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Portrait</div>
+        <div class="overlay-title">The Red Study</div>
+        <div class="overlay-meta">C. Voss · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb11">
+      <div class="thumb-placeholder" style="height:180px; background: linear-gradient(160deg, #f7f8f8, #acbb78);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Macro</div>
+        <div class="overlay-title">Sand at f/2.8</div>
+        <div class="overlay-meta">T. Park · 2024</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+    <a class="gallery-item" href="#lb12">
+      <div class="thumb-placeholder" style="height:260px; background: linear-gradient(135deg, #1c1c1c, #3a3a3a, #1c1c1c);"></div>
+      <div class="overlay">
+        <div class="overlay-cat">Street</div>
+        <div class="overlay-title">Neon District</div>
+        <div class="overlay-meta">R. Fujita · 2025</div>
+        <div class="overlay-expand">↗</div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- LIGHTBOXES (CSS :target trick) -->
+  <div class="lightbox" id="lb1">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Architecture</div>
+      <div class="lb-art" style="height:400px; background: linear-gradient(160deg, #0f2027, #203a43, #2c5364); border-radius: 8px;"></div>
+      <div class="lb-title">Glass Cathedral, Oslo</div>
+      <div class="lb-meta">
+        <span>Lena Mühl</span>
+        <span>·</span>
+        <span>March 2025</span>
+        <span>·</span>
+        <span>Sony A7R V</span>
+        <span>·</span>
+        <span>24mm f/1.4</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb2">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Abstract</div>
+      <div class="lb-art" style="height:300px; background: linear-gradient(135deg, #f5af19, #f12711); border-radius: 8px;"></div>
+      <div class="lb-title">Thermal Bloom</div>
+      <div class="lb-meta"><span>K. Osei</span><span>·</span><span>January 2025</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb3">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Nature</div>
+      <div class="lb-art" style="height:360px; background: linear-gradient(160deg, #1a2a6c, #b21f1f, #fdbb2d); border-radius: 8px;"></div>
+      <div class="lb-title">Dusk at Lofoten</div>
+      <div class="lb-meta"><span>M. Ravn</span><span>·</span><span>December 2024</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb4">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Macro</div>
+      <div class="lb-art" style="height:380px; background: linear-gradient(135deg, #134e5e, #71b280); border-radius: 8px;"></div>
+      <div class="lb-title">Leaf Network</div>
+      <div class="lb-meta"><span>Sara H.</span><span>·</span><span>February 2025</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb5">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Street</div>
+      <div class="lb-art" style="height:320px; background: linear-gradient(135deg, #e96c2c, #f7971e); border-radius: 8px;"></div>
+      <div class="lb-title">Afternoon Light, Tokyo</div>
+      <div class="lb-meta"><span>T. Nakamura</span><span>·</span><span>April 2025</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb6">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Portrait</div>
+      <div class="lb-art" style="height:440px; background: linear-gradient(160deg, #0d0d0d, #434343); border-radius: 8px;"></div>
+      <div class="lb-title">Study in Shadow</div>
+      <div class="lb-meta"><span>A. Diallo</span><span>·</span><span>March 2025</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb7">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Abstract</div>
+      <div class="lb-art" style="height:340px; background: linear-gradient(135deg, #4a00e0, #8e2de2); border-radius: 8px;"></div>
+      <div class="lb-title">Chromatic Drift</div>
+      <div class="lb-meta"><span>N. Petrov</span><span>·</span><span>April 2025</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb8">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Architecture</div>
+      <div class="lb-art" style="height:300px; background: linear-gradient(160deg, #005c97, #363795); border-radius: 8px;"></div>
+      <div class="lb-title">Brutalist Interior No. 7</div>
+      <div class="lb-meta"><span>E. Strand</span><span>·</span><span>November 2024</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb9">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Nature</div>
+      <div class="lb-art" style="height:400px; background: linear-gradient(135deg, #56ab2f, #a8e063); border-radius: 8px;"></div>
+      <div class="lb-title">Forest Canopy, Oregon</div>
+      <div class="lb-meta"><span>Y. Chen</span><span>·</span><span>January 2025</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb10">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Portrait</div>
+      <div class="lb-art" style="height:360px; background: linear-gradient(135deg, #c94b4b, #4b134f); border-radius: 8px;"></div>
+      <div class="lb-title">The Red Study</div>
+      <div class="lb-meta"><span>C. Voss</span><span>·</span><span>April 2025</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb11">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Macro</div>
+      <div class="lb-art" style="height:280px; background: linear-gradient(160deg, #f7f8f8, #acbb78); border-radius: 8px;"></div>
+      <div class="lb-title">Sand at f/2.8</div>
+      <div class="lb-meta"><span>T. Park</span><span>·</span><span>October 2024</span></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lb12">
+    <a href="#" class="lb-close">✕</a>
+    <div class="lb-content">
+      <div class="lb-tag">Street</div>
+      <div class="lb-art" style="height:380px; background: linear-gradient(135deg, #1c1c1c, #3a3a3a); border-radius: 8px;"></div>
+      <div class="lb-title">Neon District</div>
+      <div class="lb-meta"><span>R. Fujita</span><span>·</span><span>March 2025</span></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Frame<span>.</span></div>
+    <span>A visual archive of extraordinary moments.</span>
+    <span>Code Odyssey · Project <a href="#">010</a> · Image Gallery</span>
+  </footer>
+
+</body>
+</html>
