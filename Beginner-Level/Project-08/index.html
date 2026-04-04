@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>009 · Pricing Table</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #f7f6f3;
+      --ink: #0d0d0d;
+      --mid: #5a5856;
+      --muted: #9b9896;
+      --violet: #5b42e8;
+      --violet-light: rgba(91,66,232,0.08);
+      --violet-mid: rgba(91,66,232,0.15);
+      --green: #22c55e;
+      --line: rgba(13,13,13,0.08);
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--ink); }
+
+    /* NAV */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 4rem; border-bottom: 1px solid var(--line);
+      background: var(--white);
+    }
+    .logo { font-size: 1.2rem; font-weight: 800; letter-spacing: -0.03em; }
+    .logo span { color: var(--violet); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav a { text-decoration: none; color: var(--muted); font-size: 0.85rem; transition: color 0.2s; }
+    nav a:hover { color: var(--ink); }
+    .nav-cta {
+      background: var(--ink); color: var(--white) !important;
+      padding: 0.5rem 1.3rem; border-radius: 6px;
+      font-weight: 600 !important; transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--violet) !important; }
+
+    /* HEADER */
+    .pricing-header {
+      text-align: center; padding: 5rem 2rem 3rem;
+    }
+    .header-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--violet-light); color: var(--violet);
+      padding: 0.4rem 1rem; border-radius: 100px;
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em;
+      margin-bottom: 1.5rem;
+    }
+    .pricing-header h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800; letter-spacing: -0.04em;
+      line-height: 1; margin-bottom: 1rem;
+    }
+    .pricing-header h1 span { color: var(--violet); }
+    .pricing-header p { color: var(--muted); font-size: 1rem; font-weight: 300; line-height: 1.7; max-width: 480px; margin: 0 auto 2.5rem; }
+
+    /* TOGGLE */
+    .toggle-wrap { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 3.5rem; }
+    .toggle-label { font-size: 0.88rem; font-weight: 500; color: var(--mid); }
+    .toggle-label.active { color: var(--ink); }
+    .toggle {
+      width: 48px; height: 26px; background: var(--violet);
+      border-radius: 100px; position: relative; cursor: pointer; border: none;
+    }
+    .toggle::after {
+      content: ''; position: absolute; top: 3px; left: 3px;
+      width: 20px; height: 20px; border-radius: 50%; background: var(--white);
+      transition: transform 0.3s;
+    }
+    .save-badge {
+      background: var(--green); color: var(--white);
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em;
+      padding: 0.2rem 0.6rem; border-radius: 100px;
+    }
+
+    /* PRICING CARDS */
+    .pricing-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem; max-width: 1100px; margin: 0 auto;
+      padding: 0 3rem 2rem;
+    }
+    .price-card {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: 16px; padding: 2.5rem;
+      position: relative; overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .price-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+    .price-card.featured {
+      background: var(--ink); border-color: var(--ink); color: var(--white);
+      transform: scale(1.02);
+    }
+    .price-card.featured:hover { transform: scale(1.02) translateY(-4px); box-shadow: 0 24px 48px rgba(0,0,0,0.2); }
+    .price-card.featured::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 80% 20%, rgba(91,66,232,0.3), transparent 50%);
+    }
+
+    .plan-badge {
+      display: inline-block; font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.3rem 0.8rem; border-radius: 100px;
+      background: var(--violet-light); color: var(--violet);
+      margin-bottom: 1.2rem;
+    }
+    .price-card.featured .plan-badge { background: rgba(91,66,232,0.3); color: rgba(255,255,255,0.8); }
+    .price-card.featured .popular-badge {
+      position: absolute; top: 1.8rem; right: 1.8rem;
+      background: var(--violet); color: var(--white);
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.3rem 0.8rem; border-radius: 100px;
+    }
+
+    .plan-name { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; position: relative; }
+    .plan-desc { font-size: 0.8rem; color: var(--muted); font-weight: 300; position: relative; }
+    .price-card.featured .plan-desc { color: rgba(255,255,255,0.45); }
+
+    .price-row { margin: 1.8rem 0; position: relative; }
+    .price-amount {
+      font-size: 3.5rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1;
+    }
+    .price-currency { font-size: 1.5rem; vertical-align: super; font-weight: 600; }
+    .price-period { font-size: 0.82rem; color: var(--muted); font-weight: 300; margin-top: 0.3rem; }
+    .price-card.featured .price-period { color: rgba(255,255,255,0.4); }
+
+    .features-list { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem; position: relative; }
+    .feature-item { display: flex; align-items: flex-start; gap: 0.7rem; font-size: 0.85rem; font-weight: 400; }
+    .f-check {
+      width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.6rem; margin-top: 0.1rem;
+      background: var(--violet-light); color: var(--violet);
+    }
+    .price-card.featured .f-check { background: rgba(91,66,232,0.3); color: rgba(255,255,255,0.9); }
+    .f-check.cross { background: rgba(0,0,0,0.05); color: var(--muted); }
+    .price-card.featured .f-check.cross { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.25); }
+    .f-text { line-height: 1.4; }
+    .f-text.crossed { color: var(--muted); text-decoration: line-through; }
+    .price-card.featured .f-text.crossed { color: rgba(255,255,255,0.25); }
+
+    .plan-cta {
+      display: block; width: 100%; padding: 0.9rem;
+      border-radius: 8px; border: none; cursor: pointer;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.88rem; font-weight: 700; text-align: center;
+      text-decoration: none; transition: all 0.2s;
+      position: relative;
+    }
+    .cta-outline {
+      background: transparent; color: var(--ink);
+      border: 2px solid var(--line);
+    }
+    .cta-outline:hover { border-color: var(--ink); }
+    .cta-filled {
+      background: var(--violet); color: var(--white);
+      border: 2px solid var(--violet);
+    }
+    .cta-filled:hover { background: #4a35c4; border-color: #4a35c4; }
+    .cta-white {
+      background: var(--white); color: var(--ink);
+      border: 2px solid var(--white);
+    }
+    .cta-white:hover { background: transparent; color: var(--white); }
+
+    /* COMPARE TABLE */
+    .compare-section { padding: 4rem 3rem 6rem; max-width: 1100px; margin: 0 auto; }
+    .compare-header {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    .compare-header h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; }
+    .compare-header p { font-size: 0.82rem; color: var(--muted); }
+    .compare-table { width: 100%; border-collapse: collapse; }
+    .compare-table th, .compare-table td {
+      padding: 1rem 1.2rem; text-align: left;
+      border-bottom: 1px solid var(--line); font-size: 0.85rem;
+    }
+    .compare-table thead th {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+      background: var(--bg);
+    }
+    .compare-table thead th:first-child { border-radius: 8px 0 0 0; }
+    .compare-table thead th:last-child { border-radius: 0 8px 0 0; }
+    .compare-table th:not(:first-child), .compare-table td:not(:first-child) {
+      text-align: center;
+    }
+    .compare-table th.featured-col { background: var(--ink); color: var(--white) !important; }
+    .compare-table td.featured-col { background: rgba(13,13,13,0.03); }
+    .feature-name { font-weight: 500; }
+    .feature-hint { font-size: 0.75rem; color: var(--muted); font-weight: 300; }
+    .yes { color: var(--violet); font-size: 1rem; }
+    .no { color: var(--line); font-size: 1rem; }
+    .check-green { color: var(--green); font-size: 1rem; }
+    .compare-table tbody tr:hover { background: rgba(0,0,0,0.015); }
+    .cat-row td { background: var(--bg); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+
+    /* FAQ */
+    .faq-section { padding: 0 3rem 6rem; max-width: 900px; margin: 0 auto; }
+    .faq-section h2 { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 2rem; text-align: center; }
+    .faq-item { border-bottom: 1px solid var(--line); padding: 1.3rem 0; }
+    .faq-q { font-size: 0.9rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; }
+    .faq-q::after { content: '+'; color: var(--violet); font-size: 1.2rem; font-weight: 300; }
+    .faq-a { font-size: 0.84rem; color: var(--muted); line-height: 1.75; margin-top: 0.8rem; font-weight: 300; }
+
+    /* FOOTER */
+    footer {
+      background: var(--ink); color: rgba(255,255,255,0.3);
+      padding: 2rem 4rem; display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.75rem;
+    }
+    footer a { color: var(--violet); text-decoration: none; }
+    .footer-logo-sm { font-size: 1rem; font-weight: 800; letter-spacing: -0.03em; color: var(--white); }
+    .footer-logo-sm span { color: var(--violet); }
+
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      nav ul { display: none; }
+      .pricing-grid { grid-template-columns: 1fr; padding: 0 1.5rem; }
+      .price-card.featured { transform: none; }
+      .compare-section, .faq-section { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .compare-table { display: none; }
+      footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Flux<span>.</span></div>
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Docs</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#" class="nav-cta">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <section class="pricing-header">
+    <div class="header-badge">⚡ Transparent Pricing</div>
+    <h1>Pay for what<br>you <span>actually use</span></h1>
+    <p>No hidden fees. No surprise bills. Simple plans that scale with your team — cancel any time.</p>
+    <div class="toggle-wrap">
+      <span class="toggle-label active">Monthly</span>
+      <button class="toggle" aria-label="Toggle billing period"></button>
+      <span class="toggle-label">Annual</span>
+      <span class="save-badge">Save 20%</span>
+    </div>
+  </section>
+
+  <div class="pricing-grid">
+    <!-- STARTER -->
+    <div class="price-card">
+      <div class="plan-badge">Starter</div>
+      <div class="plan-name">Free Plan</div>
+      <div class="plan-desc">Perfect for solo projects and experimentation.</div>
+      <div class="price-row">
+        <div class="price-amount"><span class="price-currency">$</span>0</div>
+        <div class="price-period">Forever free</div>
+      </div>
+      <ul class="features-list">
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">3 active projects</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">5 GB storage</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Community support</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Basic analytics</span></li>
+        <li class="feature-item"><span class="f-check cross">✗</span><span class="f-text crossed">Team collaboration</span></li>
+        <li class="feature-item"><span class="f-check cross">✗</span><span class="f-text crossed">Custom domains</span></li>
+        <li class="feature-item"><span class="f-check cross">✗</span><span class="f-text crossed">API access</span></li>
+      </ul>
+      <a href="#" class="plan-cta cta-outline">Get Started Free</a>
+    </div>
+
+    <!-- PRO (FEATURED) -->
+    <div class="price-card featured">
+      <div class="popular-badge">Most Popular</div>
+      <div class="plan-badge">Pro</div>
+      <div class="plan-name">Pro Plan</div>
+      <div class="plan-desc">For teams ready to move fast and ship great products.</div>
+      <div class="price-row">
+        <div class="price-amount"><span class="price-currency">$</span>49</div>
+        <div class="price-period">per user / month</div>
+      </div>
+      <ul class="features-list">
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Unlimited projects</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">100 GB storage</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Priority support</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Advanced analytics</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Team collaboration (up to 10)</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Custom domains</span></li>
+        <li class="feature-item"><span class="f-check cross">✗</span><span class="f-text crossed">API access</span></li>
+      </ul>
+      <a href="#" class="plan-cta cta-white">Start 14-Day Trial</a>
+    </div>
+
+    <!-- ENTERPRISE -->
+    <div class="price-card">
+      <div class="plan-badge">Enterprise</div>
+      <div class="plan-name">Enterprise Plan</div>
+      <div class="plan-desc">Custom solutions for large teams and mission-critical products.</div>
+      <div class="price-row">
+        <div class="price-amount" style="font-size:2.5rem;">Custom</div>
+        <div class="price-period">Volume pricing available</div>
+      </div>
+      <ul class="features-list">
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Everything in Pro</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Unlimited storage</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Dedicated account manager</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">SLA guarantee (99.99%)</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Unlimited team members</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Custom domains + CDN</span></li>
+        <li class="feature-item"><span class="f-check">✓</span><span class="f-text">Full API access + webhooks</span></li>
+      </ul>
+      <a href="#" class="plan-cta cta-filled">Contact Sales</a>
+    </div>
+  </div>
+
+  <!-- COMPARE TABLE -->
+  <section class="compare-section">
+    <div class="compare-header">
+      <div>
+        <h2>Compare all features</h2>
+        <p style="margin-top:0.3rem;">A full breakdown across every plan.</p>
+      </div>
+    </div>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Features</th>
+          <th>Starter</th>
+          <th class="featured-col">Pro ✦</th>
+          <th>Enterprise</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="cat-row"><td colspan="4">Core</td></tr>
+        <tr>
+          <td><div class="feature-name">Projects</div><div class="feature-hint">Active simultaneous projects</div></td>
+          <td>3</td><td class="featured-col">Unlimited</td><td>Unlimited</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">Storage</div></td>
+          <td>5 GB</td><td class="featured-col">100 GB</td><td>Unlimited</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">Custom Domains</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="yes">✓</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+        <tr class="cat-row"><td colspan="4">Collaboration</td></tr>
+        <tr>
+          <td><div class="feature-name">Team Members</div></td>
+          <td>1</td><td class="featured-col">Up to 10</td><td>Unlimited</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">Real-time Editing</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="yes">✓</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">Role Permissions</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="yes">✓</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+        <tr class="cat-row"><td colspan="4">Support & Security</td></tr>
+        <tr>
+          <td><div class="feature-name">Support Level</div></td>
+          <td>Community</td><td class="featured-col">Priority Email</td><td>Dedicated Manager</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">SLA</div></td>
+          <td><span class="no">—</span></td><td class="featured-col">99.9%</td><td>99.99%</td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">SSO / SAML</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="no">—</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+        <tr>
+          <td><div class="feature-name">API Access</div></td>
+          <td><span class="no">—</span></td><td class="featured-col"><span class="no">—</span></td><td><span class="check-green">✓</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Common Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q">Can I change my plan at any time?</div>
+      <div class="faq-a">Yes — upgrade, downgrade, or cancel at any time from your account settings. If you upgrade mid-cycle, you'll be billed the prorated difference immediately. Downgrades take effect at the end of your billing period.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is there a free trial for the Pro plan?</div>
+      <div class="faq-a">Yes, every Pro plan starts with a 14-day free trial. No credit card required. You'll be asked for payment details after the trial period ends if you choose to continue.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What payment methods do you accept?</div>
+      <div class="faq-a">We accept all major credit and debit cards (Visa, Mastercard, Amex), PayPal, and bank transfers for Enterprise plans. All transactions are secured via Stripe.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How does team billing work?</div>
+      <div class="faq-a">Pro plans are billed per user per month. You'll be charged for each seat you provision. You can add or remove seats at any time and the amount will be prorated accordingly.</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo-sm">Flux<span>.</span></div>
+    <span>© 2025 Flux Inc. All rights reserved.</span>
+    <span>Code Odyssey · Project <a href="#">009</a> · Pricing Table</span>
+  </footer>
+
+</body>
+</html>
