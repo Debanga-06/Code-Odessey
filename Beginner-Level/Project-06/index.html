@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>007 · Product Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #f0ede8;
+      --ink: #111010;
+      --accent: #e84a2f;
+      --steel: #3d4a5c;
+      --muted: #8c8680;
+      --white: #ffffff;
+      --card: #e6e2dc;
+      --line: rgba(17,16,16,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--ink); overflow-x: hidden; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 3rem;
+      background: rgba(240,237,232,0.88); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .logo { font-family: 'Syne', serif; font-size: 1.3rem; font-weight: 800; letter-spacing: -0.03em; }
+    .logo span { color: var(--accent); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav a { text-decoration: none; color: var(--muted); font-size: 0.85rem; font-weight: 400; transition: color 0.3s; }
+    nav a:hover { color: var(--ink); }
+    .cart-btn {
+      background: var(--ink); color: var(--bg);
+      padding: 0.55rem 1.4rem; border-radius: 100px; border: none;
+      font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 500;
+      cursor: pointer; text-decoration: none; display: inline-block;
+      transition: background 0.3s;
+    }
+    .cart-btn:hover { background: var(--accent); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center; padding: 5rem 3rem 3rem; gap: 4rem;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+      background: rgba(232,74,47,0.1); color: var(--accent);
+      padding: 0.35rem 0.9rem; border-radius: 100px; margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(3rem, 6vw, 6rem);
+      font-weight: 800; line-height: 1;
+      letter-spacing: -0.04em; margin-bottom: 1.2rem;
+    }
+    h1 span { color: var(--accent); }
+    .hero-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; font-weight: 300; max-width: 420px; margin-bottom: 2.5rem; }
+    .hero-cta { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+    .btn-accent {
+      background: var(--accent); color: var(--white);
+      padding: 0.9rem 2.2rem; border-radius: 100px; border: none;
+      font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500;
+      cursor: pointer; text-decoration: none; display: inline-block;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn-accent:hover { background: var(--ink); transform: scale(1.02); }
+    .btn-plain {
+      color: var(--ink); font-size: 0.88rem; font-weight: 400;
+      text-decoration: none; border-bottom: 1px solid var(--line);
+      transition: border-color 0.3s;
+    }
+    .btn-plain:hover { border-color: var(--ink); }
+
+    /* PRODUCT CARD (hero) */
+    .product-hero-card {
+      background: var(--ink); border-radius: 20px;
+      padding: 3rem 2.5rem; position: relative; overflow: hidden;
+      min-height: 520px; display: flex; flex-direction: column; justify-content: flex-end;
+    }
+    .product-hero-card::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 60% 30%, rgba(232,74,47,0.25), transparent 55%);
+    }
+    .ph-number {
+      position: absolute; top: 2rem; left: 2.5rem;
+      font-family: 'Syne', sans-serif; font-size: 7rem; font-weight: 800;
+      color: rgba(255,255,255,0.04); line-height: 1; user-select: none;
+    }
+    .ph-badge {
+      position: absolute; top: 2rem; right: 2rem;
+      background: var(--accent); color: var(--white);
+      padding: 0.5rem 1rem; border-radius: 100px;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+    }
+    .ph-img {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -55%);
+      font-size: 9rem; line-height: 1;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+    }
+    .ph-label { position: relative; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 0.4rem; }
+    .ph-name { position: relative; font-family: 'Syne', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--white); }
+    .ph-price { position: relative; font-size: 1.1rem; color: var(--accent); font-weight: 500; margin-top: 0.4rem; }
+
+    /* PRODUCTS GRID */
+    .products { padding: 6rem 3rem; }
+    .prod-header {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+    .prod-header h2 {
+      font-family: 'Syne', sans-serif; font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 800; letter-spacing: -0.03em; line-height: 1;
+    }
+    .prod-header h2 span { color: var(--accent); }
+    .prod-header a { font-size: 0.85rem; color: var(--muted); text-decoration: none; transition: color 0.3s; }
+    .prod-header a:hover { color: var(--ink); }
+    .prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .prod-card {
+      background: var(--card); border-radius: 16px; overflow: hidden;
+      border: 1px solid transparent; transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .prod-card:hover {
+      border-color: var(--ink); transform: translateY(-6px);
+      box-shadow: 0 24px 48px rgba(17,16,16,0.1);
+    }
+    .prod-img {
+      aspect-ratio: 1 / 1; background: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 5rem; position: relative; overflow: hidden;
+    }
+    .prod-img::after {
+      content: 'Quick Add';
+      position: absolute; inset: 0;
+      background: rgba(17,16,16,0.8);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--white); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em;
+      text-transform: uppercase; opacity: 0; transition: opacity 0.3s;
+    }
+    .prod-card:hover .prod-img::after { opacity: 1; }
+    .prod-body { padding: 1.4rem; }
+    .prod-category { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
+    .prod-name { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .prod-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+    .prod-footer { display: flex; align-items: center; justify-content: space-between; }
+    .prod-price { font-size: 1.1rem; font-weight: 600; }
+    .prod-add {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: var(--ink); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; cursor: pointer; border: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .prod-add:hover { background: var(--accent); transform: scale(1.1); }
+    .prod-badge {
+      display: inline-block; font-size: 0.65rem;
+      background: rgba(232,74,47,0.1); color: var(--accent);
+      padding: 0.2rem 0.6rem; border-radius: 100px;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    /* FEATURES BAND */
+    .features-band {
+      background: var(--ink); padding: 5rem 3rem;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; border-radius: 20px; margin: 0 3rem;
+    }
+    .feat {
+      padding: 2rem 2.5rem; border-right: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+    }
+    .feat:last-child { border-right: none; }
+    .feat-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .feat-title { font-family: 'Syne', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem; }
+    .feat-text { font-size: 0.78rem; color: rgba(255,255,255,0.35); line-height: 1.6; }
+
+    /* TESTIMONIAL */
+    .testimonial-strip {
+      padding: 6rem 3rem;
+      display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: center;
+    }
+    .test-left h2 {
+      font-family: 'Syne', sans-serif; font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 800; letter-spacing: -0.03em; line-height: 1;
+    }
+    .test-left h2 span { color: var(--accent); }
+    .test-left p { color: var(--muted); font-size: 0.88rem; line-height: 1.7; margin-top: 1rem; }
+    .test-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .test-card {
+      background: var(--white); padding: 1.8rem;
+      border-radius: 12px; border: 1px solid var(--line);
+    }
+    .test-stars { color: var(--accent); font-size: 0.85rem; margin-bottom: 0.8rem; }
+    .test-text { font-size: 0.85rem; color: var(--ink); line-height: 1.65; margin-bottom: 1rem; }
+    .test-author { font-size: 0.75rem; color: var(--muted); display: flex; align-items: center; gap: 0.5rem; }
+    .test-avatar {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--accent); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 700;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--ink); padding: 2.5rem 3rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .footer-logo-sm { font-family: 'Syne', sans-serif; font-weight: 800; color: var(--white); font-size: 1.2rem; letter-spacing: -0.03em; }
+    .footer-logo-sm span { color: var(--accent); }
+    footer small { color: rgba(255,255,255,0.25); font-size: 0.75rem; }
+
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      nav ul { display: none; }
+      .hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; }
+      .product-hero-card { display: none; }
+      .products { padding: 4rem 1.5rem; }
+      .prod-grid { grid-template-columns: 1fr 1fr; }
+      .features-band { grid-template-columns: 1fr 1fr; margin: 0 1.5rem; }
+      .feat { border-right: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .testimonial-strip { grid-template-columns: 1fr; padding: 4rem 1.5rem; }
+      .test-grid { grid-template-columns: 1fr; }
+      footer { padding: 2rem 1.5rem; flex-direction: column; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Arc<span>.</span></div>
+    <ul>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Materials</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <a href="#" class="cart-btn">🛒 Cart (0)</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <div class="hero-tag">🔥 New Drop</div>
+      <h1>Less noise.<br>More <span>craft.</span></h1>
+      <p class="hero-sub">Arc makes minimalist everyday carry gear built from premium materials. No shortcuts. No compromises.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn-accent">Shop Collection</a>
+        <a href="#" class="btn-plain">See Materials →</a>
+      </div>
+    </div>
+    <div class="product-hero-card">
+      <div class="ph-number">01</div>
+      <div class="ph-badge">New Arrival</div>
+      <div class="ph-img">🎒</div>
+      <div class="ph-label">Best Seller · Full-Grain Leather</div>
+      <div class="ph-name">The Compact<br>Daypack</div>
+      <div class="ph-price">$285</div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="prod-header">
+      <h2>Featured<br><span>Products</span></h2>
+      <a href="#">View all →</a>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img">👜</div>
+        <div class="prod-body">
+          <div class="prod-badge">Bestseller</div>
+          <div class="prod-category">Bags · Leather</div>
+          <div class="prod-name">Slim Tote No. 3</div>
+          <div class="prod-desc">Vegetable-tanned full-grain leather. Fits a 13" laptop and daily essentials.</div>
+          <div class="prod-footer">
+            <span class="prod-price">$195</span>
+            <button class="prod-add">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">⌚</div>
+        <div class="prod-body">
+          <div class="prod-badge">New</div>
+          <div class="prod-category">Accessories · Watchband</div>
+          <div class="prod-name">Canvas Band Classic</div>
+          <div class="prod-desc">Water-resistant waxed canvas. Stainless steel buckle. Made in Portugal.</div>
+          <div class="prod-footer">
+            <span class="prod-price">$48</span>
+            <button class="prod-add">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">💼</div>
+        <div class="prod-body">
+          <div class="prod-category">Bags · Nylon</div>
+          <div class="prod-name">Commuter Brief</div>
+          <div class="prod-desc">1000D Cordura nylon shell, padded laptop sleeve, magnetic closure.</div>
+          <div class="prod-footer">
+            <span class="prod-price">$165</span>
+            <button class="prod-add">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">👛</div>
+        <div class="prod-body">
+          <div class="prod-badge">Low Stock</div>
+          <div class="prod-category">Wallets · Leather</div>
+          <div class="prod-name">Bifold Cardholder</div>
+          <div class="prod-desc">6-card capacity. Horween leather. Gets better with every use.</div>
+          <div class="prod-footer">
+            <span class="prod-price">$85</span>
+            <button class="prod-add">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">🎒</div>
+        <div class="prod-body">
+          <div class="prod-category">Bags · Canvas</div>
+          <div class="prod-name">Field Pack 18L</div>
+          <div class="prod-desc">Waxed cotton canvas, brass hardware, YKK zippers. Built for decades.</div>
+          <div class="prod-footer">
+            <span class="prod-price">$225</span>
+            <button class="prod-add">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">🔑</div>
+        <div class="prod-body">
+          <div class="prod-badge">New</div>
+          <div class="prod-category">Accessories · Keyring</div>
+          <div class="prod-name">Carabiner Hook</div>
+          <div class="prod-desc">Aircraft-grade aluminium. Silent, compact, and endlessly useful.</div>
+          <div class="prod-footer">
+            <span class="prod-price">$32</span>
+            <button class="prod-add">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="features-band">
+    <div class="feat">
+      <div class="feat-icon">🌿</div>
+      <div class="feat-title">Sustainably Made</div>
+      <p class="feat-text">Ethically sourced materials from certified tanneries and mills.</p>
+    </div>
+    <div class="feat">
+      <div class="feat-icon">🔨</div>
+      <div class="feat-title">Handcrafted</div>
+      <p class="feat-text">Every item assembled by skilled artisans with decades of experience.</p>
+    </div>
+    <div class="feat">
+      <div class="feat-icon">♾️</div>
+      <div class="feat-title">Lifetime Repair</div>
+      <p class="feat-text">We repair any Arc product, forever. No receipts required.</p>
+    </div>
+    <div class="feat">
+      <div class="feat-icon">📦</div>
+      <div class="feat-title">Free Shipping</div>
+      <p class="feat-text">Free worldwide shipping on all orders over $75.</p>
+    </div>
+  </div>
+
+  <section class="testimonial-strip">
+    <div class="test-left">
+      <h2>Built for <span>real</span> life.</h2>
+      <p>Don't take our word for it. Here's what people who actually use Arc products say after months of daily carry.</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"The Slim Tote is everything I wanted — beautiful, functional, and only getting better with age."</p>
+        <div class="test-author"><div class="test-avatar">JK</div> Jamie K. · San Francisco</div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"Two years in, the Commuter Brief still looks new. The craftsmanship is genuinely exceptional."</p>
+        <div class="test-author"><div class="test-avatar">MP</div> Marco P. · Berlin</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo-sm">Arc<span>.</span></div>
+    <small>Code Odyssey · Project 007 · Product Showcase</small>
+  </footer>
+
+</body>
+</html>
