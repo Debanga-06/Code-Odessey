@@ -153,8 +153,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 094 | Sortable List | Sorting algorithms, array methods, display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-94) |
 | 095 | Drag & Drop Demo | Drag API, drop zones, event handling | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-95) |
 | 096 | Simple Dashboard UI | Dashboard layout, widgets, data cards | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-96) |
-| 097 | Portfolio v2 | Enhanced portfolio, animations, projects | [![Pending](https://img.shields.io/badge/Status-Pending-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-97) |
-| 098 | Blog Page v2 | Improved blog, categories, tags | [![Pending](https://img.shields.io/badge/Status-Pending-yellow)](https://github.com/yourusername/Project-98) |
+| 097 | [Portfolio v2](https://portfolio-v2-gules-nu.vercel.app/) | Enhanced portfolio, animations, projects | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-97) |
+| 098 | [Blog Page v2](https://blog-page-v2.vercel.app/) | Improved blog, categories, tags | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/yourusername/Project-98) |
 | 099 | [Website Clone (Static)](https://website-clone-static.vercel.app/) | Replicate existing site, learning from real sites | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-99) |
 | 100 | [Mini Project Collection Page](https://miniprojectcollectionpage.vercel.app/) | Showcase all projects, gallery, navigation | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-100) |
 
