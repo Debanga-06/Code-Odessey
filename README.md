@@ -151,8 +151,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 092 | Search Bar UI | Search input, suggestions, autocomplete | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-92) |
 | 093 | Filter List App | Filtering logic, categories, search | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-93) |
 | 094 | Sortable List | Sorting algorithms, array methods, display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-94) |
-| 095 | Drag & Drop Demo | Drag API, drop zones, event handling | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-95) |
-| 096 | Simple Dashboard UI | Dashboard layout, widgets, data cards | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-96) |
+| 095 | Drag & Drop Demo | Drag API, drop zones, event handling | [![Working](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-95) |
+| 096 | Simple Dashboard UI | Dashboard layout, widgets, data cards | [![Working](https://img.shields.io/badge/Status-Working-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-96) |
 | 097 | [Portfolio v2](https://portfolio-v2-gules-nu.vercel.app/) | Enhanced portfolio, animations, projects | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-97) |
 | 098 | [Blog Page v2](https://blog-page-v2.vercel.app/) | Improved blog, categories, tags | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/yourusername/Project-98) |
 | 099 | [Website Clone (Static)](https://website-clone-static.vercel.app/) | Replicate existing site, learning from real sites | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-99) |
@@ -189,7 +189,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 54/100 completed
+- **Beginner Projects:** 56/100 completed
 - **Intermediate Projects:** 2/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
