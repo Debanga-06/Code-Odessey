@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>096 · Simple Dashboard UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="sidebar-logo">pulse<span>.</span>io</div>
+      <div class="sidebar-role">Analytics Dashboard</div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Main</div>
+      <ul class="sidebar-nav">
+        <li><a href="#" class="active"><span class="nav-icon">▣</span> Overview</a></li>
+        <li><a href="#"><span class="nav-icon">📈</span> Analytics</a></li>
+        <li><a href="#"><span class="nav-icon">🛒</span> Orders <span class="nav-badge">4</span></a></li>
+        <li><a href="#"><span class="nav-icon">👥</span> Customers</a></li>
+        <li><a href="#"><span class="nav-icon">📦</span> Products</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">System</div>
+      <ul class="sidebar-nav">
+        <li><a href="#"><span class="nav-icon">🔔</span> Notifications <span class="nav-badge">2</span></a></li>
+        <li><a href="#"><span class="nav-icon">⚙</span> Settings</a></li>
+        <li><a href="#"><span class="nav-icon">?</span> Help</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">AK</div>
+      <div>
+        <div class="user-name">Arjun K.</div>
+        <div class="user-sub">Admin</div>
+      </div>
+      <div class="user-opts">⋯</div>
+    </div>
+  </aside>
+
+  <!-- ── MAIN ── -->
+  <div class="main">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <div>
+          <div class="topbar-title">Good morning, Arjun 👋</div>
+          <div class="topbar-date" id="live-date">Loading...</div>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search anything..."/>
+        </div>
+        <div class="notif-btn">🔔<div class="notif-dot"></div></div>
+        <select class="period-select" onchange="updatePeriod(this.value)">
+          <option value="7">Last 7 days</option>
+          <option value="30" selected>Last 30 days</option>
+          <option value="90">Last 90 days</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- STAT CARDS -->
+      <div class="stat-grid">
+
+        <div class="stat-card c-orange">
+          <div class="stat-row">
+            <div class="stat-label">Total Revenue</div>
+            <div class="stat-icon">💰</div>
+          </div>
+          <div class="stat-value" id="stat-revenue">$84,240</div>
+          <div class="stat-delta">
+            <span class="delta-up">↑ 12.4%</span>
+            <span class="delta-label">vs last period</span>
+          </div>
+          <div class="sparkline" id="spark-revenue"></div>
+        </div>
+
+        <div class="stat-card c-teal">
+          <div class="stat-row">
+            <div class="stat-label">Active Users</div>
+            <div class="stat-icon">👥</div>
+          </div>
+          <div class="stat-value" id="stat-users">2,841</div>
+          <div class="stat-delta">
+            <span class="delta-up">↑ 8.1%</span>
+            <span class="delta-label">vs last period</span>
+          </div>
+          <div class="sparkline" id="spark-users"></div>
+        </div>
+
+        <div class="stat-card c-violet">
+          <div class="stat-row">
+            <div class="stat-label">New Orders</div>
+            <div class="stat-icon">📋</div>
+          </div>
+          <div class="stat-value" id="stat-orders">438</div>
+          <div class="stat-delta">
+            <span class="delta-down">↓ 3.2%</span>
+            <span class="delta-label">vs last period</span>
+          </div>
+          <div class="sparkline" id="spark-orders"></div>
+        </div>
+
+        <div class="stat-card c-amber">
+          <div class="stat-row">
+            <div class="stat-label">Conversion</div>
+            <div class="stat-icon">⚡</div>
+          </div>
+          <div class="stat-value" id="stat-conv">3.6%</div>
+          <div class="stat-delta">
+            <span class="delta-up">↑ 0.4%</span>
+            <span class="delta-label">vs last period</span>
+          </div>
+          <div class="sparkline" id="spark-conv"></div>
+        </div>
+
+      </div>
+
+      <!-- MID GRID -->
+      <div class="mid-grid">
+
+        <!-- BAR CHART -->
+        <div class="widget">
+          <div class="widget-head">
+            <div>
+              <div class="widget-title">Revenue Overview</div>
+              <div class="widget-sub">Monthly breakdown — current vs previous period</div>
+            </div>
+            <a href="#" class="widget-action">Export →</a>
+          </div>
+          <div class="chart-area">
+            <div class="chart-bars" id="chart-bars"></div>
+            <div class="chart-legend">
+              <div class="legend-item"><div class="legend-dot" style="background:var(--orange)"></div>Current</div>
+              <div class="legend-item"><div class="legend-dot" style="background:rgba(232,98,42,0.2)"></div>Previous</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GOALS -->
+        <div class="widget">
+          <div class="widget-head">
+            <div>
+              <div class="widget-title">Monthly Goals</div>
+              <div class="widget-sub">Progress vs targets</div>
+            </div>
+            <a href="#" class="widget-action">Edit →</a>
+          </div>
+          <div class="goal-list">
+            <div class="goal-item">
+              <div class="goal-row">
+                <span class="goal-name">Revenue</span>
+                <span class="goal-pct" style="color:var(--orange)">84%</span>
+              </div>
+              <div class="goal-track"><div class="goal-fill" style="width:84%;background:var(--orange)"></div></div>
+              <div class="goal-meta">$84.2k of $100k target</div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-row">
+                <span class="goal-name">New Customers</span>
+                <span class="goal-pct" style="color:var(--teal)">67%</span>
+              </div>
+              <div class="goal-track"><div class="goal-fill" style="width:67%;background:var(--teal)"></div></div>
+              <div class="goal-meta">402 of 600 target</div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-row">
+                <span class="goal-name">Orders</span>
+                <span class="goal-pct" style="color:var(--violet)">92%</span>
+              </div>
+              <div class="goal-track"><div class="goal-fill" style="width:92%;background:var(--violet)"></div></div>
+              <div class="goal-meta">438 of 475 target</div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-row">
+                <span class="goal-name">Satisfaction</span>
+                <span class="goal-pct" style="color:var(--amber)">78%</span>
+              </div>
+              <div class="goal-track"><div class="goal-fill" style="width:78%;background:var(--amber)"></div></div>
+              <div class="goal-meta">4.2 of 5.0 avg rating</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM GRID -->
+      <div class="bottom-grid">
+
+        <!-- TABLE -->
+        <div class="widget data-table">
+          <div class="widget-head">
+            <div>
+              <div class="widget-title">Recent Orders</div>
+              <div class="widget-sub">Last 5 transactions</div>
+            </div>
+            <a href="#" class="widget-action">View all →</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-name"><div class="td-avatar" style="background:var(--teal)">SL</div> Sana L.</td>
+                  <td><strong>$284</strong></td>
+                  <td><span class="status-chip chip-green">Paid</span></td>
+                  <td style="color:var(--muted)">Apr 6</td>
+                </tr>
+                <tr>
+                  <td class="td-name"><div class="td-avatar" style="background:var(--violet)">MK</div> Mark K.</td>
+                  <td><strong>$112</strong></td>
+                  <td><span class="status-chip chip-amber">Pending</span></td>
+                  <td style="color:var(--muted)">Apr 5</td>
+                </tr>
+                <tr>
+                  <td class="td-name"><div class="td-avatar" style="background:var(--orange)">RP</div> Riya P.</td>
+                  <td><strong>$640</strong></td>
+                  <td><span class="status-chip chip-green">Paid</span></td>
+                  <td style="color:var(--muted)">Apr 4</td>
+                </tr>
+                <tr>
+                  <td class="td-name"><div class="td-avatar" style="background:#6b7280">JO</div> J. Osei</td>
+                  <td><strong>$88</strong></td>
+                  <td><span class="status-chip chip-red">Failed</span></td>
+                  <td style="color:var(--muted)">Apr 3</td>
+                </tr>
+                <tr>
+                  <td class="td-name"><div class="td-avatar" style="background:var(--amber)">TN</div> Tara N.</td>
+                  <td><strong>$320</strong></td>
+                  <td><span class="status-chip chip-muted">Refunded</span></td>
+                  <td style="color:var(--muted)">Apr 2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ACTIVITY FEED -->
+        <div class="widget">
+          <div class="widget-head">
+            <div>
+              <div class="widget-title">Activity Feed</div>
+              <div class="widget-sub">Latest system events</div>
+            </div>
+            <a href="#" class="widget-action">All →</a>
+          </div>
+          <div class="activity-list">
+            <div class="activity-item">
+              <div class="act-icon" style="background:var(--orange-l)">🛒</div>
+              <div class="act-body">
+                <div class="act-text"><strong>New order</strong> received from Sana L. — $284</div>
+                <div class="act-time">2 minutes ago</div>
+              </div>
+              <div class="act-dot"></div>
+            </div>
+            <div class="activity-item">
+              <div class="act-icon" style="background:var(--teal-l)">👤</div>
+              <div class="act-body">
+                <div class="act-text"><strong>Mark K.</strong> updated their billing info</div>
+                <div class="act-time">18 minutes ago</div>
+              </div>
+              <div class="act-dot"></div>
+            </div>
+            <div class="activity-item">
+              <div class="act-icon" style="background:rgba(220,38,38,0.1)">⚠️</div>
+              <div class="act-body">
+                <div class="act-text">Payment <strong>failed</strong> for order #4821 — J. Osei</div>
+                <div class="act-time">1 hour ago</div>
+              </div>
+              <div class="act-dot"></div>
+            </div>
+            <div class="activity-item">
+              <div class="act-icon" style="background:var(--violet-l)">📦</div>
+              <div class="act-body">
+                <div class="act-text"><strong>Product update:</strong> Compact Bag now back in stock</div>
+                <div class="act-time">3 hours ago</div>
+              </div>
+              <div class="act-dot"></div>
+            </div>
+            <div class="activity-item">
+              <div class="act-icon" style="background:var(--amber-l)">⭐</div>
+              <div class="act-body">
+                <div class="act-text"><strong>5-star review</strong> submitted by Riya P.</div>
+                <div class="act-time">Yesterday</div>
+              </div>
+              <div class="act-dot"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- /content -->
+
+    <div class="page-footer">
+      <span class="pf-tag">pulse.io — v2.4.0 dashboard</span>
+      <span>Code Odyssey · <a href="#">096</a> · Simple Dashboard UI · Beginner</span>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

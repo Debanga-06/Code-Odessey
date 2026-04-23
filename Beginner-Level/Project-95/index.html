@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>095 · Drag & Drop Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-badge">Project 095 · Beginner</div>
+  </nav>
+
+  <div class="page-header">
+    <div>
+      <h1>Drag & <span>Drop</span></h1>
+      <p class="ph-sub">Drag cards from the source panel into the board columns. Drop to trash to remove. Watch the event log in real-time.</p>
+    </div>
+    <div class="api-pills">
+      <span class="api-pill pill-cyan">draggable</span>
+      <span class="api-pill pill-indigo">ondragstart</span>
+      <span class="api-pill pill-amber">ondragover</span>
+      <span class="api-pill pill-green">ondrop</span>
+    </div>
+  </div>
+
+  <div class="score-bar">
+    <div class="score-item">
+      <div class="score-dot" style="background: var(--cyan)"></div>
+      <span class="score-label">Available</span>
+      <span class="score-num cyan" id="avail-count">8</span>
+    </div>
+    <div class="score-item">
+      <div class="score-dot" style="background: var(--green)"></div>
+      <span class="score-label">Placed</span>
+      <span class="score-num green" id="placed-count">0</span>
+    </div>
+    <div class="score-item">
+      <div class="score-dot" style="background: var(--rose)"></div>
+      <span class="score-label">Trashed</span>
+      <span class="score-num rose" id="trash-count">0</span>
+    </div>
+    <span id="drop-counter">drops: <span>0</span></span>
+  </div>
+
+  <div class="demo-area">
+
+    <!-- SOURCE PANEL -->
+    <div class="source-panel">
+      <div class="panel-head">
+        <span class="panel-title">Source</span>
+        <span class="panel-count" id="source-badge">8</span>
+      </div>
+      <div class="source-items" id="source-list">
+
+        <div class="drag-card" draggable="true" data-id="1" data-icon="📋" data-type="task" data-name="Write unit tests">
+          <span class="card-icon">📋</span>
+          <div class="card-info">
+            <div class="card-name">Write unit tests</div>
+            <div class="card-type">task</div>
+          </div>
+          <span class="drag-handle">⠿</span>
+        </div>
+
+        <div class="drag-card" draggable="true" data-id="2" data-icon="🐛" data-type="bug" data-name="Fix login bug">
+          <span class="card-icon">🐛</span>
+          <div class="card-info">
+            <div class="card-name">Fix login bug</div>
+            <div class="card-type">bug</div>
+          </div>
+          <span class="drag-handle">⠿</span>
+        </div>
+
+        <div class="drag-card" draggable="true" data-id="3" data-icon="✨" data-type="feature" data-name="Dark mode toggle">
+          <span class="card-icon">✨</span>
+          <div class="card-info">
+            <div class="card-name">Dark mode toggle</div>
+            <div class="card-type">feature</div>
+          </div>
+          <span class="drag-handle">⠿</span>
+        </div>
+
+        <div class="drag-card" draggable="true" data-id="4" data-icon="📝" data-type="note" data-name="Update README">
+          <span class="card-icon">📝</span>
+          <div class="card-info">
+            <div class="card-name">Update README</div>
+            <div class="card-type">note</div>
+          </div>
+          <span class="drag-handle">⠿</span>
+        </div>
+
+        <div class="drag-card" draggable="true" data-id="5" data-icon="🔒" data-type="task" data-name="Auth middleware">
+          <span class="card-icon">🔒</span>
+          <div class="card-info">
+            <div class="card-name">Auth middleware</div>
+            <div class="card-type">task</div>
+          </div>
+          <span class="drag-handle">⠿</span>
+        </div>
+
+        <div class="drag-card" draggable="true" data-id="6" data-icon="🎨" data-type="feature" data-name="Redesign header">
+          <span class="card-icon">🎨</span>
+          <div class="card-info">
+            <div class="card-name">Redesign header</div>
+            <div class="card-type">feature</div>
+          </div>
+          <span class="drag-handle">⠿</span>
+        </div>
+
+        <div class="drag-card" draggable="true" data-id="7" data-icon="⚡" data-type="bug" data-name="Slow API response">
+          <span class="card-icon">⚡</span>
+          <div class="card-info">
+            <div class="card-name">Slow API response</div>
+            <div class="card-type">bug</div>
+          </div>
+          <span class="drag-handle">⠿</span>
+        </div>
+
+        <div class="drag-card" draggable="true" data-id="8" data-icon="📊" data-type="task" data-name="Analytics setup">
+          <span class="card-icon">📊</span>
+          <div class="card-info">
+            <div class="card-name">Analytics setup</div>
+            <div class="card-type">task</div>
+          </div>
+          <span class="drag-handle">⠿</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DROP BOARD -->
+    <div class="drop-board">
+
+      <div class="drop-zone" id="zone-todo" data-zone="To Do">
+        <div class="zone-head">
+          <div class="zone-color" style="background:#5a6478"></div>
+          <span class="zone-name">To Do</span>
+          <span class="zone-badge" id="badge-todo">0</span>
+        </div>
+        <div class="zone-body" id="body-todo">
+          <div class="zone-empty" id="empty-todo">
+            <div class="zone-empty-icon">○</div>
+            <div class="zone-empty-text">drop here</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drop-zone" id="zone-progress" data-zone="In Progress">
+        <div class="zone-head">
+          <div class="zone-color" style="background: var(--cyan)"></div>
+          <span class="zone-name">In Progress</span>
+          <span class="zone-badge" id="badge-progress">0</span>
+        </div>
+        <div class="zone-body" id="body-progress">
+          <div class="zone-empty" id="empty-progress">
+            <div class="zone-empty-icon">◑</div>
+            <div class="zone-empty-text">drop here</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drop-zone" id="zone-done" data-zone="Done">
+        <div class="zone-head">
+          <div class="zone-color" style="background: var(--green)"></div>
+          <span class="zone-name">Done</span>
+          <span class="zone-badge" id="badge-done">0</span>
+        </div>
+        <div class="zone-body" id="body-done">
+          <div class="zone-empty" id="empty-done">
+            <div class="zone-empty-icon">●</div>
+            <div class="zone-empty-text">drop here</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TRASH PANEL -->
+    <div class="trash-panel">
+      <div class="panel-head">
+        <span class="panel-title">Trash</span>
+        <span class="panel-count" id="trash-badge">0</span>
+      </div>
+      <div class="drop-zone trash-zone" id="zone-trash" data-zone="Trash">
+        <div class="trash-icon">🗑️</div>
+        <div class="trash-label">Drop here<br>to delete</div>
+        <div class="trash-count" id="trash-num" style="display:none">0 removed</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- EVENT LOG -->
+  <div class="event-log">
+    <div class="log-head">
+      <div class="log-title">
+        <div class="log-dot"></div>
+        Event Log
+      </div>
+      <button class="log-clear" onclick="clearLog()">clear</button>
+    </div>
+    <div class="log-entries" id="log-entries">
+      <div class="log-placeholder">// drag a card to see events fire...</div>
+    </div>
+  </div>
+
+  <!-- CODE HINTS -->
+  <div class="code-hint">
+    <div class="hint-block">
+      <h4>Make draggable</h4>
+      <code>draggable="true"</code>
+      <code>ondragstart="startDrag(e)"</code>
+      <small>// Set data on drag start</small>
+    </div>
+    <div class="hint-block">
+      <h4>Set up drop zone</h4>
+      <code>ondragover="allowDrop(e)"</code>
+      <code>e.preventDefault()</code>
+      <small>// Must prevent default to allow drop</small>
+    </div>
+    <div class="hint-block">
+      <h4>Handle the drop</h4>
+      <code>ondrop="handleDrop(e)"</code>
+      <code>e.dataTransfer.getData()</code>
+      <small>// Read transferred data, update DOM</small>
+    </div>
+  </div>
+
+  <footer>
+    <span>// drag_drop_demo.js — Drag API, drop zones, event handling</span>
+    <span>Code Odyssey · <a href="#">095</a> · Beginner</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
