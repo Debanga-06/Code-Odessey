@@ -263,18 +263,6 @@ This project exists thanks to all the amazing people who contribute! 🎉
   <img src="https://contrib.rocks/image?repo=Debanga-06/Code-Odessey" />
 </a>
 
-### 🎖️ Hall of Fame
-
-#### 🥇 Gold Contributors (10+ Projects)
-- **[@Jiban0507](https://github.com/Jiban-0507)** - 12 projects completed across all levels
-
-#### 🥈 Silver Contributors (5-9 Projects)
-- **[@ARPAN7797](https://github.com/ARPAN7797)** - 7 projects completed across all levels
-- **[@Debanga-06](https://github.com/Debanga-06)** - 5 projects completed across all levels
-
-#### 🥉 Bronze Contributors (1-4 Projects)
-- *Join the contributor list!*
-
 ### 💝 Special Thanks
 
 Special recognition to contributors who have made significant non-code contributions:
