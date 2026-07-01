@@ -198,7 +198,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 ### Overall Progress
 - **Beginner Projects:** 57/100 completed
-- **Intermediate Projects:** 2/100 completed
+- **Intermediate Projects:** 3/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
   
@@ -309,8 +309,8 @@ This repository showcases projects built with various technologies including:
 ## 📈 Project Statistics
 
 - **Total Projects**: 400+
-- **Beginner Projects**: Coming soon
-- **Intermediate Projects**: Coming soon
+- **Beginner Projects**: Ongoing
+- **Intermediate Projects**: Ongoing
 - **Expert Projects**: Coming soon
 - **Contributors**: [See all contributors](https://github.com/Debanga-06/Code-Odessey/graphs/contributors)
 
