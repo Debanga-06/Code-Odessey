@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sortable List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header class="header">
+        <h1>Sortable List</h1>
+        <p class="subtitle">Sort items using JavaScript array methods</p>
+      </header>
+
+      <!-- Stats Bar -->
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-label">Total Items</span>
+          <span class="stat-value" id="stat-count">10</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Min Value</span>
+          <span class="stat-value" id="stat-min">—</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Max Value</span>
+          <span class="stat-value" id="stat-max">—</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Average</span>
+          <span class="stat-value" id="stat-avg">—</span>
+        </div>
+      </div>
+
+      <!-- Sort Controls -->
+      <div class="controls" role="toolbar" aria-label="Sort controls">
+        <button class="btn" id="btn-asc"       onclick="sortList('asc')">▲ Value Asc</button>
+        <button class="btn" id="btn-desc"      onclick="sortList('desc')">▼ Value Desc</button>
+        <button class="btn" id="btn-name-asc"  onclick="sortList('name-asc')">A→Z Name</button>
+        <button class="btn" id="btn-name-desc" onclick="sortList('name-desc')">Z→A Name</button>
+        <button class="btn btn-reset"          onclick="sortList('original')">↺ Reset</button>
+      </div>
+
+      <!-- Sort Status -->
+      <p class="sort-status" id="sort-status">Showing original order</p>
+
+      <!-- List -->
+      <div class="list-wrapper" role="region" aria-live="polite" aria-label="Sorted list">
+
+        <div class="list-header">
+          <span>#</span>
+          <span>Item Name</span>
+          <span>Value</span>
+          <span>Visual</span>
+          <span>Tier</span>
+        </div>
+
+        <ul class="item-list" id="item-list">
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
