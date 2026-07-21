@@ -103,7 +103,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 050 | [Tabs Component](https://tabcomponent.vercel.app/) | Tab switching, content display, navigation | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-50) |
 | 051 | Modal Popup | Overlay, show/hide logic, event handling | [![Working](https://img.shields.io/badge/Status-Pending-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-51) |
 | 052 | Image Slider | Image rotation, navigation, autoplay | [![Working](https://img.shields.io/badge/Status-Pending-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-52) |
-| 053 | Simple Carousel | Carousel logic, animations, controls | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-53) |
+| 053 | [Simple Carousel](https://simple-carousel.vercel.app/) | Carousel logic, animations, controls | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-53) |
 | 054 | FAQ Toggle | Expand/collapse, dynamic content, icons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-54) |
 | 055 | Star Rating Widget | Click handling, visual feedback, ratings | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-55) |
 | 056 | Word Counter | String manipulation, real-time updates, stats | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-56) |
@@ -197,7 +197,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 57/100 completed
+- **Beginner Projects:** 58/100 completed
 - **Intermediate Projects:** 3/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
@@ -278,8 +278,8 @@ Special recognition to contributors who have made significant non-code contribut
 - ✅ **Project Launch** - August 2025
 - ✅ **First 10 Projects** - January 2026
 - ✅ **First 25 Projects** - February 2026
-- 🎯 **50 Projects** - Target: April 2026
-- 🎯 **100 Projects** - Target: June 2026
+- ✅ **50 Projects** - Target: April 2026
+- 🎯 **100 Projects** - Target: June 2027
 
 ---
 ## 🚀 Getting Started
