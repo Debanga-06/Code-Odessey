@@ -9,6 +9,8 @@
 A basic content carousel built with vanilla JavaScript, HTML, and CSS.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
+# Demo Link :- [Live](https://simple-carousel.vercel.app/)
+
 ## Concepts Covered
 - DOM selection and manipulation
 - CSS transforms (`translateX`) and transitions for sliding motion
