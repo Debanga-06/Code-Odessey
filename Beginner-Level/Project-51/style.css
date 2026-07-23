@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.open-btn, .confirm-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background: #4361ee;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.open-btn:hover, .confirm-btn:hover {
+  background: #3049c9;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease;
+  z-index: 100;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background: #fff;
+  width: 400px;
+  max-width: 90vw;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  transform: translateY(-30px);
+  transition: transform 0.25s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.overlay.active .modal {
+  transform: translateY(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #888;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.modal h2 {
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.modal p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
