@@ -101,8 +101,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 048 | [Notes App (LocalStorage)](https://notes-app-lake-five.vercel.app/) | LocalStorage API, data persistence, CRUD | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/p\Project-48) |
 | 049 | [Accordion Component](https://according-component.vercel.app/) | Toggle functionality, dynamic content, UI | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-49) |
 | 050 | [Tabs Component](https://tabcomponent.vercel.app/) | Tab switching, content display, navigation | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-50) |
-| 051 | Modal Popup | Overlay, show/hide logic, event handling | [![Working](https://img.shields.io/badge/Status-Pending-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-51) |
-| 052 | Image Slider | Image rotation, navigation, autoplay | [![Working](https://img.shields.io/badge/Status-Pending-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-52) |
+| 051 | [Modal Popup](https://modal-popup-five.vercel.app/) | Overlay, show/hide logic, event handling | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-51) |
+| 052 | [Image Slider](https://image-slider-kappa-bice.vercel.app/) | Image rotation, navigation, autoplay | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-52) |
 | 053 | [Simple Carousel](https://simple-carousel.vercel.app/) | Carousel logic, animations, controls | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-53) |
 | 054 | FAQ Toggle | Expand/collapse, dynamic content, icons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-54) |
 | 055 | Star Rating Widget | Click handling, visual feedback, ratings | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-55) |
@@ -197,7 +197,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 58/100 completed
+- **Beginner Projects:** 60/100 completed
 - **Intermediate Projects:** 3/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
