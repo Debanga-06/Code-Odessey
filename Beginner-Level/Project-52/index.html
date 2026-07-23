@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slider" id="slider">
+    <div class="slide-track" id="slideTrack">
+      <img src="https://picsum.photos/id/1015/700/400" class="slide-img" alt="Mountain river">
+      <img src="https://picsum.photos/id/1018/700/400" class="slide-img" alt="Mountain landscape">
+      <img src="https://picsum.photos/id/1035/700/400" class="slide-img" alt="Forest road">
+      <img src="https://picsum.photos/id/1043/700/400" class="slide-img" alt="Desert view">
+    </div>
+
+    <button class="nav-btn prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
+    <button class="nav-btn next" id="nextBtn" aria-label="Next image">&#10095;</button>
+
+    <div class="counter" id="counter">1 / 4</div>
+
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
