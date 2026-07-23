@@ -9,6 +9,8 @@
 An image slider/gallery with navigation, thumbnails, and autoplay.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
+### Demo :- [Live Now](https://image-slider-kappa-bice.vercel.app)
+
 ## Concepts Covered
 - Image rotation using `classList.toggle` instead of transforms
 - Dynamic thumbnail generation from existing image sources
