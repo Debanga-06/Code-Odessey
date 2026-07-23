@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modal Popup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Modal Popup Demo</h1>
+    <button id="openBtn" class="open-btn">Open Modal</button>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="modal" id="modal">
+      <button class="close-btn" id="closeBtn" aria-label="Close modal">&times;</button>
+      <h2>Welcome</h2>
+      <p>This is a simple modal popup built with vanilla JavaScript. Click outside, press Escape, or use the close button to dismiss it.</p>
+      <button class="confirm-btn" id="confirmBtn">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
