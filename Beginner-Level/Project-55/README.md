@@ -11,6 +11,8 @@
 An interactive rating component with hover preview, click selection, and 6 switchable visual styles.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
+### Demo :- [Live Now](https://star-rating-widget.vercel.app/)
+
 ## Concepts Covered
 - Dynamic DOM element generation in a loop
 - mouseenter / mouseleave / click event handling

@@ -12,6 +12,8 @@
 An accordion-style FAQ section with expand/collapse behavior and 5 switchable visual styles.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
+### Demo :- [Live Now](https://faq-toggle.vercel.app/)
+
 ## Concepts Covered
 - classList (add / remove / contains / toggle)
 - CSS max-height transition trick for smooth expand/collapse animation

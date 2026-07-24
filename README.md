@@ -104,8 +104,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 051 | [Modal Popup](https://modal-popup-five.vercel.app/) | Overlay, show/hide logic, event handling | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-51) |
 | 052 | [Image Slider](https://image-slider-kappa-bice.vercel.app/) | Image rotation, navigation, autoplay | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-52) |
 | 053 | [Simple Carousel](https://simple-carousel.vercel.app/) | Carousel logic, animations, controls | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-53) |
-| 054 | FAQ Toggle | Expand/collapse, dynamic content, icons | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-54) |
-| 055 | Star Rating Widget | Click handling, visual feedback, ratings | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-55) |
+| 054 | [FAQ Toggle](https://faq-toggle.vercel.app/) | Expand/collapse, dynamic content, icons | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-54) |
+| 055 | [Star Rating Widget](https://star-rating-widget.vercel.app/) | Click handling, visual feedback, ratings | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-55) |
 | 056 | Word Counter | String manipulation, real-time updates, stats | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-56) |
 | 057 | Character Counter | Text analysis, input events, display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-57) |
 | 058 | Email Validator | Regex patterns, validation logic, feedback | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-58) |
@@ -197,7 +197,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 60/100 completed
+- **Beginner Projects:** 62/100 completed
 - **Intermediate Projects:** 3/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
