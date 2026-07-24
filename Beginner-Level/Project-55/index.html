@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Rating Widget</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-classic">
+
+  <div class="theme-picker">
+    <button class="theme-btn active" data-theme="theme-classic">Classic</button>
+    <button class="theme-btn" data-theme="theme-hearts">Hearts</button>
+    <button class="theme-btn" data-theme="theme-emoji">Emoji</button>
+    <button class="theme-btn" data-theme="theme-numbers">Numbers</button>
+    <button class="theme-btn" data-theme="theme-neon">Neon</button>
+    <button class="theme-btn" data-theme="theme-minimal">Minimal</button>
+  </div>
+
+  <div class="rating-box">
+    <h1>Rate this product</h1>
+    <div class="rating-widget" id="ratingWidget"></div>
+    <p id="feedback">No rating yet</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
