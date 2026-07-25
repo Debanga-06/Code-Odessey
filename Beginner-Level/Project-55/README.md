@@ -1,4 +1,4 @@
-# 055 - Star Rating Widget
+# Star Rating Widget
 
 ![Project Status](https://img.shields.io/badge/status-completed-success)
 ![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)

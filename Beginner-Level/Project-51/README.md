@@ -1,4 +1,4 @@
-# 051 - Modal Popup
+# Modal Popup
 
 ![Project Status](https://img.shields.io/badge/status-completed-success)
 ![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)

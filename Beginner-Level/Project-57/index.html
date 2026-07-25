@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Counter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-classic">
+
+  <div class="theme-picker">
+    <button class="theme-btn active" data-theme="theme-classic">Classic</button>
+    <button class="theme-btn" data-theme="theme-minimal">Minimal</button>
+    <button class="theme-btn" data-theme="theme-dark">Dark</button>
+    <button class="theme-btn" data-theme="theme-gradient">Gradient</button>
+    <button class="theme-btn" data-theme="theme-neon">Neon</button>
+  </div>
+
+  <div class="container">
+    <h1>Character Counter</h1>
+
+    <div class="limit-row">
+      <label for="limitInput">Character limit:</label>
+      <input type="number" id="limitInput" value="120" min="1">
+    </div>
+
+    <textarea id="textInput" placeholder="Type or paste text to analyze..."></textarea>
+
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <p class="limit-status" id="limitStatus">0 / 120</p>
+
+    <div class="breakdown">
+      <div class="stat-box">
+        <span class="stat-value" id="letterCount">0</span>
+        <span class="stat-label">Letters</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="digitCount">0</span>
+        <span class="stat-label">Digits</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="spaceCount">0</span>
+        <span class="stat-label">Spaces</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="specialCount">0</span>
+        <span class="stat-label">Special</span>
+      </div>
+    </div>
+
+    <button id="clearBtn">Clear Text</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

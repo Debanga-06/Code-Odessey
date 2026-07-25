@@ -1,5 +1,4 @@
-# FAQ Toggle
-
+# Word Counter
 
 ![Project Status](https://img.shields.io/badge/status-completed-success)
 ![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)
@@ -9,41 +8,42 @@
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-An accordion-style FAQ section with expand/collapse behavior and 5 switchable visual styles.
+
+A real-time text analysis tool that counts words, characters, and sentences, and estimates reading time. Includes 5 switchable visual themes.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
-### Demo :- [Live Now](https://faq-toggle.vercel.app/)
+### Demo :- [Live Now]()
 
 ## Concepts Covered
-- classList (add / remove / contains / toggle)
-- CSS max-height transition trick for smooth expand/collapse animation
-- DOM traversal (parentElement)
-- Dataset attributes (data-theme) for driving JS logic from HTML
-- Dynamically swapping a body class to apply theme-specific CSS
-- Event delegation across multiple button groups
+- input event handling for live updates
+- String methods: trim, split, filter
+- Regular expressions for splitting on whitespace and sentence-ending punctuation
+- Basic math for time estimation
+- Theme switching by toggling a body class
 
 ## Features
-- Click a question to expand its answer
-- Only one answer open at a time
-- Icon rotates 45° to indicate open/closed state
-- 5 selectable themes: Classic, Minimal, Card, Dark, Neon
-- Active theme button is visually highlighted
+- Live word count as you type
+- Character count (including spaces)
+- Sentence count based on punctuation (. ! ?)
+- Estimated reading time (assumes 200 words per minute)
+- Clear button to reset the textarea
+- 5 selectable styles: Classic, Minimal, Dark, Gradient, Neon
 
 ## File Structure
 
-    faq-toggle/
-       ├── index.html
-       ├── style.css
-       ├── script.js
-       └── README.md
+      word-counter/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 
 ## How to Run
 Open `index.html` in any browser. No dependencies required.
 
 ## Possible Extensions
-- Save selected theme to localStorage so it persists on reload
-- Allow multiple answers open at once (checkbox-style accordion)
-- Add search/filter functionality for questions
+- Paragraph count
+- Average word length stat
+- Reading level estimate (e.g. Flesch-Kincaid)
 
 ## 📖 Resources for Learning
 
@@ -91,5 +91,3 @@ If you get stuck:
 **Happy Coding!** 🎉
 
 Remember: Every expert was once a beginner. Take your time to understand each part of the code, experiment with changes, and build your skills step by step. Good luck with your web development journey!
-
-

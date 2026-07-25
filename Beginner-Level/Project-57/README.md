@@ -1,5 +1,4 @@
-# FAQ Toggle
-
+# Character Counter
 
 ![Project Status](https://img.shields.io/badge/status-completed-success)
 ![Difficulty](https://img.shields.io/badge/difficulty-beginner-green)
@@ -9,41 +8,42 @@
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-An accordion-style FAQ section with expand/collapse behavior and 5 switchable visual styles.
+A live character analysis tool that breaks text down into letters, digits, spaces, and special characters, with a configurable limit and progress bar. Includes 5 switchable visual themes.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
-### Demo :- [Live Now](https://faq-toggle.vercel.app/)
+### Demo :- [Live Now]()
 
 ## Concepts Covered
-- classList (add / remove / contains / toggle)
-- CSS max-height transition trick for smooth expand/collapse animation
-- DOM traversal (parentElement)
-- Dataset attributes (data-theme) for driving JS logic from HTML
-- Dynamically swapping a body class to apply theme-specific CSS
-- Event delegation across multiple button groups
+- input event handling on multiple fields (textarea + number input)
+- for...of loop to iterate over string characters
+- Regular expressions (`test()`) to classify each character
+- Conditional logic (if/else if chains) for categorization
+- Dynamic inline style updates (progress bar width and color)
+- Guarding against division by zero / invalid numeric input
 
 ## Features
-- Click a question to expand its answer
-- Only one answer open at a time
-- Icon rotates 45° to indicate open/closed state
-- 5 selectable themes: Classic, Minimal, Card, Dark, Neon
-- Active theme button is visually highlighted
+- Live total character count against a user-defined limit
+- Progress bar that fills as the limit is approached
+- Visual warning (red) when the limit is exceeded
+- Breakdown into letters, digits, spaces, and special characters
+- Clear button to reset
+- 5 selectable styles: Classic, Minimal, Dark, Gradient, Neon
 
 ## File Structure
 
-    faq-toggle/
-       ├── index.html
-       ├── style.css
-       ├── script.js
-       └── README.md
+       character-counter/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 
 ## How to Run
 Open `index.html` in any browser. No dependencies required.
 
 ## Possible Extensions
-- Save selected theme to localStorage so it persists on reload
-- Allow multiple answers open at once (checkbox-style accordion)
-- Add search/filter functionality for questions
+- Count words alongside characters
+- Support for Unicode/emoji-aware counting
+- Copy-to-clipboard button for the analyzed text
 
 ## 📖 Resources for Learning
 
@@ -91,5 +91,3 @@ If you get stuck:
 **Happy Coding!** 🎉
 
 Remember: Every expert was once a beginner. Take your time to understand each part of the code, experiment with changes, and build your skills step by step. Good luck with your web development journey!
-
-

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Counter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-classic">
+
+  <div class="theme-picker">
+    <button class="theme-btn active" data-theme="theme-classic">Classic</button>
+    <button class="theme-btn" data-theme="theme-minimal">Minimal</button>
+    <button class="theme-btn" data-theme="theme-dark">Dark</button>
+    <button class="theme-btn" data-theme="theme-gradient">Gradient</button>
+    <button class="theme-btn" data-theme="theme-neon">Neon</button>
+  </div>
+
+  <div class="container">
+    <h1>Word Counter</h1>
+    <textarea id="textInput" placeholder="Start typing or paste your text here..."></textarea>
+
+    <div class="stats">
+      <div class="stat-box">
+        <span class="stat-value" id="wordCount">0</span>
+        <span class="stat-label">Words</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="charCount">0</span>
+        <span class="stat-label">Characters</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="sentenceCount">0</span>
+        <span class="stat-label">Sentences</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="readTime">0s</span>
+        <span class="stat-label">Read Time</span>
+      </div>
+    </div>
+
+    <button id="clearBtn">Clear Text</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

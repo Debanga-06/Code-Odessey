@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 24px;
+    padding: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .theme-picker {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .theme-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .theme-btn.active {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 560px;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .limit-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+  }
+  
+  .limit-row input {
+    width: 80px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    resize: vertical;
+    outline: none;
+    font-family: inherit;
+  }
+  
+  .progress-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 14px;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+    transition: width 0.2s ease, background 0.2s ease;
+  }
+  
+  .limit-status {
+    text-align: right;
+    font-size: 0.85rem;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  .breakdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .stat-box {
+    padding: 14px 8px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .stat-value {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  
+  .stat-label {
+    font-size: 0.78rem;
+  }
+  
+  #clearBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 480px) {
+    .breakdown { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  .theme-classic { background: #f0f2f5; color: #2b2d42; }
+  .theme-classic .container { background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+  .theme-classic textarea { border: 2px solid #ddd; color: #222; background: #fff; }
+  .theme-classic textarea:focus { border-color: #4361ee; }
+  .theme-classic .progress-track { background: #e9ecef; }
+  .theme-classic .progress-fill { background: #4361ee; }
+  .theme-classic .stat-box { background: #f8f9fa; }
+  .theme-classic .stat-value { color: #4361ee; }
+  .theme-classic .stat-label { color: #666; }
+  .theme-classic #clearBtn { background: #ef233c; color: #fff; }
+  .theme-classic #clearBtn:hover { background: #d90429; }
+  .theme-classic .limit-row input { background: #fff; color: #222; }
+  
+  .theme-minimal { background: #fff; color: #111; }
+  .theme-minimal .container { border: 1px solid #e0e0e0; }
+  .theme-minimal textarea { border: 1px solid #ccc; background: #fff; color: #111; }
+  .theme-minimal .progress-track { background: #eee; }
+  .theme-minimal .progress-fill { background: #111; }
+  .theme-minimal .stat-box { border: 1px solid #eee; }
+  .theme-minimal .stat-value { color: #111; }
+  .theme-minimal .stat-label { color: #777; }
+  .theme-minimal #clearBtn { background: #111; color: #fff; }
+  .theme-minimal #clearBtn:hover { background: #333; }
+  
+  .theme-dark { background: #121212; color: #eee; }
+  .theme-dark .container { background: #1e1e1e; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+  .theme-dark textarea { background: #2a2a2a; color: #eee; border: 2px solid #3a3a3a; }
+  .theme-dark .progress-track { background: #2a2a2a; }
+  .theme-dark .progress-fill { background: #4cc9f0; }
+  .theme-dark .stat-box { background: #2a2a2a; }
+  .theme-dark .stat-value { color: #4cc9f0; }
+  .theme-dark .stat-label { color: #999; }
+  .theme-dark #clearBtn { background: #e63946; color: #fff; }
+  .theme-dark #clearBtn:hover { background: #c1121f; }
+  .theme-dark .theme-btn { background: #1e1e1e; color: #eee; border-color: #444; }
+  .theme-dark .theme-btn.active { background: #4361ee; border-color: #4361ee; }
+  .theme-dark .limit-row input { background: #2a2a2a; color: #eee; border-color: #3a3a3a; }
+  
+  .theme-gradient { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; }
+  .theme-gradient .container { background: rgba(255,255,255,0.12); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.25); }
+  .theme-gradient textarea { background: rgba(255,255,255,0.15); color: #fff; border: 2px solid rgba(255,255,255,0.3); }
+  .theme-gradient textarea::placeholder { color: rgba(255,255,255,0.7); }
+  .theme-gradient .progress-track { background: rgba(255,255,255,0.2); }
+  .theme-gradient .progress-fill { background: #fff; }
+  .theme-gradient .stat-box { background: rgba(255,255,255,0.15); }
+  .theme-gradient .stat-value { color: #fff; }
+  .theme-gradient .stat-label { color: rgba(255,255,255,0.85); }
+  .theme-gradient #clearBtn { background: #fff; color: #764ba2; font-weight: 600; }
+  .theme-gradient .theme-btn { background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.4); }
+  .theme-gradient .theme-btn.active { background: #fff; color: #764ba2; }
+  .theme-gradient .limit-row input { background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.4); }
+  
+  .theme-neon { background: #0a0a12; color: #eafffb; }
+  .theme-neon .container { background: #111124; border: 1px solid #2be0d0; box-shadow: 0 0 16px rgba(43,224,208,0.2); }
+  .theme-neon textarea { background: #0a0a12; color: #eafffb; border: 2px solid #2be0d0; }
+  .theme-neon .progress-track { background: #0a0a12; border: 1px solid #2be0d0; }
+  .theme-neon .progress-fill { background: #ff2bd6; }
+  .theme-neon .stat-box { background: #0a0a12; border: 1px solid #2be0d0; }
+  .theme-neon .stat-value { color: #2be0d0; }
+  .theme-neon .stat-label { color: #9ff5ec; }
+  .theme-neon #clearBtn { background: #ff2bd6; color: #0a0a12; font-weight: 700; }
+  .theme-neon .theme-btn { background: #111124; color: #2be0d0; border-color: #2be0d0; }
+  .theme-neon .theme-btn.active { background: #2be0d0; color: #0a0a12; }
+  .theme-neon .limit-row input { background: #0a0a12; color: #eafffb; border-color: #2be0d0; }
