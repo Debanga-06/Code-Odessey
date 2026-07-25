@@ -106,8 +106,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 053 | [Simple Carousel](https://simple-carousel.vercel.app/) | Carousel logic, animations, controls | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-53) |
 | 054 | [FAQ Toggle](https://faq-toggle.vercel.app/) | Expand/collapse, dynamic content, icons | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-54) |
 | 055 | [Star Rating Widget](https://star-rating-widget.vercel.app/) | Click handling, visual feedback, ratings | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-55) |
-| 056 | Word Counter | String manipulation, real-time updates, stats | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-56) |
-| 057 | Character Counter | Text analysis, input events, display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-57) |
+| 056 | [Word Counter](https://word-counter-one-orcin.vercel.app/) | String manipulation, real-time updates, stats |[![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-56) |
+| 057 | [Character Counter](https://charecter-counter-olive.vercel.app/) | Text analysis, input events, display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-57) |
 | 058 | Email Validator | Regex patterns, validation logic, feedback | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-58) |
 | 059 | Password Generator | Random generation, string building, security | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-59) |
 | 060 | Random Username Generator | String concatenation, random words, creativity | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-60) |
@@ -197,7 +197,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 62/100 completed
+- **Beginner Projects:** 64/100 completed
 - **Intermediate Projects:** 3/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
