@@ -11,7 +11,7 @@
 A live character analysis tool that breaks text down into letters, digits, spaces, and special characters, with a configurable limit and progress bar. Includes 5 switchable visual themes.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
-### Demo :- [Live Now]()
+### Demo :- [Live Now](https://charecter-counter-olive.vercel.app/)
 
 ## Concepts Covered
 - input event handling on multiple fields (textarea + number input)

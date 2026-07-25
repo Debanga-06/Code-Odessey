@@ -12,7 +12,7 @@
 A real-time text analysis tool that counts words, characters, and sentences, and estimates reading time. Includes 5 switchable visual themes.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
-### Demo :- [Live Now]()
+### Demo :- [Live Now](https://word-counter-one-orcin.vercel.app/)
 
 ## Concepts Covered
 - input event handling for live updates
