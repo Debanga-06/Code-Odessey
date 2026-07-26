@@ -108,8 +108,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 055 | [Star Rating Widget](https://star-rating-widget.vercel.app/) | Click handling, visual feedback, ratings | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-55) |
 | 056 | [Word Counter](https://word-counter-one-orcin.vercel.app/) | String manipulation, real-time updates, stats |[![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-56) |
 | 057 | [Character Counter](https://charecter-counter-olive.vercel.app/) | Text analysis, input events, display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-57) |
-| 058 | Email Validator | Regex patterns, validation logic, feedback | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-58) |
-| 059 | Password Generator | Random generation, string building, security | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-59) |
+| 058 | [Email Validator](https://email-validator-chi-silk.vercel.app/) | Regex patterns, validation logic, feedback | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-58) |
+| 059 | [Password Generator](https://password-generator-three-gilt-79.vercel.app/) | Random generation, string building, security | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-59) |
 | 060 | Random Username Generator | String concatenation, random words, creativity | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-60) |
 | 061 | Simple Quiz App | Quiz logic, score tracking, questions array | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-61) |
 | 062 | Yes/No Game | Decision tree, game flow, user interaction | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-62) |
@@ -197,7 +197,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 64/100 completed
+- **Beginner Projects:** 66/100 completed
 - **Intermediate Projects:** 3/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed

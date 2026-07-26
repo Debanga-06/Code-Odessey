@@ -11,7 +11,7 @@
 A configurable password generator with strength meter and clipboard copy. Includes 5 switchable visual themes.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
-### Demo :- [Live Now]()
+### Demo :- [Live Now](https://password-generator-three-gilt-79.vercel.app/)
 
 ## Concepts Covered
 - `Math.random()` for pseudo-random selection

@@ -11,7 +11,7 @@
 A real-time email format checker that validates structure using regular expressions and shows rule-by-rule feedback. Includes 5 switchable visual themes.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
-### Demo :- [Live Now]()
+### Demo :- [Live Now](https://email-validator-chi-silk.vercel.app/)
 
 ## Concepts Covered
 - Regular expressions for pattern matching (`test()`)
