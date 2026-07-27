@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Quiz App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-classic">
+
+  <div class="theme-picker">
+    <button class="theme-btn active" data-theme="theme-classic">Classic</button>
+    <button class="theme-btn" data-theme="theme-minimal">Minimal</button>
+    <button class="theme-btn" data-theme="theme-dark">Dark</button>
+    <button class="theme-btn" data-theme="theme-gradient">Gradient</button>
+    <button class="theme-btn" data-theme="theme-neon">Neon</button>
+  </div>
+
+  <div class="container">
+
+    <div class="quiz-screen" id="quizScreen">
+      <div class="quiz-header">
+        <span id="questionCounter">Question 1 / 5</span>
+        <span id="scoreDisplay">Score: 0</span>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <h2 id="questionText">Question text goes here</h2>
+
+      <div class="options" id="optionsContainer"></div>
+
+      <p class="feedback-msg" id="feedbackMsg"></p>
+
+      <button id="nextBtn" disabled>Next Question</button>
+    </div>
+
+    <div class="result-screen hidden" id="resultScreen">
+      <h2>Quiz Complete!</h2>
+      <p class="final-score" id="finalScore">You scored 0 / 5</p>
+      <p class="result-msg" id="resultMsg"></p>
+      <button id="restartBtn">Try Again</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

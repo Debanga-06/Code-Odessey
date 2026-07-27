@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Username Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-classic">
+
+  <div class="theme-picker">
+    <button class="theme-btn active" data-theme="theme-classic">Classic</button>
+    <button class="theme-btn" data-theme="theme-minimal">Minimal</button>
+    <button class="theme-btn" data-theme="theme-dark">Dark</button>
+    <button class="theme-btn" data-theme="theme-gradient">Gradient</button>
+    <button class="theme-btn" data-theme="theme-neon">Neon</button>
+  </div>
+
+  <div class="container">
+    <h1>Username Generator</h1>
+
+    <div class="output-row">
+      <input type="text" id="usernameOutput" readonly placeholder="Your username will appear here">
+      <button id="copyBtn" title="Copy to clipboard">📋</button>
+    </div>
+    <p class="copy-msg" id="copyMsg"></p>
+
+    <div class="option-row">
+      <label><input type="checkbox" id="optNumber" checked> Add random number</label>
+      <label><input type="checkbox" id="optSeparator" checked> Use separator</label>
+    </div>
+
+    <div class="option-row select-row">
+      <label for="separatorSelect">Separator style:</label>
+      <select id="separatorSelect">
+        <option value="_">Underscore ( _ )</option>
+        <option value="-">Hyphen ( - )</option>
+        <option value=".">Dot ( . )</option>
+        <option value="">None</option>
+      </select>
+    </div>
+
+    <div class="history">
+      <p class="history-title">Recent usernames</p>
+      <ul id="historyList"></ul>
+    </div>
+
+    <button id="generateBtn">Generate Username</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
