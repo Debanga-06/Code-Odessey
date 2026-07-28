@@ -11,7 +11,7 @@
 A classic Rock Paper Scissors game against a computer opponent with score tracking across rounds. Includes 5 switchable visual themes.
 Part of the Code Odysseys series - JavaScript fundamentals practice.
 
-### Demo :- [Live Now]()
+### Demo :- [Live Now](https://rock-paper-sessior-game-three.vercel.app/)
 
 ## Concepts Covered
 - `Math.random()` combined with `Math.floor()` to simulate computer "AI" choice
