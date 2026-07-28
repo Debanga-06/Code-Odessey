@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>103 | Movie Search App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">🎬 Movie<span>Search</span></h1>
+
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="dark" title="Dark theme">🌙</button>
+        <button class="theme-btn" data-theme="light" title="Light theme">☀️</button>
+        <button class="theme-btn" data-theme="retro" title="Retro theme">📼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <section class="search-section">
+      <form id="search-form" class="search-form" autocomplete="off">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search for a movie... (e.g. Inception)"
+          minlength="2"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+
+      <div class="filter-row">
+        <select id="type-filter" class="type-filter">
+          <option value="">All Types</option>
+          <option value="movie">Movies</option>
+          <option value="series">Series</option>
+          <option value="episode">Episodes</option>
+        </select>
+
+        <select id="year-filter" class="year-filter">
+          <option value="">Any Year</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="status-section" id="status-section">
+      <p class="status-message" id="status-message">Search for a movie to get started 🍿</p>
+    </section>
+
+    <section class="results-section">
+      <div class="results-grid" id="results-grid"></div>
+    </section>
+
+    <section class="pagination" id="pagination"></section>
+
+  </main>
+
+  <!-- Movie details modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Movie Search App | Data from OMDb API</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

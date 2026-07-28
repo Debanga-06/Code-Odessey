@@ -172,7 +172,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 101 | [Weather App (API)](https://code-odessey-8ch6.vercel.app/) | Fetch API, async/await, API keys, data handling | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-101) |
 | 102 | [News App](https://weather-app-api-eight-lovat.vercel.app/) | News API integration, articles display, filtering | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-102) |
 | 103 | [GitHub Profile Finder](https://github-finder-five-rho.vercel.app/) | GitHub API, user search, repo display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Github-finder) |
-| 104 | Movie Search App | TMDb/OMDb API, search, movie details | [![Working](https://img.shields.io/badge/Status-Pending-yellow)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-104) |
+| 104 | [Movie Search App](https://movie-search-app-roan-seven.vercel.app/) | TMDb/OMDb API, search, movie details | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-104) |
 | 105 | Country Info App | REST Countries API, flags, population data | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-105) |
 | 106 | Currency Converter | Exchange rate API, conversion logic, real-time | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-106) |
 | 107 | Stock Price Viewer | Stock API, charts, real-time data | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-107) |
@@ -198,7 +198,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 ### Overall Progress
 - **Beginner Projects:** 70/100 completed
-- **Intermediate Projects:** 3/100 completed
+- **Intermediate Projects:** 4/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
   
