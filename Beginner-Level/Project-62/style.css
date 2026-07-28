@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 24px;
+    padding: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .theme-picker {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .theme-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .theme-btn.active {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 460px;
+    padding: 34px 30px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .path-trail {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    opacity: 0.7;
+  }
+  
+  h2 {
+    margin-bottom: 26px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+  
+  .choices {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .choice-btn {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+  }
+  
+  .choice-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-decoration: underline;
+  }
+  
+  .ending-screen h2 {
+    margin-bottom: 14px;
+  }
+  
+  .ending-screen p {
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  #restartBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .theme-neon { background: #0a0a12; color: #eafffb; }
+  .theme-neon .container { background: #111124; border: 1px solid #2be0d0; box-shadow: 0 0 16px rgba(43,224,208,0.2); }
+  .theme-neon .yes { background: #2be0d0; color: #0a0a12; font-weight: 700; }
+  .theme-neon .no { background: #ff2bd6; color: #0a0a12; font-weight: 700; }
+  .theme-neon .back-btn { color: #2be0d0; }
+  .theme-neon #restartBtn { background: #ff2bd6; color: #0a0a12; font-weight: 700; }
+  .theme-neon .theme-btn { background: #111124; color: #2be0d0; border-color: #2be0d0; }
+  .theme-neon .theme-btn.active { background: #2be0d0; color: #0a0a12; }

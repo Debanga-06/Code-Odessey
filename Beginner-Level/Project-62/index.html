@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yes/No Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-neon">
+
+  <div class="container">
+
+    <div class="game-screen" id="gameScreen">
+      <p class="path-trail" id="pathTrail">Step 1</p>
+      <h2 id="nodeText">Are you feeling adventurous today?</h2>
+
+      <div class="choices">
+        <button id="yesBtn" class="choice-btn yes">Yes</button>
+        <button id="noBtn" class="choice-btn no">No</button>
+      </div>
+
+      <button id="backBtn" class="back-btn hidden">← Go Back</button>
+    </div>
+
+    <div class="ending-screen hidden" id="endingScreen">
+      <h2 id="endingTitle">Ending Reached</h2>
+      <p id="endingText"></p>
+      <button id="restartBtn">Play Again</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
