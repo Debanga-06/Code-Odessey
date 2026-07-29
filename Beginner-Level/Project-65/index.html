@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyboard Event Tester</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Keyboard Event Tester</h1>
+    <p class="subtitle">Press any key to see its event details</p>
+
+    <div class="key-display" id="keyDisplay">
+      <span id="keyChar">—</span>
+    </div>
+
+    <div class="details-grid">
+      <div class="detail-box">
+        <span class="detail-label">key</span>
+        <span class="detail-value" id="keyValue">-</span>
+      </div>
+      <div class="detail-box">
+        <span class="detail-label">code</span>
+        <span class="detail-value" id="codeValue">-</span>
+      </div>
+      <div class="detail-box">
+        <span class="detail-label">keyCode</span>
+        <span class="detail-value" id="keyCodeValue">-</span>
+      </div>
+      <div class="detail-box">
+        <span class="detail-label">location</span>
+        <span class="detail-value" id="locationValue">-</span>
+      </div>
+    </div>
+
+    <div class="modifiers-row">
+      <span class="modifier-chip" id="modShift">Shift</span>
+      <span class="modifier-chip" id="modCtrl">Ctrl</span>
+      <span class="modifier-chip" id="modAlt">Alt</span>
+      <span class="modifier-chip" id="modMeta">Meta</span>
+    </div>
+
+    <div class="log-section">
+      <div class="log-header">
+        <span>Event log</span>
+        <button id="clearLogBtn">Clear</button>
+      </div>
+      <ul class="log-list" id="logList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

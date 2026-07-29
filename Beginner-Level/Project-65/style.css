@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 560px;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(43, 224, 208, 0.15);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 6px;
+    color: #2be0d0;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    color: #9ff5ec;
+    margin-bottom: 24px;
+  }
+  
+  .key-display {
+    background: #0a0a12;
+    border: 2px solid #2be0d0;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .key-display span {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ff2bd6;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-box {
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .detail-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #9ff5ec;
+    margin-bottom: 4px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .detail-value {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2be0d0;
+    word-break: break-word;
+  }
+  
+  .modifiers-row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  
+  .modifier-chip {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #2be0d0;
+    font-size: 0.8rem;
+    color: #5f7d7a;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  
+  .modifier-chip.active {
+    background: #2be0d0;
+    color: #0a0a12;
+    font-weight: 700;
+  }
+  
+  .log-section {
+    text-align: left;
+  }
+  
+  .log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    color: #9ff5ec;
+  }
+  
+  .log-header button {
+    background: #ff2bd6;
+    color: #0a0a12;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  
+  .log-list {
+    list-style: none;
+    max-height: 160px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4px;
+  }
+  
+  .log-list li {
+    font-size: 0.8rem;
+    font-family: 'Courier New', monospace;
+    padding: 6px 10px;
+    background: #0a0a12;
+    border-left: 2px solid #2be0d0;
+    color: #9ff5ec;
+  }

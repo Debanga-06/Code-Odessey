@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Flip Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Memory Flip Game</h1>
+
+    <div class="stats-row">
+      <span id="movesDisplay">Moves: 0</span>
+      <span id="matchesDisplay">Matches: 0 / 8</span>
+      <span id="timerDisplay">Time: 0s</span>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <p class="win-msg hidden" id="winMsg">All pairs matched!</p>
+
+    <button id="restartBtn">Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

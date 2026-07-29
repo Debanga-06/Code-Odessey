@@ -32,7 +32,7 @@ Part of the Code Odysseys series - JavaScript fundamentals practice.
 ## File Structure
 
 ```id="x32pl9"
-SRock-Paper-Game/
+Rock-Paper-Game/
 │
 ├── index.html      # Main structure
 ├── style.css       # Styling file
