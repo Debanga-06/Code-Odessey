@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>105 | Country Info App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">🌍 Country<span>Info</span></h1>
+
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="dark" title="Dark theme">🌙</button>
+        <button class="theme-btn" data-theme="light" title="Light theme">☀️</button>
+        <button class="theme-btn" data-theme="retro" title="Retro theme">📼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <section class="search-section">
+      <form id="search-form" class="search-form" autocomplete="off">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search for a country... (e.g. Japan)"
+          minlength="2"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+
+      <div class="filter-row">
+        <select id="region-filter" class="region-filter">
+          <option value="">All Regions</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+          <option value="Antarctic">Antarctic</option>
+        </select>
+
+        <select id="sort-select" class="sort-select">
+          <option value="name-asc">Name (A–Z)</option>
+          <option value="name-desc">Name (Z–A)</option>
+          <option value="population-desc">Population (High–Low)</option>
+          <option value="population-asc">Population (Low–High)</option>
+          <option value="area-desc">Area (Large–Small)</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="status-section" id="status-section">
+      <p class="status-message" id="status-message">Loading countries...</p>
+    </section>
+
+    <section class="results-section">
+      <div class="results-grid" id="results-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- Country details modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Code Odysseys #105 — Country Info App | Data from REST Countries API</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
