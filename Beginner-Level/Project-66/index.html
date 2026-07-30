@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouse Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Mouse Tracker</h1>
+    <p class="subtitle">Move your cursor inside the tracking zone</p>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="stat-label">X</span>
+        <span class="stat-value" id="xValue">0</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Y</span>
+        <span class="stat-value" id="yValue">0</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Distance</span>
+        <span class="stat-value" id="distanceValue">0px</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Speed</span>
+        <span class="stat-value" id="speedValue">0 px/s</span>
+      </div>
+    </div>
+
+    <div class="track-zone" id="trackZone">
+      <div class="dot" id="dot"></div>
+      <span class="zone-hint" id="zoneHint">Move your mouse here</span>
+    </div>
+
+    <div class="status-row">
+      <span id="statusText">Cursor outside zone</span>
+      <button id="resetBtn">Reset Distance</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

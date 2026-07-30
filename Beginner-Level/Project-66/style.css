@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 560px;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(43, 224, 208, 0.15);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 6px;
+    color: #2be0d0;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    color: #9ff5ec;
+    margin-bottom: 20px;
+  }
+  
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .stat-box {
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    border-radius: 8px;
+    padding: 12px 6px;
+  }
+  
+  .stat-label {
+    display: block;
+    font-size: 0.72rem;
+    color: #9ff5ec;
+    margin-bottom: 4px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .stat-value {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2be0d0;
+  }
+  
+  .track-zone {
+    position: relative;
+    height: 260px;
+    background: #0a0a12;
+    border: 2px dashed #2be0d0;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .zone-hint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5f7d7a;
+    font-size: 0.9rem;
+    pointer-events: none;
+  }
+  
+  .dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ff2bd6;
+    box-shadow: 0 0 10px #ff2bd6;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  .status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #9ff5ec;
+  }
+  
+  #resetBtn {
+    background: #ff2bd6;
+    color: #0a0a12;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  
+  #resetBtn:hover {
+    background: #d61fb3;
+  }

@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+  }
+  
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    background: #ff2bd6;
+    box-shadow: 0 0 10px #ff2bd6;
+    z-index: 1000;
+    transition: width 0.05s linear;
+  }
+  
+  .badge {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    color: #2be0d0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    z-index: 1000;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #2be0d0;
+    color: #0a0a12;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 0 14px rgba(43, 224, 208, 0.4);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .back-to-top.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+  }
+  
+  .content {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 24px 120px;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .hero h1 {
+    color: #2be0d0;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    color: #9ff5ec;
+    font-size: 0.95rem;
+  }
+  
+  section {
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  
+  section h2 {
+    color: #ff2bd6;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  section p {
+    line-height: 1.6;
+    color: #d6fffb;
+    font-size: 0.95rem;
+  }

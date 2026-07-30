@@ -12,9 +12,7 @@
 
 REST Countries relaunched as a **paid-tier, key-authenticated API (v5)**. The old free,
 keyless `restcountries.com/v3.1/all` endpoint this project originally used **no longer
-works** — it returns errors or is unreachable. This README and the code in this folder
-have been updated to the new `api.restcountries.com/countries/v5` API. If your deployed
-copy of this app stopped working, this is almost certainly why. See [API Setup](#api-setup)
+works** — it returns errors or is unreachable. See [API Setup](#api-setup)
 below — there are **two** required steps now, not one: getting a key, *and* allow-listing
 your domain for that key.
 
@@ -46,7 +44,7 @@ keeps the app well inside REST Countries' free-tier monthly request quota. Searc
 filtering, and sorting all run against the cached data with plain array methods — no network
 call needed after the initial (or cached) load.
 
-**Live Demo:** *(add your deployed link here once hosted)*
+**Live Demo:** *(https://country-finder-ecru.vercel.app)*
 
 ## ✨ Features
 

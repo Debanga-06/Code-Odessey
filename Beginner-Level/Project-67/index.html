@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll Progress Bar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="badge" id="percentBadge">0%</div>
+
+  <button class="back-to-top hidden" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="content">
+    <header class="hero">
+      <h1>Scroll Progress Bar</h1>
+      <p>Scroll down to watch the bar at the top fill up.</p>
+    </header>
+
+    <article>
+      <section><h2>Section 1</h2><p>This is the first block of content. Keep scrolling to see how far through the page you are, tracked in real time by the progress indicator above.</p></section>
+      <section><h2>Section 2</h2><p>Scroll tracking works by comparing how far the page has been scrolled against the total scrollable height available.</p></section>
+      <section><h2>Section 3</h2><p>The bar's width is recalculated on every scroll event, so it always reflects the current position accurately.</p></section>
+      <section><h2>Section 4</h2><p>A percentage badge in the corner mirrors the same value as a number, useful for pages where a visual bar alone isn't enough.</p></section>
+      <section><h2>Section 5</h2><p>Once you scroll far enough down, a "back to top" button appears, offering a quick way to jump back to the beginning.</p></section>
+      <section><h2>Section 6</h2><p>Try resizing the browser window too — the calculation adjusts automatically since it's based on live measurements, not fixed numbers.</p></section>
+      <section><h2>Section 7</h2><p>This pattern is commonly used on blog posts and long-form articles to give readers a sense of progress.</p></section>
+      <section><h2>Section 8</h2><p>Near the very bottom, the bar should reach 100% and the badge should read 100% as well.</p></section>
+      <section><h2>End</h2><p>You've reached the bottom of the page. Click the back-to-top button to smoothly scroll back up.</p></section>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
