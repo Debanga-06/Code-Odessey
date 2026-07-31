@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme Switcher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Theme Switcher</h1>
+    <p class="subtitle">Pick a theme — your choice is remembered next time you visit</p>
+
+    <div class="theme-options" id="themeOptions">
+      <button class="theme-card" data-theme="neon">
+        <span class="swatch swatch-neon"></span>
+        <span>Neon</span>
+      </button>
+      <button class="theme-card" data-theme="light">
+        <span class="swatch swatch-light"></span>
+        <span>Light</span>
+      </button>
+      <button class="theme-card" data-theme="dark">
+        <span class="swatch swatch-dark"></span>
+        <span>Dark</span>
+      </button>
+      <button class="theme-card" data-theme="forest">
+        <span class="swatch swatch-forest"></span>
+        <span>Forest</span>
+      </button>
+      <button class="theme-card" data-theme="sunset">
+        <span class="swatch swatch-sunset"></span>
+        <span>Sunset</span>
+      </button>
+    </div>
+
+    <div class="preview-card">
+      <h2>Sample card</h2>
+      <p>This box uses the same CSS variables as the rest of the page, so it updates instantly with your theme choice.</p>
+      <button class="preview-btn">Sample button</button>
+    </div>
+
+    <p class="status-text" id="statusText">Current theme: Neon (default)</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

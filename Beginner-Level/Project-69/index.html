@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alert Notification UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Alert Notification UI</h1>
+    <p class="subtitle">Trigger different notification types and watch them stack and auto-dismiss</p>
+
+    <div class="trigger-row">
+      <button class="trigger-btn success" data-type="success">Success</button>
+      <button class="trigger-btn error" data-type="error">Error</button>
+      <button class="trigger-btn warning" data-type="warning">Warning</button>
+      <button class="trigger-btn info" data-type="info">Info</button>
+    </div>
+
+    <div class="option-row">
+      <label>
+        <input type="checkbox" id="persistToggle">
+        Persist (no auto-dismiss)
+      </label>
+    </div>
+
+    <button id="clearAllBtn">Clear All</button>
+  </div>
+
+  <div class="toast-stack" id="toastStack"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

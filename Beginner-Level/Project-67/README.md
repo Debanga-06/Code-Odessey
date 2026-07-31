@@ -53,7 +53,7 @@ This beginner project teaches:
 ## 📁 Project Structure
 
 ```id="x32pl9"
-Keyboard-tester/
+scroll-progress-bar/
 │
 ├── index.html      # Main structure
 ├── style.css       # Styling file
