@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Chat UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chat-app">
+    <div class="chat-header">
+      <div class="avatar">JD</div>
+      <div class="header-info">
+        <span class="header-name">Jordan Diaz</span>
+        <span class="header-status" id="statusText">Online</span>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="date-divider"><span>Today</span></div>
+
+      <div class="message received">
+        <div class="bubble">Hey! Are we still on for the project review tomorrow?</div>
+        <span class="timestamp">9:02 AM</span>
+      </div>
+
+      <div class="message sent">
+        <div class="bubble">Yes, 10 AM works for me. I'll bring the updated slides.</div>
+        <span class="timestamp">9:05 AM</span>
+      </div>
+
+      <div class="message received">
+        <div class="bubble">Perfect. Should I book the meeting room or is remote fine?</div>
+        <span class="timestamp">9:06 AM</span>
+      </div>
+
+      <div class="message sent">
+        <div class="bubble">Remote is fine, I'll send a call link shortly.</div>
+        <span class="timestamp">9:07 AM</span>
+      </div>
+
+      <div class="message received">
+        <div class="bubble">Sounds good, thanks!</div>
+        <span class="timestamp">9:07 AM</span>
+      </div>
+
+      <div class="typing-indicator hidden" id="typingIndicator">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="chat-input-row">
+      <input type="text" id="messageInput" placeholder="Type a message...">
+      <button id="sendBtn" aria-label="Send message">➤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
