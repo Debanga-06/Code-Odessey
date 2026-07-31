@@ -118,9 +118,9 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 065 | [Keyboard Event Tester](https://keyboard-checker-lovat.vercel.app/) | Event listeners, key detection, display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-65) |
 | 066 | [Mouse Tracker](https://mouse-tracker-six.vercel.app/) | Mouse events, coordinates, real-time tracking | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-66) |
 | 067 | [Scroll Progress Bar](https://scroll-progress-bar-seven.vercel.app/) | Scroll events, progress calculation, indicator | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-67) |
-| 068 | Theme Switcher | Multiple themes, CSS variables, persistence | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-68) |
-| 069 | Alert Notification UI | Notifications, dismiss functionality, timing | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-69) |
-| 070 | Simple Chat UI (Static) | Chat layout, message bubbles, conversation flow | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-70) |
+| 068 | [Theme Switcher](https://theme-switcher-inky.vercel.app/) | Multiple themes, CSS variables, persistence | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-68) |
+| 069 | [Alert Notification UI](https://alert-notification.vercel.app/) | Notifications, dismiss functionality, timing | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-69) |
+| 070 | [Simple Chat UI (Static)](https://simple-chat-bay-theta.vercel.app/) | Chat layout, message bubbles, conversation flow | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-70) |
 
 
 ### Mini Practice Projects (71-100)
@@ -197,7 +197,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 ## 📊 Progress Tracking
 
 ### Overall Progress
-- **Beginner Projects:** 74/100 completed
+- **Beginner Projects:** 77/100 completed
 - **Intermediate Projects:** 5/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
