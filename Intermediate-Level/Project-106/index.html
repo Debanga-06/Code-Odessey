@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>106 | Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">💱 Currency<span>Convert</span></h1>
+
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="dark" title="Dark theme">🌙</button>
+        <button class="theme-btn" data-theme="light" title="Light theme">☀️</button>
+        <button class="theme-btn" data-theme="retro" title="Retro theme">📼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <section class="converter-card">
+      <div class="amount-row">
+        <label for="amount-input" class="field-label">Amount</label>
+        <input
+          type="number"
+          id="amount-input"
+          class="amount-input"
+          value="1"
+          min="0"
+          step="any"
+        />
+      </div>
+
+      <div class="currency-row">
+        <div class="currency-field">
+          <label for="from-select" class="field-label">From</label>
+          <select id="from-select" class="currency-select"></select>
+        </div>
+
+        <button id="swap-btn" class="swap-btn" title="Swap currencies">⇄</button>
+
+        <div class="currency-field">
+          <label for="to-select" class="field-label">To</label>
+          <select id="to-select" class="currency-select"></select>
+        </div>
+      </div>
+
+      <div class="result-section" id="result-section">
+        <p class="result-message" id="result-message">Loading currencies...</p>
+      </div>
+
+      <div class="rate-line" id="rate-line"></div>
+    </section>
+
+    <section class="favorites-section">
+      <h2 class="favorites-title">Quick Pairs</h2>
+      <div class="favorites-row" id="favorites-row"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Currency Converter | Data from ExchangeRate-API</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
