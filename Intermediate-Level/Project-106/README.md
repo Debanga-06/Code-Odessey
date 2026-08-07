@@ -7,6 +7,9 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![API](https://img.shields.io/badge/API-ExchangeRate--API-blue)
 
+### Live Demo: [Live Site](https://currency-converter-seven-bice.vercel.app/)
+
+
 ## 📋 Table of Contents
 - [Overview](#overview)
 - [Features](#features)
