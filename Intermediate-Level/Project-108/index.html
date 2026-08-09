@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>108 | Dictionary App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">📖 Dictionary<span>App</span></h1>
+
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="dark" title="Dark theme">🌙</button>
+        <button class="theme-btn" data-theme="light" title="Light theme">☀️</button>
+        <button class="theme-btn" data-theme="retro" title="Retro theme">📼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <section class="search-section">
+      <form id="search-form" class="search-form" autocomplete="off">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Look up a word... (e.g. serendipity)"
+          minlength="1"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </section>
+
+    <section class="word-of-day" id="word-of-day"></section>
+
+    <section class="result-section" id="result-section">
+      <p class="empty-state" id="empty-state">Search for a word to see its definition 📚</p>
+    </section>
+
+    <section class="recent-section">
+      <h2 class="recent-title">Recent Searches</h2>
+      <div class="recent-row" id="recent-row"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Dictionary App | Data from Free Dictionary API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
