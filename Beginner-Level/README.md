@@ -1,15 +1,34 @@
-# 🟢 Beginner Level Projects (1-100)
+# 🟢 Beginner Level Projects
+
+![Progress](https://img.shields.io/badge/Progress-77%2F100-brightgreen)
+![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-2ea44f)
+![Tech](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JavaScript-e8b84b)
 
 Part of the [Code-Odessey](https://github.com/Debanga-06/Code-Odessey) project series.
 
-**Goal:** Learn HTML, CSS, basic JavaScript, DOM, layouts, and responsiveness
-**Tech Stack:** HTML, CSS, Vanilla JavaScript
+> ⬅️ [Back to main repo](../README.md) &nbsp;·&nbsp; Next level: [Intermediate →](../Intermediate-Level/README.md)
 
-> ⬅️ [Back to main repo README](../README.md)
+---
+
+## 📖 Overview
+
+This level is your foundation. Every project here is scoped to build **one core web-dev skill at a time** — no frameworks, no build tools, just HTML, CSS, and vanilla JavaScript. By the end of these 100 projects you should be comfortable with layouts, DOM manipulation, browser APIs, and shipping small, polished UIs from scratch.
+
+**Goal:** Learn HTML, CSS, basic JavaScript, DOM, layouts, and responsiveness
+**Tech Stack:** HTML5, CSS3, Vanilla JavaScript (ES6+)
+**Prerequisites:** None — this is the starting point of Code-Odessey
 
 ## 📊 Progress
 
-**77/100 completed**
+**77 / 100 completed**
+
+`████████████████████████████████████████░░░░░░░░░░` 77%
+
+| Section | Range | Completed |
+|---------|-------|-----------|
+| Basics & UI Projects | 001–030 | 30/30 ✅ |
+| JavaScript Fundamentals | 031–070 | 40/40 ✅ |
+| Mini Practice Projects | 071–100 | 7/30 🚧 |
 
 ---
 
@@ -136,11 +155,34 @@ Part of the [Code-Odessey](https://github.com/Debanga-06/Code-Odessey) project s
 
 ## 🛠️ Technologies Covered in This Level
 
-- HTML5, CSS3, Flexbox, Grid
-- Vanilla JavaScript, DOM Manipulation
-- LocalStorage, Browser APIs
-- Responsive Design, Mobile-First
+- HTML5 semantic markup & accessibility basics
+- CSS3 — Flexbox, Grid, animations, custom properties
+- Vanilla JavaScript — DOM manipulation, events, closures
+- Browser APIs — LocalStorage, Intersection Observer, Drag & Drop
+- Responsive & mobile-first design principles
+
+## 🚀 How to Run a Project Locally
+
+1. Navigate into the project folder, e.g.:
+   ```bash
+   cd Beginner-Level/Project-01
+   ```
+2. Open `index.html` directly in your browser, **or** serve it locally:
+   ```bash
+   npx serve .
+   ```
+3. No build step or dependencies required unless the project's own README says otherwise.
+
+## 🤝 Contributing to This Level
+
+Picking up one of the ❌ **Not Started** projects above is one of the easiest ways to make your first contribution to Code-Odessey. Fork the repo, build the project inside `Beginner-Level/project-XXX`, add a short README with a live demo link, and open a PR. See the [main contributing guide](../README.md#-contributing) for the full workflow.
+
+## 📞 Questions?
+
+Open an [issue](https://github.com/Debanga-06/Code-Odessey/issues) or join the [Discord](https://discord.gg/tskR7uneZ) — the community is happy to help.
 
 ---
 
-> ⬅️ [Back to main repo README](../README.md) · Continue to [Intermediate Level →](../Intermediate-Level/README.md)
+> ⬅️ [Back to main repo](../README.md) &nbsp;·&nbsp; Next level: [Intermediate →](../Intermediate-Level/README.md)
+
+*Made with ❤️ by the Code-Odessey community*

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>109 | Random User Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">🎲 Random<span>Users</span></h1>
+
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="dark" title="Dark theme">🌙</button>
+        <button class="theme-btn" data-theme="light" title="Light theme">☀️</button>
+        <button class="theme-btn" data-theme="retro" title="Retro theme">📼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <section class="controls-section">
+      <div class="controls-row">
+        <div class="control-field">
+          <label for="count-select" class="field-label">How many</label>
+          <select id="count-select" class="control-select">
+            <option value="6">6</option>
+            <option value="12" selected>12</option>
+            <option value="24">24</option>
+          </select>
+        </div>
+
+        <div class="control-field">
+          <label for="gender-select" class="field-label">Gender</label>
+          <select id="gender-select" class="control-select">
+            <option value="">Any</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </div>
+
+        <div class="control-field">
+          <label for="nat-select" class="field-label">Nationality</label>
+          <select id="nat-select" class="control-select">
+            <option value="">Any</option>
+            <option value="us">United States</option>
+            <option value="gb">United Kingdom</option>
+            <option value="in">India</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="br">Brazil</option>
+            <option value="jp">Japan</option>
+          </select>
+        </div>
+
+        <button id="generate-btn" class="generate-btn">🎲 Generate</button>
+      </div>
+
+      <div class="seed-row">
+        <span class="seed-label" id="seed-label"></span>
+        <button class="copy-seed-btn" id="copy-seed-btn" title="Copy a link that reproduces this exact batch">🔗 Copy shareable link</button>
+      </div>
+    </section>
+
+    <section class="status-section" id="status-section">
+      <p class="status-message" id="status-message">Click Generate to load some random users 🎲</p>
+    </section>
+
+    <section class="results-section">
+      <div class="results-grid" id="results-grid"></div>
+    </section>
+
+    <section class="favorites-section">
+      <h2 class="favorites-title">Saved Profiles</h2>
+      <div class="favorites-row" id="favorites-row"></div>
+    </section>
+
+  </main>
+
+  <!-- Profile details modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Random User Generator | Data from randomuser.me</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

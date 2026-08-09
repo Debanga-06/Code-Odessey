@@ -68,26 +68,39 @@ A handful of standouts worth checking out first:
 
 ## 📊 Progress Tracking
 
-### Overall Progress
-- **Beginner Projects:** 77/100 completed
-- **Intermediate Projects:** 8/100 completed
-- **Expert Projects:** 0/100 completed
-- **Advanced Expert Projects:** 0/100 completed
+<!--
+  HOW TO UPDATE: just change the numbers below (one per level).
+  GitHub renders this Mermaid block as a live pie chart automatically — no image, no tool needed.
+-->
+```mermaid
+pie showData
+    title Projects Completed (85 / 400 total)
+    "Beginner - 77/100" : 77
+    "Intermediate - 8/100" : 8
+    "Expert - 0/100" : 0
+    "Advanced Expert - 0/100" : 0
+```
+
+| Level | Completed |
+|-------|-----------|
+| 🟢 Beginner | 77/100 |
+| 🟡 Intermediate | 8/100 |
+| 🔵 Expert | 0/100 |
+| 🔴 Advanced Expert | 0/100 |
 
 ## 🛠️ Technologies You'll Master
 
-**Beginner Level:**
-- HTML5, CSS3, Flexbox, Grid
-- Vanilla JavaScript, DOM Manipulation
-- LocalStorage, Browser APIs
-- Responsive Design, Mobile-First
+**Beginner Level**
 
-**Intermediate Level:**
-- REST APIs, Fetch, Async/Await
-- React.js, Vue.js, Angular
-- State Management, Routing
-- Tailwind CSS, Bootstrap
-- Third-party APIs Integration
+![HTML5](https://skillicons.dev/icons?i=html,css,js)
+
+`HTML5` · `CSS3 (Flexbox/Grid)` · `Vanilla JavaScript` · `DOM Manipulation` · `LocalStorage` · `Responsive / Mobile-First Design`
+
+**Intermediate Level**
+
+![React Vue Angular](https://skillicons.dev/icons?i=js,react,vue,angular,tailwind,bootstrap)
+
+`REST APIs` · `Fetch / Async-Await` · `React.js` · `Vue.js` · `Angular` · `State Management & Routing` · `Tailwind CSS` · `Bootstrap` · `Third-party API Integration`
 
 ---
 
@@ -109,7 +122,7 @@ This project exists thanks to all the amazing people who contribute! 🎉
       <span title="Project Creator">🌟 Creator</span>
       <br />
       <br />
-      <span title="Code">💻 5 Projects</span>
+      <span title="Code">💻 100+ Projects</span>
       <br />
       <span title="Documentation">📖 Docs</span>
       <span title="Maintenance">🔧 Maintainer</span>
@@ -123,7 +136,7 @@ This project exists thanks to all the amazing people who contribute! 🎉
       <br />
       <span title="Controller">🕹️ Repo Controller </span>
       <br />
-      <span title="Code">💻 12 Projects</span>
+      <span title="Code">💻 50+ Projects</span>
   </tr>
 </table>
 
