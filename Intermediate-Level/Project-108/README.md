@@ -7,7 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![API](https://img.shields.io/badge/API-Free_Dictionary_API-9cf)
 
-### Live Demo: [Live Site](https://stock-viewer-ebon.vercel.app/)
+### Live Demo: [Live Site](https://english-dictionary-wheat-xi.vercel.app/)
 
 ## 📋 Table of Contents
 - [Overview](#overview)
