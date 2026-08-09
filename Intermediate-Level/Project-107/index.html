@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>107 | Stock Price Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">📈 Stock<span>Viewer</span></h1>
+
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="dark" title="Dark theme">🌙</button>
+        <button class="theme-btn" data-theme="light" title="Light theme">☀️</button>
+        <button class="theme-btn" data-theme="retro" title="Retro theme">📼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <section class="search-section">
+      <form id="search-form" class="search-form" autocomplete="off">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search a symbol... (e.g. AAPL, Tesla)"
+          minlength="1"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+      <div class="search-results" id="search-results"></div>
+    </section>
+
+    <section class="stock-card" id="stock-card">
+      <p class="empty-state" id="empty-state">Search for a stock symbol to see live pricing 📊</p>
+    </section>
+
+    <section class="watchlist-section">
+      <h2 class="watchlist-title">Watchlist</h2>
+      <div class="watchlist-row" id="watchlist-row"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Stock Price Viewer | Data from Finnhub</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
