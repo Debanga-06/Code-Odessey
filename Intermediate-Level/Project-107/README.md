@@ -7,7 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![API](https://img.shields.io/badge/API-Finnhub-6b46c1)
 
-### Live Demo: [Live Site](https://currency-converter-seven-bice.vercel.app/)
+### Live Demo: [Live Site](https://stock-viewer-ebon.vercel.app/)
 
 ## ⚠️ A Note on "Historical Charts" vs. This App
 

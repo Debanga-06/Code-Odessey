@@ -175,7 +175,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 | 104 | [Movie Search App](https://movie-search-app-roan-seven.vercel.app/) | TMDb/OMDb API, search, movie details | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-104) |
 | 105 | [Country Info App](https://country-finder-ecru.vercel.app) | REST Countries API, flags, population data | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-105) |
 | 106 | [Currency Converter](https://currency-converter-seven-bice.vercel.app/) | Exchange rate API, conversion logic, real-time | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-106) |
-| 107 | Stock Price Viewer | Stock API, charts, real-time data | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-107) |
+| 107 | [Stock Price Viewer](https://stock-viewer-ebon.vercel.app/) | Stock API, charts, real-time data | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-107) |
 | 108 | Dictionary App | Dictionary API, definitions, pronunciation | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-108) |
 | 109 | Random User Generator | Random User API, profile cards, data display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-109) |
 | 110 | Recipe Finder | Recipe API, search, ingredients, instructions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-110) |
@@ -198,7 +198,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 ### Overall Progress
 - **Beginner Projects:** 77/100 completed
-- **Intermediate Projects:** 6/100 completed
+- **Intermediate Projects:** 7/100 completed
 - **Expert Projects:** 0/100 completed
 - **Advanced Expert Projects:** 0/100 completed
   
