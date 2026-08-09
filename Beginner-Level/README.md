@@ -20,9 +20,18 @@ This level is your foundation. Every project here is scoped to build **one core 
 
 ## 📊 Progress
 
-**77 / 100 completed**
-
-`████████████████████████████████████████░░░░░░░░░░` 77%
+<!--
+  HOW TO UPDATE: change the "Completed" / "Remaining" numbers for each section below.
+  GitHub renders this Mermaid block as a live pie chart automatically.
+-->
+```mermaid
+pie showData
+    title Beginner Level — 77/100 Completed
+    "Basics & UI - Done" : 30
+    "JS Fundamentals - Done" : 40
+    "Mini Practice - Done" : 7
+    "Mini Practice - Remaining" : 23
+```
 
 | Section | Range | Completed |
 |---------|-------|-----------|
@@ -155,11 +164,9 @@ This level is your foundation. Every project here is scoped to build **one core 
 
 ## 🛠️ Technologies Covered in This Level
 
-- HTML5 semantic markup & accessibility basics
-- CSS3 — Flexbox, Grid, animations, custom properties
-- Vanilla JavaScript — DOM manipulation, events, closures
-- Browser APIs — LocalStorage, Intersection Observer, Drag & Drop
-- Responsive & mobile-first design principles
+![HTML CSS JS](https://skillicons.dev/icons?i=html,css,js)
+
+`HTML5 semantic markup & accessibility` · `CSS3 — Flexbox, Grid, animations, custom properties` · `Vanilla JavaScript — DOM, events, closures` · `Browser APIs — LocalStorage, Intersection Observer, Drag & Drop` · `Responsive & mobile-first design`
 
 ## 🚀 How to Run a Project Locally
 

@@ -20,9 +20,17 @@ This level moves past static pages into **real, data-driven applications**. Proj
 
 ## 📊 Progress
 
-**8 / 100 completed**
-
-`████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 8%
+<!--
+  HOW TO UPDATE: change the "Done" / "Remaining" numbers below.
+  GitHub renders this Mermaid block as a live pie chart automatically.
+-->
+```mermaid
+pie showData
+    title Intermediate Level — 8/100 Completed
+    "API & Logic - Done" : 8
+    "API & Logic - Remaining" : 32
+    "Sections 141-200 - Not Started" : 60
+```
 
 | Section | Range | Completed |
 |---------|-------|-----------|
@@ -56,17 +64,15 @@ This level moves past static pages into **real, data-driven applications**. Proj
 | 119 | Notes App (CRUD) | Full CRUD operations, categories, search | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-119) |
 | 120 | To-Do App (Advanced) | Categories, filters, due dates, priorities | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-120) |
 
-*Projects 111–200 are planned and will be added as they're built — see [Contributing](#-contributing-to-this-level) if you'd like to help fill them in.*
+*Projects 121–200 are planned and will be added as they're built — see [Contributing](#-contributing-to-this-level) if you'd like to help fill them in.*
 
 ---
 
 ## 🛠️ Technologies Covered in This Level
 
-- REST APIs — Fetch, async/await, error & loading states
-- React.js, Vue.js, Angular fundamentals
-- State management & client-side routing
-- Tailwind CSS, Bootstrap
-- Third-party API integration (weather, movies, currency, GitHub, etc.)
+![React Vue Angular Tailwind Bootstrap](https://skillicons.dev/icons?i=js,react,vue,angular,tailwind,bootstrap)
+
+`REST APIs — Fetch, async/await, error & loading states` · `React.js` · `Vue.js` · `Angular fundamentals` · `State management & client-side routing` · `Tailwind CSS` · `Bootstrap` · `Third-party API integration (weather, movies, currency, GitHub, etc.)`
 
 ## 🚀 How to Run a Project Locally
 
@@ -83,7 +89,7 @@ Several projects call external APIs — you may need to grab a free API key (Ope
 ## 🤝 Contributing to This Level
 
 This level has the most room to grow — only 8/100 done. Good first contributions:
-- Pick up any ❌ **Not Started** project (109, 110, or propose a new one for 111+)
+- Pick up any ❌ **Not Started** project (109–120, or propose a new one for 121+)
 - Improve error handling / loading states on an existing project
 - Add a proper `.env.example` where an API key is required
 
