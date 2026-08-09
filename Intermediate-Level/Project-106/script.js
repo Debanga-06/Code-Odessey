@@ -1,23 +1,10 @@
-/* ==========================================================
-   106 — CURRENCY CONVERTER
-   Concepts practiced: fetching once per base-currency change
-   (not per keystroke), doing the actual conversion math on the
-   client instead of re-hitting the API for every amount, async/
-   await, localStorage for a favorites list, debounce, template
-   literals.
-========================================================== */
-
-// -----------------------------------------------------------
 // 1. CONFIG
-// -----------------------------------------------------------
-// EXCHANGE_API_KEY comes from config.js, loaded before this file
-// in index.html. config.js is gitignored so the real key never
 // gets committed — config.example.js shows the expected shape.
 const API_BASE_URL = "https://v6.exchangerate-api.com/v6";
 
-// -----------------------------------------------------------
+
 // 2. DOM REFERENCES
-// -----------------------------------------------------------
+
 const body = document.body;
 const themeButtons = document.querySelectorAll(".theme-btn");
 
@@ -30,9 +17,9 @@ const resultMessage = document.getElementById("result-message");
 const rateLine = document.getElementById("rate-line");
 const favoritesRow = document.getElementById("favorites-row");
 
-// -----------------------------------------------------------
+
 // 3. STATE
-// -----------------------------------------------------------
+
 // `rates` is only re-fetched when the base currency changes.
 // Changing the amount or the target currency just re-reads
 // this cached object — no network call needed.
@@ -44,9 +31,9 @@ let state = {
   lastUpdated: null,
 };
 
-// -----------------------------------------------------------
+
 // 4. THEME HANDLING
-// -----------------------------------------------------------
+
 function applyTheme(theme) {
   body.dataset.theme = theme;
   localStorage.setItem("currencyapp-theme", theme);
@@ -65,9 +52,9 @@ themeButtons.forEach((btn) => {
   btn.addEventListener("click", () => applyTheme(btn.dataset.theme));
 });
 
-// -----------------------------------------------------------
+
 // 5. DEBOUNCE UTILITY
-// -----------------------------------------------------------
+
 function debounce(fn, delay = 300) {
   let timeoutId;
   return (...args) => {
@@ -76,9 +63,9 @@ function debounce(fn, delay = 300) {
   };
 }
 
-// -----------------------------------------------------------
+
 // 6. API CALLS
-// -----------------------------------------------------------
+
 async function fetchSupportedCurrencies() {
   const response = await fetch(`${API_BASE_URL}/${EXCHANGE_API_KEY}/codes`);
   const data = await response.json();
@@ -101,9 +88,9 @@ async function fetchRatesForBase(base) {
   return data; // includes conversion_rates and time_last_update_utc
 }
 
-// -----------------------------------------------------------
+
 // 7. RENDERING — CURRENCY DROPDOWNS
-// -----------------------------------------------------------
+
 function populateSelects(codes) {
   const optionsHTML = codes
     .map(([code, name]) => `<option value="${code}">${code} — ${name}</option>`)
@@ -116,9 +103,9 @@ function populateSelects(codes) {
   toSelect.value = state.target;
 }
 
-// -----------------------------------------------------------
+
 // 8. CONVERSION MATH (pure client-side, no network call)
-// -----------------------------------------------------------
+
 function convert() {
   const rate = state.rates[state.target];
 
@@ -143,9 +130,9 @@ function setResult(message, isError = false) {
   resultMessage.classList.toggle("error", isError);
 }
 
-// -----------------------------------------------------------
+
 // 9. LOADING RATES FOR A NEW BASE CURRENCY
-// -----------------------------------------------------------
+
 async function loadRatesForCurrentBase() {
   setResult("Fetching latest rates...");
   rateLine.textContent = "";
@@ -166,9 +153,9 @@ async function loadRatesForCurrentBase() {
   }
 }
 
-// -----------------------------------------------------------
+
 // 10. FAVORITES (localStorage)
-// -----------------------------------------------------------
+
 function getFavorites() {
   return JSON.parse(localStorage.getItem("currencyapp-favorites") || "[]");
 }
@@ -234,9 +221,9 @@ favoritesRow.addEventListener("click", (event) => {
   }
 });
 
-// -----------------------------------------------------------
+
 // 11. EVENT WIRING
-// -----------------------------------------------------------
+
 const debouncedAmountUpdate = debounce(() => {
   state.amount = parseFloat(amountInput.value);
   convert();
@@ -264,9 +251,9 @@ swapBtn.addEventListener("click", () => {
   renderFavorites();
 });
 
-// -----------------------------------------------------------
+
 // 12. INIT
-// -----------------------------------------------------------
+
 async function init() {
   initTheme();
 
