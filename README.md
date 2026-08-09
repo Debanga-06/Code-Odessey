@@ -215,7 +215,7 @@ This project is licensed under the AGPL- 3.0 License - see the [LICENSE](LICENSE
 - **Issues**: [Create an issue](https://github.com/Debanga-06/Code-Odessey/issues)
 - **Discussions**: [Join our discussions](https://github.com/Debanga-06/Code-Odessey/discussions)
 - **Email**: debanga078@gmail.com
-- **Discord**: [Join our community](https://discord.gg/tskR7uneZ)
+- **Discord**: [Join our community](https://discord.gg/6JFBppePjx)
 
 ## 🌟 Show Your Support
 

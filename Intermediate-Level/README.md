@@ -97,7 +97,7 @@ Fork the repo, build inside `Intermediate-Level/Project-XXX`, include a README w
 
 ## 📞 Questions?
 
-Open an [issue](https://github.com/Debanga-06/Code-Odessey/issues) or join the [Discord](https://discord.gg/tskR7uneZ) — the community is happy to help.
+Open an [issue](https://github.com/Debanga-06/Code-Odessey/issues) or join the [Discord](https://discord.gg/6JFBppePjx) — the community is happy to help.
 
 ---
 
