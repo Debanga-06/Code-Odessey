@@ -26,15 +26,15 @@ This level moves past static pages into **real, data-driven applications**. Proj
 -->
 ```mermaid
 pie showData
-    title Intermediate Level — 8/100 Completed
-    "API & Logic - Done" : 8
-    "API & Logic - Remaining" : 32
+    title Intermediate Level — 9/100 Completed
+    "API & Logic - Done" : 9
+    "API & Logic - Remaining" : 31
     "Sections 141-200 - Not Started" : 60
 ```
 
 | Section | Range | Completed |
 |---------|-------|-----------|
-| API & Logic Based | 101–140 | 8/40 🚧 |
+| API & Logic Based | 101–140 | 9/40 🚧 |
 | *(more sections coming as the level grows)* | 141–200 | 0/60 ⏳ |
 
 ---
@@ -51,7 +51,7 @@ pie showData
 | 106 | [Currency Converter](https://currency-converter-seven-bice.vercel.app/) | Exchange rate API, conversion logic, real-time | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-106) |
 | 107 | [Stock Price Viewer](https://stock-viewer-ebon.vercel.app/) | Stock API, charts, real-time data | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-107) |
 | 108 | [Dictionary App](https://english-dictionary-wheat-xi.vercel.app/) | Dictionary API, definitions, pronunciation | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-108) |
-| 109 | Random User Generator | Random User API, profile cards, data display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-109) |
+| 109 | [Random User Generator](https://user-generator-rust.vercel.app/) | Random User API, profile cards, data display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-109) |
 | 110 | Recipe Finder | Recipe API, search, ingredients, instructions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-110) |
 | 111 | Meme Generator | Meme API, image manipulation, text overlay | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-111) |
 | 112 | Unsplash Image Search | Unsplash API, image search, gallery | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-112) |

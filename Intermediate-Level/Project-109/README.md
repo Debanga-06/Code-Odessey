@@ -7,7 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![API](https://img.shields.io/badge/API-randomuser.me-blueviolet)
 
-### Live Demo: [Live Site]()
+### Live Demo: [Live Site](https://user-generator-rust.vercel.app/)
 
 ## 📋 Table of Contents
 - [Overview](#overview)
