@@ -1,6 +1,6 @@
 # 🟡 Intermediate Level Projects
 
-![Progress](https://img.shields.io/badge/Progress-8%2F100-yellow)
+![Progress](https://img.shields.io/badge/Progress-10%2F100-yellow)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Intermediate-e8b84b)
 ![Tech](https://img.shields.io/badge/Tech-APIs%20%7C%20React%20%7C%20Vue-blue)
 
@@ -26,15 +26,15 @@ This level moves past static pages into **real, data-driven applications**. Proj
 -->
 ```mermaid
 pie showData
-    title Intermediate Level — 9/100 Completed
-    "API & Logic - Done" : 9
-    "API & Logic - Remaining" : 31
+    title Intermediate Level — 10/100 Completed
+    "API & Logic - Done" : 10
+    "API & Logic - Remaining" : 30
     "Sections 141-200 - Not Started" : 60
 ```
 
 | Section | Range | Completed |
 |---------|-------|-----------|
-| API & Logic Based | 101–140 | 9/40 🚧 |
+| API & Logic Based | 101–140 | 10/40 🚧 |
 | *(more sections coming as the level grows)* | 141–200 | 0/60 ⏳ |
 
 ---
@@ -52,7 +52,7 @@ pie showData
 | 107 | [Stock Price Viewer](https://stock-viewer-ebon.vercel.app/) | Stock API, charts, real-time data | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-107) |
 | 108 | [Dictionary App](https://english-dictionary-wheat-xi.vercel.app/) | Dictionary API, definitions, pronunciation | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-108) |
 | 109 | [Random User Generator](https://user-generator-rust.vercel.app/) | Random User API, profile cards, data display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-109) |
-| 110 | Recipe Finder | Recipe API, search, ingredients, instructions | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-110) |
+| 110 | [Recipe Finder](https://recipe-finder-alpha-ruby.vercel.app/) | Recipe API, search, ingredients, instructions | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-110) |
 | 111 | Meme Generator | Meme API, image manipulation, text overlay | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-111) |
 | 112 | Unsplash Image Search | Unsplash API, image search, gallery | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-112) |
 | 113 | YouTube Search App | YouTube API, video search, embed player | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-113) |

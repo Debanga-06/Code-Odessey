@@ -40,8 +40,8 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 | Level | Focus | Progress | Browse |
 |-------|-------|----------|--------|
-| 🟢 **Beginner** (1-100) | HTML, CSS, DOM, Vanilla JS, responsive layouts | ![](https://img.shields.io/badge/77%2F100-77%25-brightgreen) | [**View Projects →**](Beginner-Level/README.md) |
-| 🟡 **Intermediate** (101-200) | REST APIs, React/Vue, state management, real apps | ![](https://img.shields.io/badge/9%2F100-9%25-yellow) | [**View Projects →**](Intermediate-Level/README.md) |
+| 🟢 **Beginner** (1-100) | HTML, CSS, DOM, Vanilla JS, responsive layouts | ![](https://img.shields.io/badge/80%2F100-80%25-brightgreen) | [**View Projects →**](Beginner-Level/README.md) |
+| 🟡 **Intermediate** (101-200) | REST APIs, React/Vue, state management, real apps | ![](https://img.shields.io/badge/10%2F100-10%25-yellow) | [**View Projects →**](Intermediate-Level/README.md) |
 | 🔵 **Expert** (201-300) | Full-stack apps, auth, databases, advanced architecture | ![](https://img.shields.io/badge/Coming%20Soon-lightgrey) | Coming Soon |
 | 🔴 **Advanced Expert** (301-400) | Production-grade systems, scaling, real-world engineering | ![](https://img.shields.io/badge/Coming%20Soon-lightgrey) | Coming Soon |
 
@@ -74,17 +74,17 @@ A handful of standouts worth checking out first:
 -->
 ```mermaid
 pie showData
-    title Projects Completed (86 / 400 total)
-    "Beginner - 77/100" : 77
-    "Intermediate - 9/100" : 9
+    title Projects Completed (90 / 400 total)
+    "Beginner - 80/100" : 80
+    "Intermediate - 10/100" : 10
     "Expert - 0/100" : 0
     "Advanced Expert - 0/100" : 0
 ```
 
 | Level | Completed |
 |-------|-----------|
-| 🟢 Beginner | 77/100 |
-| 🟡 Intermediate | 9/100 |
+| 🟢 Beginner | 80/100 |
+| 🟡 Intermediate | 10/100 |
 | 🔵 Expert | 0/100 |
 | 🔴 Advanced Expert | 0/100 |
 

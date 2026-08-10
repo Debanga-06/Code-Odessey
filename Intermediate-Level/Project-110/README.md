@@ -7,6 +7,8 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![API](https://img.shields.io/badge/API-TheMealDB-e74c3c)
 
+### Live Demo: [Live Site](https://recipe-finder-alpha-ruby.vercel.app/)
+
 ## 📋 Table of Contents
 - [Overview](#overview)
 - [Features](#features)
