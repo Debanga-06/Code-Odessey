@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Bar UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Search Bar UI</h1>
+    <p class="subtitle">Type to see live autocomplete suggestions</p>
+
+    <div class="search-wrapper">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search countries, cities, languages..." autocomplete="off">
+        <button class="clear-btn hidden" id="clearBtn" aria-label="Clear search">×</button>
+      </div>
+
+      <ul class="suggestions hidden" id="suggestionsList"></ul>
+    </div>
+
+    <div class="history-section">
+      <div class="history-header">
+        <span>Recent searches</span>
+        <button id="clearHistoryBtn">Clear</button>
+      </div>
+      <div class="history-chips" id="historyChips"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
