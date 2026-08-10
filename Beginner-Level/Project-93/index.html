@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filter List App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Product Filter</h1>
+    <p class="subtitle">Filter by category, price, and search text</p>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search products..." class="search-input">
+
+      <div class="category-chips" id="categoryChips"></div>
+
+      <div class="price-row">
+        <label for="priceRange">Max price: <span id="priceValue">200</span></label>
+        <input type="range" id="priceRange" min="0" max="200" value="200" step="10">
+      </div>
+
+      <div class="sort-row">
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A to Z</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="results-header">
+      <span id="resultCount">0 products</span>
+      <button id="resetBtn">Reset Filters</button>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+
+    <p class="no-results hidden" id="noResults">No products match your filters.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
