@@ -26,18 +26,18 @@ This level is your foundation. Every project here is scoped to build **one core 
 -->
 ```mermaid
 pie showData
-    title Beginner Level — 77/100 Completed
+    title Beginner Level — 80/100 Completed
     "Basics & UI - Done" : 30
     "JS Fundamentals - Done" : 40
-    "Mini Practice - Done" : 7
-    "Mini Practice - Remaining" : 23
+    "Mini Practice - Done" : 10
+    "Mini Practice - Remaining" : 20
 ```
 
 | Section | Range | Completed |
 |---------|-------|-----------|
 | Basics & UI Projects | 001–030 | 30/30 ✅ |
 | JavaScript Fundamentals | 031–070 | 40/40 ✅ |
-| Mini Practice Projects | 071–100 | 7/30 🚧 |
+| Mini Practice Projects | 071–100 | 10/30 🚧 |
 
 ---
 
@@ -149,9 +149,9 @@ pie showData
 | 088 | Scroll Reveal Animations | Intersection Observer, reveal effects, scroll | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-88) |
 | 089 | CSS Art Project | Pure CSS art, creativity, advanced styling | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-89) |
 | 090 | Social Media Post UI | Post cards, likes, comments, shares | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-90) |
-| 091 | Notification Bell UI | Notification icon, dropdown, unread count | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-91) |
-| 092 | Search Bar UI | Search input, suggestions, autocomplete | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-92) |
-| 093 | Filter List App | Filtering logic, categories, search | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-93) |
+| 091 | [Notification Bell UI](https://notification-ui-seven.vercel.app/) | Notification icon, dropdown, unread count | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-91) |
+| 092 | Search Bar UI | Search input, suggestions, autocomplete | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-92) |
+| 093 | Filter List App | Filtering logic, categories, search | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-93) |
 | 094 | [Sortable List](https://sortable-list-sepia.vercel.app/) | Sorting algorithms, array methods, display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-94) |
 | 095 | [Drag & Drop Demo](https://drag-drop-pi-ten.vercel.app/) | Drag API, drop zones, event handling | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-95) |
 | 096 | [Simple Dashboard UI](https://dashboard-ui-five-kappa.vercel.app/) | Dashboard layout, widgets, data cards | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/Project-96) |

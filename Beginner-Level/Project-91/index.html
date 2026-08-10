@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notification Bell UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="topbar">
+      <span class="brand">Dashboard</span>
+
+      <div class="bell-wrapper">
+        <button class="bell-btn" id="bellBtn" aria-label="Notifications">
+          🔔
+          <span class="badge hidden" id="badge">0</span>
+        </button>
+
+        <div class="dropdown hidden" id="dropdown">
+          <div class="dropdown-header">
+            <span>Notifications</span>
+            <button id="markAllBtn">Mark all as read</button>
+          </div>
+
+          <ul class="notif-list" id="notifList"></ul>
+
+          <div class="dropdown-footer" id="emptyState">
+            You're all caught up
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-controls">
+      <p class="hint">Simulate incoming notifications:</p>
+      <button id="addNotifBtn">Add Notification</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
