@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather UI (Static)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="weather-card">
+    <div class="location">
+      <span class="city">Kolkata</span>
+      <span class="date" id="dateText">Wednesday, 19 August</span>
+    </div>
+
+    <div class="main-weather">
+      <span class="weather-icon">⛅</span>
+      <span class="temperature">29°</span>
+    </div>
+
+    <p class="condition">Partly Cloudy</p>
+    <p class="high-low">H: 33°  L: 26°</p>
+
+    <div class="details-grid">
+      <div class="detail-item">
+        <span class="detail-icon">💧</span>
+        <span class="detail-label">Humidity</span>
+        <span class="detail-value">72%</span>
+      </div>
+      <div class="detail-item">
+        <span class="detail-icon">💨</span>
+        <span class="detail-label">Wind</span>
+        <span class="detail-value">14 km/h</span>
+      </div>
+      <div class="detail-item">
+        <span class="detail-icon">🌡️</span>
+        <span class="detail-label">Feels like</span>
+        <span class="detail-value">32°</span>
+      </div>
+      <div class="detail-item">
+        <span class="detail-icon">☀️</span>
+        <span class="detail-label">UV Index</span>
+        <span class="detail-value">6</span>
+      </div>
+    </div>
+
+    <div class="forecast-row" id="forecastRow"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

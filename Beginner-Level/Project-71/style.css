@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .weather-card {
+    width: 100%;
+    max-width: 360px;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(43, 224, 208, 0.15);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .location {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .city {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2be0d0;
+  }
+  
+  .date {
+    font-size: 0.8rem;
+    color: #9ff5ec;
+    margin-top: 2px;
+  }
+  
+  .main-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+  
+  .weather-icon {
+    font-size: 3.5rem;
+  }
+  
+  .temperature {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  
+  .condition {
+    font-size: 1rem;
+    color: #eafffb;
+    margin-bottom: 4px;
+  }
+  
+  .high-low {
+    font-size: 0.85rem;
+    color: #9ff5ec;
+    margin-bottom: 24px;
+  }
+  
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .detail-item {
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    border-radius: 8px;
+    padding: 10px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .detail-icon {
+    font-size: 1rem;
+  }
+  
+  .detail-label {
+    font-size: 0.65rem;
+    color: #9ff5ec;
+  }
+  
+  .detail-value {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #2be0d0;
+  }
+  
+  .forecast-row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #2be0d0;
+    padding-top: 16px;
+  }
+  
+  .forecast-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+  }
+  
+  .forecast-name {
+    color: #9ff5ec;
+  }
+  
+  .forecast-icon {
+    font-size: 1.3rem;
+  }
+  
+  .forecast-temp {
+    font-weight: 700;
+    color: #eafffb;
+  }
