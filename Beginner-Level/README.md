@@ -1,6 +1,6 @@
 # 🟢 Beginner Level Projects
 
-![Progress](https://img.shields.io/badge/Progress-77%2F100-brightgreen)
+![Progress](https://img.shields.io/badge/Progress-84%2F100-brightgreen)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-2ea44f)
 ![Tech](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JavaScript-e8b84b)
 
@@ -26,18 +26,18 @@ This level is your foundation. Every project here is scoped to build **one core 
 -->
 ```mermaid
 pie showData
-    title Beginner Level — 80/100 Completed
+    title Beginner Level — 84/100 Completed
     "Basics & UI - Done" : 30
     "JS Fundamentals - Done" : 40
-    "Mini Practice - Done" : 10
-    "Mini Practice - Remaining" : 20
+    "Mini Practice - Done" : 14
+    "Mini Practice - Remaining" : 16
 ```
 
 | Section | Range | Completed |
 |---------|-------|-----------|
 | Basics & UI Projects | 001–030 | 30/30 ✅ |
 | JavaScript Fundamentals | 031–070 | 40/40 ✅ |
-| Mini Practice Projects | 071–100 | 10/30 🚧 |
+| Mini Practice Projects | 071–100 | 14/30 🚧 |
 
 ---
 
@@ -129,7 +129,7 @@ pie showData
 
 | ID | Project Name | Learning Outcome | Status |
 |----|--------------|------------------|--------|
-| 071 | Weather UI (Static) | Weather layouts, icons, data display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-71) |
+| 071 | [Weather UI (Static)](https://weather-ui-static.vercel.app/) | Weather layouts, icons, data display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-71) |
 | 072 | Music Player UI | Player controls, progress bars, playlists | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-72) |
 | 073 | Video Player UI | Video controls, custom players, fullscreen | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-73) |
 | 074 | Poll Voting UI | Voting interface, results display, percentages | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-74) |
