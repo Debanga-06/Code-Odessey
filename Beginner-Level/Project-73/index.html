@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Player UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="player-wrapper" id="playerWrapper">
+    <video id="video" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" poster=""></video>
+
+    <div class="center-play hidden" id="centerPlay">▶</div>
+
+    <div class="controls-bar" id="controlsBar">
+      <div class="seek-track" id="seekTrack">
+        <div class="seek-buffered" id="seekBuffered"></div>
+        <div class="seek-fill" id="seekFill"></div>
+        <div class="seek-handle" id="seekHandle"></div>
+      </div>
+
+      <div class="controls-row">
+        <div class="controls-left">
+          <button class="ctrl-btn" id="playBtn" aria-label="Play">▶</button>
+          <button class="ctrl-btn" id="muteBtn" aria-label="Mute">🔊</button>
+          <input type="range" id="volumeRange" min="0" max="100" value="100">
+          <span class="time-text" id="timeText">0:00 / 0:00</span>
+        </div>
+
+        <div class="controls-right">
+          <select id="speedSelect">
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+          </select>
+          <button class="ctrl-btn" id="fullscreenBtn" aria-label="Fullscreen">⛶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
