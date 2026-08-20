@@ -130,7 +130,7 @@ pie showData
 | ID | Project Name | Learning Outcome | Status |
 |----|--------------|------------------|--------|
 | 071 | [Weather UI (Static)](https://weather-ui-static.vercel.app/) | Weather layouts, icons, data display | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-71) |
-| 072 | Music Player UI | Player controls, progress bars, playlists | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-72) |
+| 072 | [Music Player UI](https://music-ui-xi.vercel.app/) | Player controls, progress bars, playlists | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-72) |
 | 073 | Video Player UI | Video controls, custom players, fullscreen | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-73) |
 | 074 | Poll Voting UI | Voting interface, results display, percentages | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-74) |
 | 075 | Feedback Form | Form design, ratings, text feedback | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-75) |
