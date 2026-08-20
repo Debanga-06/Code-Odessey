@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="player">
+    <div class="artwork" id="artwork">🎵</div>
+
+    <div class="track-info">
+      <span class="track-title" id="trackTitle">Midnight Drive</span>
+      <span class="track-artist" id="trackArtist">Neon Pulse</span>
+    </div>
+
+    <div class="progress-section">
+      <span class="time" id="currentTime">0:00</span>
+      <div class="progress-track" id="progressTrack">
+        <div class="progress-fill" id="progressFill"></div>
+        <div class="progress-handle" id="progressHandle"></div>
+      </div>
+      <span class="time" id="totalTime">3:00</span>
+    </div>
+
+    <div class="controls-row">
+      <button class="control-btn" id="shuffleBtn" aria-label="Shuffle">🔀</button>
+      <button class="control-btn" id="prevBtn" aria-label="Previous">⏮</button>
+      <button class="control-btn play-btn" id="playBtn" aria-label="Play">▶</button>
+      <button class="control-btn" id="nextBtn" aria-label="Next">⏭</button>
+      <button class="control-btn" id="repeatBtn" aria-label="Repeat">🔁</button>
+    </div>
+
+    <div class="volume-row">
+      <span class="volume-icon">🔊</span>
+      <input type="range" id="volumeRange" min="0" max="100" value="70">
+    </div>
+
+    <div class="playlist" id="playlist"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

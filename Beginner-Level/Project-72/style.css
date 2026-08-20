@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .player {
+    width: 100%;
+    max-width: 380px;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(43, 224, 208, 0.15);
+    padding: 26px;
+  }
+  
+  .artwork {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom: 18px;
+  }
+  
+  .track-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .track-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2be0d0;
+  }
+  
+  .track-artist {
+    display: block;
+    font-size: 0.85rem;
+    color: #9ff5ec;
+    margin-top: 2px;
+  }
+  
+  .progress-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .time {
+    font-size: 0.7rem;
+    color: #9ff5ec;
+    min-width: 30px;
+  }
+  
+  .progress-track {
+    flex: 1;
+    height: 5px;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #ff2bd6;
+    border-radius: 3px;
+  }
+  
+  .progress-handle {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 12px;
+    height: 12px;
+    background: #ff2bd6;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 6px #ff2bd6;
+  }
+  
+  .controls-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .control-btn {
+    background: none;
+    border: none;
+    color: #eafffb;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 8px;
+    transition: transform 0.15s ease, color 0.15s ease;
+  }
+  
+  .control-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .control-btn.active {
+    color: #ff2bd6;
+  }
+  
+  .play-btn {
+    background: #2be0d0;
+    color: #0a0a12;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .play-btn:hover {
+    transform: scale(1.08);
+  }
+  
+  .volume-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .volume-icon {
+    font-size: 0.9rem;
+  }
+  
+  .volume-row input[type="range"] {
+    flex: 1;
+  }
+  
+  .playlist {
+    border-top: 1px solid #2be0d0;
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 180px;
+    overflow-y: auto;
+  }
+  
+  .playlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .playlist-item:hover {
+    background: #1c1c34;
+  }
+  
+  .playlist-item.playing {
+    background: #1c1c34;
+    color: #2be0d0;
+  }
+  
+  .playlist-item-name {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .playlist-item-artist {
+    font-size: 0.7rem;
+    color: #9ff5ec;
+  }
+  
+  .playlist-item-duration {
+    font-size: 0.75rem;
+    color: #5f7d7a;
+  }
