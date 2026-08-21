@@ -55,7 +55,7 @@ This intermediate project teaches:
 ## 📁 Project Structure
 
 ```id="x32pl9"
-music-ui/
+video-player-ui/
 │
 ├── index.html      # Main structure
 ├── style.css       # Styling file

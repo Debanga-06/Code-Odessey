@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poll Voting UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="poll-card">
+      <p class="poll-category">Web Development</p>
+      <h1 class="poll-question">Which frontend framework do you prefer?</h1>
+
+      <div class="options-list" id="optionsList"></div>
+
+      <div class="poll-footer">
+        <span id="totalVotes">0 votes</span>
+        <button id="resetBtn">Reset Poll</button>
+      </div>
+    </div>
+
+    <p class="voted-msg hidden" id="votedMsg">Thanks for voting! Click any option to change your vote.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
