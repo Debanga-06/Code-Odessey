@@ -40,7 +40,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 | Level | Focus | Progress | Browse |
 |-------|-------|----------|--------|
-| 🟢 **Beginner** (1-100) | HTML, CSS, DOM, Vanilla JS, responsive layouts | ![](https://img.shields.io/badge/84%2F100-90%25-brightgreen) | [**View Projects →**](Beginner-Level/README.md) |
+| 🟢 **Beginner** (1-100) | HTML, CSS, DOM, Vanilla JS, responsive layouts | ![](https://img.shields.io/badge/90%2F100-90%25-brightgreen) | [**View Projects →**](Beginner-Level/README.md) |
 | 🟡 **Intermediate** (101-200) | REST APIs, React/Vue, state management, real apps | ![](https://img.shields.io/badge/10%2F100-10%25-yellow) | [**View Projects →**](Intermediate-Level/README.md) |
 | 🔵 **Expert** (201-300) | Full-stack apps, auth, databases, advanced architecture | ![](https://img.shields.io/badge/Coming%20Soon-lightgrey) | Coming Soon |
 | 🔴 **Advanced Expert** (301-400) | Production-grade systems, scaling, real-world engineering | ![](https://img.shields.io/badge/Coming%20Soon-lightgrey) | Coming Soon |

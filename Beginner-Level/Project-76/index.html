@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="survey-card" id="surveyCard">
+      <div class="progress-header">
+        <span id="stepLabel">Step 1 of 4</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <form id="surveyForm">
+
+        <div class="question-block" data-step="1">
+          <h2>How did you hear about us?</h2>
+          <div class="options-list">
+            <label class="radio-option">
+              <input type="radio" name="source" value="Search engine">
+              <span class="custom-radio"></span>
+              Search engine
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="source" value="Social media">
+              <span class="custom-radio"></span>
+              Social media
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="source" value="Friend or colleague">
+              <span class="custom-radio"></span>
+              Friend or colleague
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="source" value="Advertisement">
+              <span class="custom-radio"></span>
+              Advertisement
+            </label>
+          </div>
+          <span class="error-text hidden" data-error="1">Please select one option</span>
+        </div>
+
+        <div class="question-block hidden" data-step="2">
+          <h2>Which features do you use most? (Select all that apply)</h2>
+          <div class="options-list">
+            <label class="checkbox-option">
+              <input type="checkbox" name="features" value="Dashboard">
+              <span class="custom-checkbox"></span>
+              Dashboard
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" name="features" value="Reports">
+              <span class="custom-checkbox"></span>
+              Reports
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" name="features" value="Notifications">
+              <span class="custom-checkbox"></span>
+              Notifications
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" name="features" value="Integrations">
+              <span class="custom-checkbox"></span>
+              Integrations
+            </label>
+          </div>
+          <span class="error-text hidden" data-error="2">Please select at least one option</span>
+        </div>
+
+        <div class="question-block hidden" data-step="3">
+          <h2>How likely are you to recommend us to a friend?</h2>
+          <div class="scale-row" id="scaleRow"></div>
+          <div class="scale-labels">
+            <span>Not likely</span>
+            <span>Very likely</span>
+          </div>
+          <span class="error-text hidden" data-error="3">Please select a score</span>
+        </div>
+
+        <div class="question-block hidden" data-step="4">
+          <h2>Any additional comments?</h2>
+          <textarea name="comments" placeholder="Optional — share any other thoughts..."></textarea>
+        </div>
+
+      </form>
+
+      <div class="nav-row">
+        <button type="button" id="backBtn" class="nav-btn secondary hidden">Back</button>
+        <button type="button" id="nextBtn" class="nav-btn primary">Next</button>
+      </div>
+    </div>
+
+    <div class="complete-screen hidden" id="completeScreen">
+      <div class="check-icon">✓</div>
+      <h2>Survey complete</h2>
+      <p>Thanks for taking the time to share your feedback.</p>
+      <button id="restartBtn">Take Survey Again</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
