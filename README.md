@@ -40,7 +40,7 @@ For detailed contribution guidelines, please read our [CONTRIBUTING.md](CONTRIBU
 
 | Level | Focus | Progress | Browse |
 |-------|-------|----------|--------|
-| 🟢 **Beginner** (1-100) | HTML, CSS, DOM, Vanilla JS, responsive layouts | ![](https://img.shields.io/badge/84%2F100-84%25-brightgreen) | [**View Projects →**](Beginner-Level/README.md) |
+| 🟢 **Beginner** (1-100) | HTML, CSS, DOM, Vanilla JS, responsive layouts | ![](https://img.shields.io/badge/84%2F100-90%25-brightgreen) | [**View Projects →**](Beginner-Level/README.md) |
 | 🟡 **Intermediate** (101-200) | REST APIs, React/Vue, state management, real apps | ![](https://img.shields.io/badge/10%2F100-10%25-yellow) | [**View Projects →**](Intermediate-Level/README.md) |
 | 🔵 **Expert** (201-300) | Full-stack apps, auth, databases, advanced architecture | ![](https://img.shields.io/badge/Coming%20Soon-lightgrey) | Coming Soon |
 | 🔴 **Advanced Expert** (301-400) | Production-grade systems, scaling, real-world engineering | ![](https://img.shields.io/badge/Coming%20Soon-lightgrey) | Coming Soon |
@@ -74,8 +74,8 @@ A handful of standouts worth checking out first:
 -->
 ```mermaid
 pie showData
-    title Projects Completed (94 / 400 total)
-    "Beginner - 80/100" : 84
+    title Projects Completed (100 / 400 total)
+    "Beginner - 90/100" : 90
     "Intermediate - 10/100" : 10
     "Expert - 0/100" : 0
     "Advanced Expert - 0/100" : 0
@@ -83,7 +83,7 @@ pie showData
 
 | Level | Completed |
 |-------|-----------|
-| 🟢 Beginner | 84/100 |
+| 🟢 Beginner | 90/100 |
 | 🟡 Intermediate | 10/100 |
 | 🔵 Expert | 0/100 |
 | 🔴 Advanced Expert | 0/100 |
@@ -162,8 +162,9 @@ Special recognition to contributors who have made significant non-code contribut
 - ✅ **Project Launch** - August 2025
 - ✅ **First 10 Projects** - January 2026
 - ✅ **First 25 Projects** - February 2026
-- ✅ **50 Projects** - Target: April 2026
-- 🎯 **100 Projects** - Target: June 2027
+- ✅ **50 Projects** - April 2026
+- ✅ **100 Projects** - August 2026
+- 🎯 **150 Projects** - Target: November 2026
 
 ---
 
