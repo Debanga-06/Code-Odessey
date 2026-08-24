@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <form class="feedback-form" id="feedbackForm">
+      <h1>Share your feedback</h1>
+      <p class="subtitle">Help us improve — this takes less than a minute</p>
+
+      <div class="field-group">
+        <label>How would you rate your experience?</label>
+        <div class="star-rating" id="starRating"></div>
+        <span class="rating-error hidden" id="ratingError">Please select a rating</span>
+      </div>
+
+      <div class="field-group">
+        <label>How satisfied are you overall?</label>
+        <div class="emoji-scale" id="emojiScale"></div>
+      </div>
+
+      <div class="field-group">
+        <label for="nameInput">Name (optional)</label>
+        <input type="text" id="nameInput" placeholder="Your name">
+      </div>
+
+      <div class="field-group">
+        <label for="emailInput">Email (optional)</label>
+        <input type="email" id="emailInput" placeholder="you@example.com">
+      </div>
+
+      <div class="field-group">
+        <label for="messageInput">Your feedback</label>
+        <textarea id="messageInput" placeholder="Tell us what you think..." maxlength="300"></textarea>
+        <span class="char-count" id="charCount">0 / 300</span>
+        <span class="message-error hidden" id="messageError">Please enter your feedback</span>
+      </div>
+
+      <button type="submit" id="submitBtn">Submit Feedback</button>
+    </form>
+
+    <div class="success-screen hidden" id="successScreen">
+      <div class="success-icon">✓</div>
+      <h2>Thank you!</h2>
+      <p>Your feedback has been received and helps us improve.</p>
+      <button id="newFeedbackBtn">Submit Another Response</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

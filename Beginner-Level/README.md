@@ -1,6 +1,6 @@
 # 🟢 Beginner Level Projects
 
-![Progress](https://img.shields.io/badge/Progress-84%2F100-brightgreen)
+![Progress](https://img.shields.io/badge/Progress-90%2F100-brightgreen)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-2ea44f)
 ![Tech](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JavaScript-e8b84b)
 
@@ -26,18 +26,18 @@ This level is your foundation. Every project here is scoped to build **one core 
 -->
 ```mermaid
 pie showData
-    title Beginner Level — 84/100 Completed
+    title Beginner Level — 90/100 Completed
     "Basics & UI - Done" : 30
     "JS Fundamentals - Done" : 40
-    "Mini Practice - Done" : 14
-    "Mini Practice - Remaining" : 16
+    "Mini Practice - Done" : 20
+    "Mini Practice - Remaining" : 10
 ```
 
 | Section | Range | Completed |
 |---------|-------|-----------|
 | Basics & UI Projects | 001–030 | 30/30 ✅ |
 | JavaScript Fundamentals | 031–070 | 40/40 ✅ |
-| Mini Practice Projects | 071–100 | 14/30 🚧 |
+| Mini Practice Projects | 071–100 | 20/30 🚧 |
 
 ---
 
@@ -133,8 +133,8 @@ pie showData
 | 072 | [Music Player UI](https://music-ui-xi.vercel.app/) | Player controls, progress bars, playlists | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-72) |
 | 073 | [Video Player UI](https://video-player-ui-three.vercel.app/) | Video controls, custom players, fullscreen | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-73) |
 | 074 | [Poll Voting UI](https://poll-voting-ui.vercel.app/) | Voting interface, results display, percentages | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-74) |
-| 075 | Feedback Form | Form design, ratings, text feedback | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-75) |
-| 076 | Survey Page | Multiple questions, radio buttons, checkboxes | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-76) |
+| 075 | [Feedback Form] | Form design, ratings, text feedback | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-75) |
+| 076 | [Survey Page] | Multiple questions, radio buttons, checkboxes | [![Completed](https://img.shields.io/badge/Status-Completed-green)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-76) |
 | 077 | Online Menu Page | Menu sections, item cards, prices | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-77) |
 | 078 | Event Invitation Page | Event details, RSVP form, date/time | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-78) |
 | 079 | Profile Card Generator | User profiles, avatar, social links | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Beginner-Level/project-79) |
