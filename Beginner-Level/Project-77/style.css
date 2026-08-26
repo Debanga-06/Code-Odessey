@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    padding: 30px 20px 60px;
+  }
+  
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  
+  .menu-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .menu-header h1 {
+    color: #2be0d0;
+    margin-bottom: 4px;
+  }
+  
+  .tagline {
+    font-size: 0.85rem;
+    color: #9ff5ec;
+  }
+  
+  .category-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    margin-bottom: 26px;
+  }
+  
+  .tab-btn {
+    flex-shrink: 0;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    color: #9ff5ec;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .tab-btn.active {
+    background: #2be0d0;
+    color: #0a0a12;
+    font-weight: 700;
+  }
+  
+  .menu-section {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+    color: #ff2bd6;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2be0d0;
+  }
+  
+  .item-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid #1c1c34;
+  }
+  
+  .item-card:last-child {
+    border-bottom: none;
+  }
+  
+  .item-info {
+    flex: 1;
+  }
+  
+  .item-name-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  
+  .item-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+  
+  .veg-badge {
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #4caf50;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .veg-badge::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4caf50;
+  }
+  
+  .veg-badge.non-veg {
+    border-color: #e63946;
+  }
+  
+  .veg-badge.non-veg::after {
+    background: #e63946;
+    border-radius: 0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .item-desc {
+    font-size: 0.8rem;
+    color: #9ff5ec;
+    line-height: 1.4;
+  }
+  
+  .item-price {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2be0d0;
+    white-space: nowrap;
+  }
+  
+  .item-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    background: rgba(255, 43, 214, 0.15);
+    color: #ff2bd6;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-top: 6px;
+  }
