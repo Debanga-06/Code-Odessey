@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Invitation Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="invite-card" id="inviteCard">
+      <div class="event-banner">🎉</div>
+
+      <h1 class="event-title">Annual Tech Meetup 2026</h1>
+      <p class="event-subtitle">A night of talks, demos, and networking</p>
+
+      <div class="countdown-row" id="countdownRow">
+        <div class="countdown-unit">
+          <span class="countdown-value" id="daysValue">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="hoursValue">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="minutesValue">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="secondsValue">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+
+      <div class="details-list">
+        <div class="detail-row">
+          <span class="detail-icon">📅</span>
+          <div>
+            <span class="detail-label">Date</span>
+            <span class="detail-value" id="eventDate">Saturday, 12 September 2026</span>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="detail-icon">🕒</span>
+          <div>
+            <span class="detail-label">Time</span>
+            <span class="detail-value">6:00 PM – 9:00 PM</span>
+          </div>
+        </div>
+        <div class="detail-row">
+          <span class="detail-icon">📍</span>
+          <div>
+            <span class="detail-label">Venue</span>
+            <span class="detail-value">The Grand Hall, Sector 5, Kolkata</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rsvp-section" id="rsvpSection">
+        <h2>Will you be attending?</h2>
+
+        <form id="rsvpForm">
+          <input type="text" id="nameInput" placeholder="Your name" required>
+
+          <div class="attend-options">
+            <button type="button" class="attend-btn" data-value="yes">✓ Joyfully Accept</button>
+            <button type="button" class="attend-btn" data-value="no">✕ Can't Make It</button>
+          </div>
+
+          <div class="guest-row hidden" id="guestRow">
+            <label for="guestCount">Number of guests (including you)</label>
+            <select id="guestCount">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <span class="form-error hidden" id="formError">Please enter your name and select a response</span>
+
+          <button type="submit" id="submitBtn">Send RSVP</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="confirmation-screen hidden" id="confirmationScreen">
+      <div class="confirm-icon" id="confirmIcon">✓</div>
+      <h2 id="confirmTitle">You're on the list!</h2>
+      <p id="confirmText">We can't wait to see you there.</p>
+      <button id="editRsvpBtn">Edit RSVP</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

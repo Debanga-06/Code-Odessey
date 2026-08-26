@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 460px;
+  }
+  
+  .invite-card, .confirmation-screen {
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 16px;
+    box-shadow: 0 0 24px rgba(43, 224, 208, 0.15);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .event-banner {
+    font-size: 3rem;
+    margin-bottom: 12px;
+  }
+  
+  .event-title {
+    font-size: 1.3rem;
+    color: #2be0d0;
+    margin-bottom: 6px;
+  }
+  
+  .event-subtitle {
+    font-size: 0.85rem;
+    color: #9ff5ec;
+    margin-bottom: 24px;
+  }
+  
+  .countdown-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  
+  .countdown-unit {
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    min-width: 56px;
+  }
+  
+  .countdown-value {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff2bd6;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .countdown-label {
+    display: block;
+    font-size: 0.65rem;
+    color: #9ff5ec;
+    margin-top: 2px;
+  }
+  
+  .details-list {
+    text-align: left;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .detail-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  
+  .detail-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  
+  .detail-label {
+    display: block;
+    font-size: 0.7rem;
+    color: #5f7d7a;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  
+  .detail-value {
+    display: block;
+    font-size: 0.9rem;
+    color: #eafffb;
+    margin-top: 2px;
+  }
+  
+  .rsvp-section {
+    border-top: 1px solid #2be0d0;
+    padding-top: 22px;
+    text-align: left;
+  }
+  
+  .rsvp-section h2 {
+    font-size: 1rem;
+    color: #2be0d0;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  
+  #rsvpForm input[type="text"] {
+    width: 100%;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 11px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    margin-bottom: 14px;
+  }
+  
+  .attend-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  
+  .attend-btn {
+    flex: 1;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 12px 8px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  
+  .attend-btn.selected[data-value="yes"] {
+    background: #2be0d0;
+    color: #0a0a12;
+    font-weight: 700;
+  }
+  
+  .attend-btn.selected[data-value="no"] {
+    background: #ff4d5e;
+    color: #0a0a12;
+    font-weight: 700;
+  }
+  
+  .guest-row {
+    margin-bottom: 14px;
+  }
+  
+  .guest-row.hidden {
+    display: none;
+  }
+  
+  .guest-row label {
+    display: block;
+    font-size: 0.8rem;
+    color: #9ff5ec;
+    margin-bottom: 6px;
+  }
+  
+  .guest-row select {
+    width: 100%;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .form-error {
+    display: block;
+    font-size: 0.78rem;
+    color: #ff4d5e;
+    margin-bottom: 12px;
+  }
+  
+  .form-error.hidden {
+    display: none;
+  }
+  
+  #submitBtn {
+    width: 100%;
+    padding: 13px;
+    background: #ff2bd6;
+    color: #0a0a12;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .confirmation-screen.hidden {
+    display: none;
+  }
+  
+  .confirm-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #2be0d0;
+    color: #0a0a12;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+  }
+  
+  .confirmation-screen h2 {
+    color: #2be0d0;
+    margin-bottom: 8px;
+  }
+  
+  .confirmation-screen p {
+    font-size: 0.9rem;
+    color: #9ff5ec;
+    margin-bottom: 22px;
+  }
+  
+  #editRsvpBtn {
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #2be0d0;
+    color: #2be0d0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
