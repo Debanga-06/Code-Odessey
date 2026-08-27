@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="form-panel">
+      <h1>Profile Card Generator</h1>
+      <p class="subtitle">Fill in the details to build your card live</p>
+
+      <div class="field-group">
+        <label for="nameInput">Full name</label>
+        <input type="text" id="nameInput" placeholder="Jordan Diaz" value="Jordan Diaz">
+      </div>
+
+      <div class="field-group">
+        <label for="roleInput">Role / Title</label>
+        <input type="text" id="roleInput" placeholder="Frontend Developer" value="Frontend Developer">
+      </div>
+
+      <div class="field-group">
+        <label for="bioInput">Short bio</label>
+        <textarea id="bioInput" maxlength="120" placeholder="A short line about yourself">Building clean, accessible interfaces one component at a time.</textarea>
+        <span class="char-count" id="charCount">0 / 120</span>
+      </div>
+
+      <div class="field-group">
+        <label for="colorPicker">Accent color</label>
+        <div class="color-row" id="colorRow"></div>
+      </div>
+
+      <div class="field-group">
+        <label>Social links</label>
+        <div class="social-inputs">
+          <input type="text" id="githubInput" placeholder="GitHub username">
+          <input type="text" id="twitterInput" placeholder="Twitter/X username">
+          <input type="text" id="linkedinInput" placeholder="LinkedIn username">
+        </div>
+      </div>
+
+      <button id="downloadBtn">Copy Card Summary</button>
+      <span class="copy-msg" id="copyMsg"></span>
+    </div>
+
+    <div class="preview-panel">
+      <div class="profile-card" id="profileCard">
+        <div class="card-banner" id="cardBanner"></div>
+        <div class="avatar" id="avatar">JD</div>
+        <h2 class="card-name" id="cardName">Jordan Diaz</h2>
+        <p class="card-role" id="cardRole">Frontend Developer</p>
+        <p class="card-bio" id="cardBio">Building clean, accessible interfaces one component at a time.</p>
+
+        <div class="card-socials" id="cardSocials"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

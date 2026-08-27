@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    padding: 30px 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .form-panel {
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+  }
+  
+  h1 {
+    font-size: 1.3rem;
+    color: #2be0d0;
+    margin-bottom: 4px;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+    color: #9ff5ec;
+    margin-bottom: 22px;
+  }
+  
+  .field-group {
+    margin-bottom: 18px;
+  }
+  
+  .field-group label {
+    display: block;
+    font-size: 0.82rem;
+    color: #9ff5ec;
+    margin-bottom: 6px;
+  }
+  
+  .field-group input[type="text"], .field-group textarea {
+    width: 100%;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    outline: none;
+    font-family: inherit;
+  }
+  
+  .field-group textarea {
+    min-height: 70px;
+    resize: vertical;
+  }
+  
+  .char-count {
+    display: block;
+    text-align: right;
+    font-size: 0.7rem;
+    color: #5f7d7a;
+    margin-top: 4px;
+  }
+  
+  .color-row {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .color-swatch.active {
+    border-color: #eafffb;
+  }
+  
+  .social-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .social-inputs input {
+    width: 100%;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    outline: none;
+  }
+  
+  #downloadBtn {
+    width: 100%;
+    padding: 12px;
+    background: #ff2bd6;
+    color: #0a0a12;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .copy-msg {
+    display: block;
+    text-align: center;
+    font-size: 0.78rem;
+    color: #2be0d0;
+    margin-top: 8px;
+    min-height: 16px;
+  }
+  
+  .preview-panel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .profile-card {
+    width: 300px;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 24px rgba(43, 224, 208, 0.15);
+  }
+  
+  .card-banner {
+    height: 80px;
+    background: #2be0d0;
+    transition: background 0.2s ease;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #0a0a12;
+    border: 4px solid #111124;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2be0d0;
+    margin: -40px auto 0;
+    transition: color 0.2s ease;
+  }
+  
+  .card-name {
+    font-size: 1.15rem;
+    margin-top: 14px;
+    color: #eafffb;
+  }
+  
+  .card-role {
+    font-size: 0.85rem;
+    color: #2be0d0;
+    margin-top: 2px;
+    transition: color 0.2s ease;
+  }
+  
+  .card-bio {
+    font-size: 0.8rem;
+    color: #9ff5ec;
+    padding: 14px 20px 0;
+    line-height: 1.5;
+  }
+  
+  .card-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 20px 22px;
+  }
+  
+  .social-chip {
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 0.72rem;
+  }
+  
+  .no-socials {
+    font-size: 0.75rem;
+    color: #5f7d7a;
+    padding: 18px 0 22px;
+  }
