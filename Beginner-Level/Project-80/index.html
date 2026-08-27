@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badge Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="form-panel">
+      <h1>Badge Generator</h1>
+      <p class="subtitle">Build shields.io-style SVG badges</p>
+
+      <div class="field-group">
+        <label for="labelInput">Label text</label>
+        <input type="text" id="labelInput" value="build" maxlength="20">
+      </div>
+
+      <div class="field-group">
+        <label for="messageInput">Message text</label>
+        <input type="text" id="messageInput" value="passing" maxlength="20">
+      </div>
+
+      <div class="field-group">
+        <label>Label color</label>
+        <div class="color-row" id="labelColorRow"></div>
+      </div>
+
+      <div class="field-group">
+        <label>Message color</label>
+        <div class="color-row" id="messageColorRow"></div>
+      </div>
+
+      <div class="field-group">
+        <label>Style</label>
+        <div class="style-toggle">
+          <button class="style-btn active" data-style="flat">Flat</button>
+          <button class="style-btn" data-style="rounded">Rounded</button>
+          <button class="style-btn" data-style="square">Square</button>
+        </div>
+      </div>
+
+      <div class="quick-presets">
+        <span class="preset-label">Quick presets:</span>
+        <button class="preset-btn" data-label="build" data-message="passing" data-label-color="#555" data-message-color="#4caf50">build passing</button>
+        <button class="preset-btn" data-label="license" data-message="MIT" data-label-color="#555" data-message-color="#2b6cb0">license MIT</button>
+        <button class="preset-btn" data-label="version" data-message="2.4.0" data-label-color="#555" data-message-color="#ff2bd6">version</button>
+        <button class="preset-btn" data-label="coverage" data-message="94%" data-label-color="#555" data-message-color="#e63946">coverage</button>
+      </div>
+    </div>
+
+    <div class="preview-panel">
+      <p class="preview-label">Live preview</p>
+      <div class="badge-preview" id="badgePreview"></div>
+
+      <div class="code-box">
+        <div class="code-header">
+          <span>Markdown</span>
+          <button id="copyBtn">Copy</button>
+        </div>
+        <pre id="markdownOutput"></pre>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
