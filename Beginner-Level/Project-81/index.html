@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animation Showcase</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>CSS Animation Showcase</h1>
+    <p class="subtitle">Click any card to replay its animation</p>
+
+    <div class="controls-row">
+      <label>
+        Speed:
+        <select id="speedSelect">
+          <option value="2">Slow</option>
+          <option value="1" selected>Normal</option>
+          <option value="0.4">Fast</option>
+        </select>
+      </label>
+      <button id="replayAllBtn">Replay All</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

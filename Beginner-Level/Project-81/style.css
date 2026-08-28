@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    padding: 30px 20px 60px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2be0d0;
+    margin-bottom: 6px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #9ff5ec;
+    margin-bottom: 20px;
+  }
+  
+  .controls-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    font-size: 0.85rem;
+    color: #9ff5ec;
+  }
+  
+  .controls-row select {
+    background: #111124;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-left: 6px;
+  }
+  
+  #replayAllBtn {
+    background: #ff2bd6;
+    color: #0a0a12;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+  
+  .anim-card {
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .anim-stage {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  
+  .anim-box {
+    width: 44px;
+    height: 44px;
+    background: #ff2bd6;
+    border-radius: 8px;
+  }
+  
+  .anim-name {
+    font-size: 0.82rem;
+    color: #9ff5ec;
+  }
+  
+  /* Bounce */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-24px); }
+  }
+  .anim-bounce.play .anim-box {
+    animation: bounce 0.7s ease;
+  }
+  
+  /* Spin */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .anim-spin.play .anim-box {
+    animation: spin 0.8s linear;
+  }
+  
+  /* Pulse */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.6; }
+  }
+  .anim-pulse.play .anim-box {
+    animation: pulse 0.7s ease;
+  }
+  
+  /* Shake */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-6px); }
+    80% { transform: translateX(6px); }
+  }
+  .anim-shake.play .anim-box {
+    animation: shake 0.6s ease;
+  }
+  
+  /* Flip */
+  @keyframes flip {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+  }
+  .anim-flip .anim-stage {
+    perspective: 400px;
+  }
+  .anim-flip.play .anim-box {
+    animation: flip 0.8s ease;
+  }
+  
+  /* Slide in */
+  @keyframes slideIn {
+    from { transform: translateX(-80px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  .anim-slide.play .anim-box {
+    animation: slideIn 0.6s ease;
+  }
+  
+  /* Fade */
+  @keyframes fadePulse {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .anim-fade.play .anim-box {
+    animation: fadePulse 0.8s ease;
+  }
+  
+  /* Elastic pop */
+  @keyframes elastic {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.2); }
+    80% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+  }
+  .anim-elastic.play .anim-box {
+    animation: elastic 0.7s ease;
+  }
+  
+  /* Wobble */
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+  }
+  .anim-wobble.play .anim-box {
+    animation: wobble 0.6s ease;
+  }
