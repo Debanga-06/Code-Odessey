@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Validation Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <form class="login-card" id="loginForm" novalidate>
+      <h1>Welcome back</h1>
+      <p class="subtitle">Sign in to your account</p>
+
+      <div class="field-group">
+        <label for="emailInput">Email</label>
+        <div class="input-wrapper">
+          <input type="text" id="emailInput" placeholder="you@example.com" autocomplete="off">
+          <span class="status-icon" id="emailStatusIcon"></span>
+        </div>
+        <span class="field-error hidden" id="emailError">Enter a valid email address</span>
+      </div>
+
+      <div class="field-group">
+        <label for="passwordInput">Password</label>
+        <div class="input-wrapper">
+          <input type="password" id="passwordInput" placeholder="Enter your password" autocomplete="off">
+          <button type="button" class="toggle-visibility" id="toggleVisibility">Show</button>
+        </div>
+        <span class="field-error hidden" id="passwordError">Password must be at least 8 characters</span>
+
+        <div class="strength-track" id="strengthTrack">
+          <div class="strength-fill" id="strengthFill"></div>
+        </div>
+        <span class="strength-label" id="strengthLabel"></span>
+      </div>
+
+      <label class="remember-row">
+        <input type="checkbox" id="rememberCheck">
+        Remember me
+      </label>
+
+      <button type="submit" id="submitBtn" disabled>Sign In</button>
+
+      <p class="form-status" id="formStatus"></p>
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
