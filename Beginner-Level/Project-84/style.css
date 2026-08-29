@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    padding: 30px 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .calculator-card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 480px;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 14px;
+    padding: 28px;
+  }
+  
+  .summary-card {
+    flex: 1;
+    min-width: 260px;
+    max-width: 300px;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 14px;
+    padding: 24px;
+    position: sticky;
+    top: 20px;
+  }
+  
+  h1 {
+    font-size: 1.25rem;
+    color: #2be0d0;
+    margin-bottom: 4px;
+  }
+  
+  .subtitle {
+    font-size: 0.82rem;
+    color: #9ff5ec;
+    margin-bottom: 24px;
+  }
+  
+  h2 {
+    font-size: 1.05rem;
+    color: #2be0d0;
+    margin-bottom: 16px;
+  }
+  
+  .field-group {
+    margin-bottom: 22px;
+  }
+  
+  .field-group > label {
+    display: block;
+    font-size: 0.82rem;
+    color: #9ff5ec;
+    margin-bottom: 10px;
+  }
+  
+  .plan-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .plan-card {
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .plan-card.selected {
+    border-color: #ff2bd6;
+    background: #1c1c34;
+  }
+  
+  .plan-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  
+  .plan-desc {
+    font-size: 0.75rem;
+    color: #9ff5ec;
+    margin-top: 2px;
+  }
+  
+  .plan-price {
+    font-size: 0.9rem;
+    color: #2be0d0;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  #seatsRange {
+    width: 100%;
+  }
+  
+  .billing-toggle {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .billing-btn {
+    flex: 1;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .billing-btn.active {
+    background: #2be0d0;
+    color: #0a0a12;
+    font-weight: 700;
+  }
+  
+  .save-tag {
+    display: block;
+    font-size: 0.65rem;
+    margin-top: 2px;
+    color: #ff2bd6;
+  }
+  
+  .billing-btn.active .save-tag {
+    color: #0a0a12;
+  }
+  
+  .addon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .addon-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .addon-item.selected {
+    border-color: #ff2bd6;
+    background: #1c1c34;
+  }
+  
+  .addon-price {
+    color: #2be0d0;
+    font-weight: 700;
+  }
+  
+  .promo-row {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .promo-row input {
+    flex: 1;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    outline: none;
+  }
+  
+  .promo-row button {
+    background: #ff2bd6;
+    color: #0a0a12;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .promo-msg {
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 6px;
+    min-height: 16px;
+  }
+  
+  .promo-msg.success { color: #57c785; }
+  .promo-msg.error { color: #ff4d5e; }
+  
+  .summary-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+    font-size: 0.82rem;
+  }
+  
+  .summary-line {
+    display: flex;
+    justify-content: space-between;
+    color: #9ff5ec;
+  }
+  
+  .summary-line.discount {
+    color: #57c785;
+  }
+  
+  .summary-total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-top: 1px solid #2be0d0;
+    padding-top: 14px;
+  }
+  
+  .billing-note {
+    font-size: 0.72rem;
+    color: #5f7d7a;
+    margin-top: 8px;
+  }

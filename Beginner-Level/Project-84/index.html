@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="calculator-card">
+      <h1>Build your plan</h1>
+      <p class="subtitle">Customize your subscription and see the price update live</p>
+
+      <div class="field-group">
+        <label>Choose a plan</label>
+        <div class="plan-options" id="planOptions"></div>
+      </div>
+
+      <div class="field-group">
+        <label for="seatsRange">Team members: <span id="seatsValue">5</span></label>
+        <input type="range" id="seatsRange" min="1" max="50" value="5">
+      </div>
+
+      <div class="field-group">
+        <label>Billing cycle</label>
+        <div class="billing-toggle">
+          <button class="billing-btn active" data-cycle="monthly">Monthly</button>
+          <button class="billing-btn" data-cycle="yearly">Yearly <span class="save-tag">Save 20%</span></button>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label>Add-ons</label>
+        <div class="addon-list" id="addonList"></div>
+      </div>
+
+      <div class="promo-row">
+        <input type="text" id="promoInput" placeholder="Promo code">
+        <button id="applyPromoBtn">Apply</button>
+      </div>
+      <span class="promo-msg" id="promoMsg"></span>
+    </div>
+
+    <div class="summary-card">
+      <h2>Price summary</h2>
+      <div class="summary-lines" id="summaryLines"></div>
+
+      <div class="summary-total-row">
+        <span>Total</span>
+        <span id="summaryTotal">$0.00</span>
+      </div>
+      <p class="billing-note" id="billingNote"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
