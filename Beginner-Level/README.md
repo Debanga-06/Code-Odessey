@@ -30,7 +30,6 @@ pie showData
     "Basics & UI - Done" : 30
     "JS Fundamentals - Done" : 40
     "Mini Practice - Done" : 30
-    "Mini Practice - Remaining" : 00
 ```
 
 | Section | Range | Completed |
