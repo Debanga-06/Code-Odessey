@@ -1,6 +1,6 @@
 # 🟢 Beginner Level Projects
 
-![Progress](https://img.shields.io/badge/Progress-90%2F100-brightgreen)
+![Progress](https://img.shields.io/badge/Progress-100%2F100-brightgreen)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-2ea44f)
 ![Tech](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JavaScript-e8b84b)
 
@@ -26,18 +26,18 @@ This level is your foundation. Every project here is scoped to build **one core 
 -->
 ```mermaid
 pie showData
-    title Beginner Level — 90/100 Completed
+    title Beginner Level — 100/100 Completed
     "Basics & UI - Done" : 30
     "JS Fundamentals - Done" : 40
-    "Mini Practice - Done" : 20
-    "Mini Practice - Remaining" : 10
+    "Mini Practice - Done" : 30
+    "Mini Practice - Remaining" : 00
 ```
 
 | Section | Range | Completed |
 |---------|-------|-----------|
 | Basics & UI Projects | 001–030 | 30/30 ✅ |
 | JavaScript Fundamentals | 031–070 | 40/40 ✅ |
-| Mini Practice Projects | 071–100 | 20/30 🚧 |
+| Mini Practice Projects | 071–100 | 30/30 ✅ |
 
 ---
 
