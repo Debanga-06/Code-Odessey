@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple E-commerce UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <span class="brand">Nimbus Store</span>
+    <button class="cart-btn" id="cartBtn">
+      🛒
+      <span class="cart-badge hidden" id="cartBadge">0</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <div class="product-grid" id="productGrid"></div>
+  </main>
+
+  <div class="overlay hidden" id="overlay"></div>
+
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCartBtn" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button id="checkoutBtn" disabled>Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div class="checkout-modal hidden" id="checkoutModal">
+    <div class="checkout-box">
+      <div class="checkout-header">
+        <h2>Checkout</h2>
+        <button id="closeCheckoutBtn" aria-label="Close">×</button>
+      </div>
+
+      <div class="checkout-step" id="stepShipping">
+        <h3>Shipping details</h3>
+        <input type="text" id="shipName" placeholder="Full name">
+        <input type="text" id="shipAddress" placeholder="Address">
+        <input type="text" id="shipCity" placeholder="City">
+        <button id="toPaymentBtn">Continue to Payment</button>
+      </div>
+
+      <div class="checkout-step hidden" id="stepPayment">
+        <h3>Payment details</h3>
+        <input type="text" id="cardNumber" placeholder="Card number" maxlength="19">
+        <div class="payment-row">
+          <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+          <input type="text" id="cardCvv" placeholder="CVV" maxlength="3">
+        </div>
+        <div class="order-summary" id="orderSummary"></div>
+        <button id="placeOrderBtn">Place Order</button>
+      </div>
+
+      <div class="checkout-step hidden" id="stepSuccess">
+        <div class="success-icon">✓</div>
+        <h3>Order confirmed!</h3>
+        <p>Your order will arrive in 3-5 business days.</p>
+        <button id="closeSuccessBtn">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
