@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Joke Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Random Joke Generator</h1>
+    <p class="subtitle">Fresh jokes fetched live, with a local backup if things go quiet</p>
+
+    <div class="joke-card" id="jokeCard">
+      <span class="category-tag" id="categoryTag">General</span>
+      <p class="joke-text" id="jokeText">Click the button below to get a joke!</p>
+      <p class="joke-delivery hidden" id="jokeDelivery"></p>
+    </div>
+
+    <div class="actions-row">
+      <button id="newJokeBtn">Get New Joke</button>
+      <button id="copyBtn" class="secondary-btn">Copy</button>
+    </div>
+
+    <div class="favorites-section">
+      <div class="favorites-header">
+        <span>Saved jokes (<span id="favCount">0</span>)</span>
+        <button id="saveBtn" class="secondary-btn small">☆ Save this joke</button>
+      </div>
+      <ul class="favorites-list" id="favoritesList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
