@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #0a0a12;
+    color: #eafffb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 720px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2be0d0;
+    margin-bottom: 6px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #9ff5ec;
+    margin-bottom: 22px;
+  }
+  
+  #textOutput {
+    width: 100%;
+    background: #111124;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    margin-bottom: 20px;
+    font-family: inherit;
+  }
+  
+  .keyboard {
+    background: #111124;
+    border: 1px solid #2be0d0;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .key-row {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+  }
+  
+  .key {
+    flex: 1;
+    min-width: 28px;
+    background: #0a0a12;
+    border: 1px solid #2be0d0;
+    color: #eafffb;
+    padding: 12px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-align: center;
+    user-select: none;
+    transition: background 0.1s ease, transform 0.1s ease;
+  }
+  
+  .key:hover {
+    background: #1c1c34;
+  }
+  
+  .key.pressed {
+    background: #ff2bd6;
+    color: #0a0a12;
+    transform: scale(0.95);
+  }
+  
+  .key.wide {
+    flex: 2;
+  }
+  
+  .key.extra-wide {
+    flex: 6;
+  }
+  
+  .key.special {
+    color: #9ff5ec;
+    font-size: 0.72rem;
+  }
+  
+  .key.active-toggle {
+    background: #2be0d0;
+    color: #0a0a12;
+  }
