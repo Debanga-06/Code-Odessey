@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f3ec;
+    color: #241f18;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 24px;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(255, 183, 94, 0.25), transparent 55%),
+      radial-gradient(circle at 75% 75%, rgba(120, 170, 255, 0.18), transparent 50%),
+      #f7f3ec;
+  }
+  
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #a8895c;
+    margin-bottom: 14px;
+  }
+  
+  .hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    margin-bottom: 18px;
+  }
+  
+  .hero p {
+    max-width: 480px;
+    color: #5a5348;
+    font-size: 1.02rem;
+  }
+  
+  .scroll-cue {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    color: #a8895c;
+    animation: bob 1.8s ease-in-out infinite;
+  }
+  
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+  
+  .reveal-block, .stagger-section, .progress-section {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 110px 28px;
+  }
+  
+  .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a8895c;
+    background: rgba(168, 137, 92, 0.12);
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .reveal-block h2, .stagger-section h2, .progress-section h2 {
+    font-size: 2rem;
+    margin-bottom: 14px;
+  }
+  
+  .reveal-block p, .stagger-section p, .progress-section p {
+    color: #5a5348;
+    font-size: 1rem;
+    max-width: 520px;
+  }
+  
+  /* Split layout */
+  .split {
+    max-width: 820px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .split-text {
+    flex: 1;
+    min-width: 240px;
+  }
+  
+  .split-visual {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .visual-card {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(145deg, #ffb75e, #ed8f4c);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff8ee;
+    box-shadow: 0 20px 40px -10px rgba(237, 143, 76, 0.4);
+  }
+  
+  /* Stagger grid */
+  .stagger-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+  }
+  
+  .stagger-card {
+    background: #fff;
+    border: 1px solid rgba(36, 31, 24, 0.08);
+    border-radius: 16px;
+    padding: 22px 20px;
+    box-shadow: 0 8px 24px -8px rgba(36, 31, 24, 0.1);
+  }
+  
+  .card-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #241f18;
+    color: #f7f3ec;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .stagger-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+  
+  .stagger-card p {
+    font-size: 0.88rem;
+    color: #5a5348;
+  }
+  
+  /* Progress section */
+  .mini-progress-track {
+    height: 6px;
+    background: rgba(36, 31, 24, 0.08);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 20px 0 8px;
+  }
+  
+  .mini-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ffb75e, #ed8f4c);
+    border-radius: 3px;
+    transition: width 0.1s linear;
+  }
+  
+  .progress-percent {
+    font-size: 0.8rem;
+    color: #a8895c;
+    font-weight: 500;
+  }
+  
+  .final {
+    text-align: center;
+    padding-bottom: 160px;
+  }
+  
+  /* ---------- Reveal animation base states ---------- */
+  [data-reveal] {
+    opacity: 0;
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  
+  [data-reveal="fade-up"] {
+    transform: translateY(36px);
+  }
+  
+  [data-reveal="fade-left"] {
+    transform: translateX(-44px);
+  }
+  
+  [data-reveal="fade-right"] {
+    transform: translateX(44px);
+  }
+  
+  [data-reveal="zoom-in"] {
+    transform: scale(0.88);
+  }
+  
+  [data-reveal].revealed {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }

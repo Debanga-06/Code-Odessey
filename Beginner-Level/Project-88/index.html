@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll Reveal Animations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <span class="eyebrow">Scroll down</span>
+    <h1>Reveal on scroll</h1>
+    <p>Every section below animates into view the moment it enters the viewport, powered by the Intersection Observer API — no scroll event listeners involved.</p>
+    <div class="scroll-cue">↓</div>
+  </section>
+
+  <section class="reveal-block" data-reveal="fade-up">
+    <span class="tag">Fade up</span>
+    <h2>The simplest reveal</h2>
+    <p>This block starts slightly lower and transparent, then eases into place — the most common scroll-reveal effect, and a good default for most content.</p>
+  </section>
+
+  <section class="reveal-block split" data-reveal="fade-left">
+    <div class="split-text">
+      <span class="tag">Fade from left</span>
+      <h2>Directional entrances</h2>
+      <p>Content can enter from any direction. This panel slides in from the left as it becomes visible, giving the page a sense of horizontal rhythm.</p>
+    </div>
+    <div class="split-visual" data-reveal="fade-right" data-delay="150">
+      <div class="visual-card">01</div>
+    </div>
+  </section>
+
+  <section class="stagger-section" data-reveal="fade-up">
+    <span class="tag">Staggered group</span>
+    <h2>Cards revealed in sequence</h2>
+    <div class="stagger-grid" id="staggerGrid">
+      <div class="stagger-card" data-reveal="fade-up" data-delay="0">
+        <span class="card-num">1</span>
+        <h3>Observe</h3>
+        <p>Watch elements enter the viewport without polling scroll position.</p>
+      </div>
+      <div class="stagger-card" data-reveal="fade-up" data-delay="120">
+        <span class="card-num">2</span>
+        <h3>Reveal</h3>
+        <p>Toggle a class once, and let CSS transitions do the animating.</p>
+      </div>
+      <div class="stagger-card" data-reveal="fade-up" data-delay="240">
+        <span class="card-num">3</span>
+        <h3>Unobserve</h3>
+        <p>Stop watching an element once it has revealed, for a clean one-time effect.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal-block" data-reveal="zoom-in">
+    <span class="tag">Zoom in</span>
+    <h2>Scale-based entrances</h2>
+    <p>Rather than moving position, this block grows in from slightly smaller than full size — a subtler alternative to directional sliding.</p>
+  </section>
+
+  <section class="progress-section">
+    <span class="tag">Scroll progress</span>
+    <h2>How far you've come</h2>
+    <div class="mini-progress-track">
+      <div class="mini-progress-fill" id="miniProgressFill"></div>
+    </div>
+    <p class="progress-percent" id="progressPercent">0%</p>
+  </section>
+
+  <section class="reveal-block final" data-reveal="fade-up">
+    <span class="tag">The end</span>
+    <h2>That's the whole page</h2>
+    <p>Scroll back up to watch every section reset and replay — each one only reveals once per observation, but reloading the page resets that.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
