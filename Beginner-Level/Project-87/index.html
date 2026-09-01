@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Notes Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <span class="toolbar-title">📌 Sticky Board</span>
+      <span class="note-count" id="noteCount">0 notes</span>
+    </div>
+
+    <div class="toolbar-right">
+      <div class="color-picker" id="colorPicker"></div>
+      <button class="add-btn" id="addBtn">+ New Note</button>
+      <button class="clear-btn" id="clearBtn">Clear Board</button>
+    </div>
+  </div>
+
+  <div class="board" id="board">
+    <p class="empty-hint" id="emptyHint">Click "New Note" to pin your first sticky note</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.03), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(255,255,255,0.02), transparent 40%),
+      linear-gradient(160deg, #1a1410 0%, #241a12 100%);
+    min-height: 100vh;
+    color: #f4ede4;
+    overflow-x: hidden;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 16px 28px;
+    background: rgba(20, 15, 10, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 500;
+  }
+  
+  .toolbar-left {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  
+  .toolbar-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  
+  .note-count {
+    font-size: 0.78rem;
+    color: rgba(244, 237, 228, 0.55);
+  }
+  
+  .toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .color-picker {
+    display: flex;
+    gap: 6px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+  }
+  
+  .color-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  
+  .color-dot:hover {
+    transform: scale(1.15);
+  }
+  
+  .color-dot.active {
+    border-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+  }
+  
+  .add-btn {
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+    color: #201400;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(251, 133, 0, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  .add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(251, 133, 0, 0.45);
+  }
+  
+  .clear-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(244, 237, 228, 0.7);
+    padding: 10px 16px;
+    border-radius: 24px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  
+  .clear-btn:hover {
+    background: rgba(255, 77, 79, 0.15);
+    border-color: rgba(255, 77, 79, 0.4);
+    color: #ff8a8a;
+  }
+  
+  .board {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 68px);
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  
+  .empty-hint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(244, 237, 228, 0.35);
+    font-size: 0.95rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .empty-hint.hidden {
+    display: none;
+  }
+  
+  .sticky-note {
+    position: absolute;
+    width: 200px;
+    min-height: 190px;
+    padding: 18px 16px 14px;
+    border-radius: 3px 3px 40px 3px / 3px 3px 12px 3px;
+    box-shadow:
+      0 10px 20px -6px rgba(0, 0, 0, 0.45),
+      0 2px 6px rgba(0, 0, 0, 0.25);
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease, transform 0.12s ease;
+    font-family: 'Kalam', cursive;
+  }
+  
+  .sticky-note::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-4deg);
+    width: 34px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+  }
+  
+  .sticky-note.dragging {
+    cursor: grabbing;
+    z-index: 999 !important;
+    box-shadow:
+      0 26px 40px -10px rgba(0, 0, 0, 0.6),
+      0 6px 14px rgba(0, 0, 0, 0.3);
+    transition: none;
+  }
+  
+  .note-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+  }
+  
+  .delete-note-btn {
+    background: rgba(0, 0, 0, 0.12);
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 0.85rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .delete-note-btn:hover {
+    background: rgba(0, 0, 0, 0.25);
+    color: #000;
+  }
+  
+  .note-textarea {
+    flex: 1;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Kalam', cursive;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.78);
+  }
+  
+  .note-textarea::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+  }
+  
+  .note-timestamp {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.62rem;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 8px;
+    text-align: right;
+  }
