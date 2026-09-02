@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .scene-tabs {
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    padding: 6px;
+    border-radius: 20px;
+  }
+  
+  .scene-tab {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 0.82rem;
+    cursor: pointer;
+  }
+  
+  .scene-tab.active {
+    background: rgba(255, 255, 255, 0.9);
+    color: #111;
+    font-weight: 600;
+  }
+  
+  .scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .scene.active {
+    display: block;
+  }
+  
+  /* ============================================================
+     SCENE 1 — DEEP SPACE
+     ============================================================ */
+  .space-scene {
+    background:
+      radial-gradient(ellipse at 70% 20%, rgba(120, 60, 200, 0.35), transparent 55%),
+      radial-gradient(ellipse at 15% 80%, rgba(30, 90, 200, 0.3), transparent 50%),
+      linear-gradient(180deg, #060613 0%, #0a0a1c 60%, #05050f 100%);
+  }
+  
+  .stars {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle linear infinite;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.15; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.6); }
+  }
+  
+  .planet {
+    position: absolute;
+    top: 14%;
+    right: 10%;
+    width: 160px;
+    height: 160px;
+  }
+  
+  .planet-body {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background:
+      radial-gradient(circle at 32% 30%, #ffe3ac, #e8a55c 40%, #b06a34 75%, #6f3d1c 100%);
+    box-shadow:
+      inset -20px -14px 30px rgba(0, 0, 0, 0.45),
+      0 0 50px rgba(232, 165, 92, 0.25);
+    z-index: 2;
+  }
+  
+  .ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 70px;
+    border: 14px solid transparent;
+    border-radius: 50%;
+    border-top-color: rgba(230, 200, 160, 0.85);
+    border-bottom-color: rgba(230, 200, 160, 0.85);
+    transform: translate(-50%, -50%) rotate(-18deg);
+  }
+  
+  .ring-back {
+    z-index: 1;
+    opacity: 0.85;
+  }
+  
+  .ring-front {
+    z-index: 3;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  }
+  
+  .astronaut {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    width: 100px;
+    height: 160px;
+    animation: astronautFloat 6s ease-in-out infinite;
+    transform-origin: center;
+  }
+  
+  @keyframes astronautFloat {
+    0%, 100% { transform: translate(0, 0) rotate(-4deg); }
+    50% { transform: translate(-10px, -30px) rotate(4deg); }
+  }
+  
+  .tether {
+    position: absolute;
+    top: -140px;
+    left: 46px;
+    width: 2px;
+    height: 150px;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0px,
+      rgba(255, 255, 255, 0.5) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+  }
+  
+  .backpack {
+    position: absolute;
+    top: 30px;
+    left: 24px;
+    width: 52px;
+    height: 62px;
+    background: linear-gradient(160deg, #dfe4ea, #a9b1bb);
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .body-suit {
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    width: 70px;
+    height: 75px;
+    background: linear-gradient(150deg, #ffffff, #d7dde3);
+    border-radius: 30px 30px 22px 22px;
+    z-index: 2;
+    box-shadow: inset 6px -8px 14px rgba(0, 0, 0, 0.12);
+  }
+  
+  .chest-panel {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    width: 34px;
+    height: 22px;
+    background: linear-gradient(135deg, #ff8fa3, #ff5c8a);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 92, 138, 0.5);
+  }
+  
+  .arm {
+    position: absolute;
+    top: 55px;
+    width: 20px;
+    height: 55px;
+    background: linear-gradient(160deg, #ffffff, #ccd3da);
+    border-radius: 12px;
+    z-index: 1;
+  }
+  
+  .arm-left {
+    left: -6px;
+    transform: rotate(24deg);
+  }
+  
+  .arm-right {
+    right: -6px;
+    transform: rotate(-30deg);
+  }
+  
+  .leg {
+    position: absolute;
+    top: 112px;
+    width: 24px;
+    height: 46px;
+    background: linear-gradient(160deg, #ffffff, #ccd3da);
+    border-radius: 0 0 12px 12px;
+    z-index: 1;
+  }
+  
+  .leg-left {
+    left: 16px;
+    transform: rotate(-6deg);
+  }
+  
+  .leg-right {
+    right: 16px;
+    transform: rotate(8deg);
+  }
+  
+  .helmet {
+    position: absolute;
+    top: -8px;
+    left: 18px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(155deg, #ffffff, #c7cdd4);
+    z-index: 3;
+    box-shadow: inset -6px -6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .visor {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 48px;
+    height: 38px;
+    border-radius: 50% 50% 55% 55%;
+    background: radial-gradient(circle at 35% 30%, #6fd8ff, #1e5f8c 70%, #0b3550 100%);
+    overflow: hidden;
+  }
+  
+  .visor-reflection {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 16px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    transform: rotate(-20deg);
+  }
+  
+  .antenna {
+    position: absolute;
+    top: -10px;
+    right: 8px;
+    width: 3px;
+    height: 14px;
+    background: #c7cdd4;
+  }
+  
+  .antenna::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ff5c8a;
+    box-shadow: 0 0 8px #ff5c8a;
+  }
+  
+  /* ============================================================
+     SCENE 2 — MOUNTAIN SUNSET
+     ============================================================ */
+  .sunset-scene {
+    background: linear-gradient(180deg,
+      #2e1a47 0%,
+      #6b2d5c 22%,
+      #c8486a 42%,
+      #f2814f 60%,
+      #f9b660 72%,
+      #fbe4a0 100%
+    );
+  }
+  
+  .sun {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 35%, #fff6d8, #ffcf6b 55%, #ff9d4d 100%);
+    box-shadow:
+      0 0 60px 20px rgba(255, 180, 90, 0.45),
+      0 0 140px 60px rgba(255, 140, 90, 0.25);
+    z-index: 1;
+  }
+  
+  .cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 50px;
+    z-index: 2;
+  }
+  
+  .cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: inherit;
+    border-radius: 50%;
+  }
+  
+  .cloud-1 {
+    top: 16%;
+    left: 12%;
+    width: 90px;
+    height: 26px;
+  }
+  .cloud-1::before { width: 46px; height: 46px; top: -22px; left: 8px; }
+  .cloud-1::after { width: 34px; height: 34px; top: -14px; left: 42px; }
+  
+  .cloud-2 {
+    top: 22%;
+    right: 14%;
+    width: 70px;
+    height: 20px;
+    opacity: 0.7;
+  }
+  .cloud-2::before { width: 34px; height: 34px; top: -16px; left: 6px; }
+  .cloud-2::after { width: 26px; height: 26px; top: -10px; left: 30px; }
+  
+  .bird {
+    position: absolute;
+    width: 18px;
+    height: 8px;
+    z-index: 3;
+  }
+  
+  .bird::before, .bird::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid rgba(40, 20, 30, 0.65);
+    border-radius: 50%;
+    top: 0;
+  }
+  
+  .bird::before {
+    left: 0;
+    border-right: none;
+    transform: rotate(10deg);
+  }
+  
+  .bird::after {
+    right: 0;
+    border-left: none;
+    transform: rotate(-10deg) scaleX(-1);
+  }
+  
+  .bird-1 { top: 30%; left: 20%; animation: flyAcross 14s linear infinite; }
+  .bird-2 { top: 34%; left: 20%; animation: flyAcross 14s linear infinite 1.2s; }
+  .bird-3 { top: 27%; left: 20%; animation: flyAcross 14s linear infinite 2.4s; }
+  
+  @keyframes flyAcross {
+    0% { transform: translateX(0) translateY(0); opacity: 0; }
+    8% { opacity: 1; }
+    92% { opacity: 1; }
+    100% { transform: translateX(120vw) translateY(-30px); opacity: 0; }
+  }
+  
+  .mountain-row {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .mountain {
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+  }
+  
+  .back {
+    bottom: 34%;
+    opacity: 0.55;
+    z-index: 1;
+  }
+  .back .mountain { border-bottom: 180px solid #4a2f52; margin-left: -60px; }
+  
+  .mid {
+    bottom: 30%;
+    opacity: 0.75;
+    z-index: 2;
+  }
+  .mid .mountain { border-bottom: 220px solid #39243f; margin-left: -40px; }
+  
+  .front {
+    bottom: 26%;
+    opacity: 1;
+    z-index: 3;
+  }
+  .front .mountain { border-bottom: 260px solid #241a2e; margin-left: -20px; }
+  
+  .lake {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 26%;
+    background: linear-gradient(180deg, #3a1f42, #1a0f24);
+    z-index: 4;
+    overflow: hidden;
+  }
+  
+  .sun-reflection {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 100%;
+    background: repeating-linear-gradient(
+      180deg,
+      rgba(255, 190, 110, 0.55) 0px,
+      rgba(255, 190, 110, 0.55) 6px,
+      transparent 6px,
+      transparent 14px
+    );
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0%, 100% { opacity: 0.6; transform: translateX(-50%) scaleX(1); }
+    50% { opacity: 1; transform: translateX(-50%) scaleX(1.15); }
+  }

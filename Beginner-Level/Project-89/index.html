@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Art Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scene-tabs">
+    <button class="scene-tab active" data-scene="space">Deep Space</button>
+    <button class="scene-tab" data-scene="sunset">Mountain Sunset</button>
+  </div>
+
+  <!-- ===================== SCENE 1: DEEP SPACE ===================== -->
+  <section class="scene space-scene active" id="spaceScene">
+    <div class="stars" id="starsLayer"></div>
+
+    <div class="planet">
+      <div class="ring ring-back"></div>
+      <div class="planet-body"></div>
+      <div class="ring ring-front"></div>
+    </div>
+
+    <div class="astronaut">
+      <div class="tether"></div>
+      <div class="backpack"></div>
+      <div class="body-suit">
+        <div class="chest-panel"></div>
+      </div>
+      <div class="arm arm-left"></div>
+      <div class="arm arm-right"></div>
+      <div class="leg leg-left"></div>
+      <div class="leg leg-right"></div>
+      <div class="helmet">
+        <div class="visor">
+          <div class="visor-reflection"></div>
+        </div>
+        <div class="antenna"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SCENE 2: MOUNTAIN SUNSET ===================== -->
+  <section class="scene sunset-scene" id="sunsetScene">
+    <div class="sun"></div>
+
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+
+    <div class="bird bird-1"></div>
+    <div class="bird bird-2"></div>
+    <div class="bird bird-3"></div>
+
+    <div class="mountain-row back">
+      <div class="mountain m1"></div>
+      <div class="mountain m2"></div>
+      <div class="mountain m3"></div>
+    </div>
+    <div class="mountain-row mid">
+      <div class="mountain m4"></div>
+      <div class="mountain m5"></div>
+    </div>
+    <div class="mountain-row front">
+      <div class="mountain m6"></div>
+      <div class="mountain m7"></div>
+    </div>
+
+    <div class="lake">
+      <div class="sun-reflection"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
