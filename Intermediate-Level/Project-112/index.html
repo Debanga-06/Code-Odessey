@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unsplash Image Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">🖼️ Unsplash<span>Search</span></h1>
+
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="dark" title="Dark theme">🌙</button>
+        <button class="theme-btn" data-theme="light" title="Light theme">☀️</button>
+        <button class="theme-btn" data-theme="retro" title="Retro theme">📼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <section class="search-section">
+      <form id="search-form" class="search-form" autocomplete="off">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search photos... (e.g. mountains, coffee, city at night)"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+
+      <div class="filter-row">
+        <div class="orientation-toggle">
+          <button class="orientation-btn active" data-orientation="">Any</button>
+          <button class="orientation-btn" data-orientation="landscape">Landscape</button>
+          <button class="orientation-btn" data-orientation="portrait">Portrait</button>
+          <button class="orientation-btn" data-orientation="squarish">Square</button>
+        </div>
+        <button id="surprise-btn" class="surprise-btn">🎲 Surprise Me</button>
+      </div>
+    </section>
+
+    <section class="status-section" id="status-section">
+      <p class="status-message" id="status-message">Search for a topic, or hit Surprise Me for inspiration 🎨</p>
+    </section>
+
+    <section class="results-section">
+      <div class="results-grid" id="results-grid"></div>
+      <button class="load-more-btn" id="load-more-btn" hidden>Load More</button>
+    </section>
+
+    <section class="favorites-section">
+      <h2 class="favorites-title">Saved Photos</h2>
+      <div class="favorites-row" id="favorites-row"></div>
+    </section>
+
+  </main>
+
+  <!-- Photo details modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Unsplash Image Search | Photos from <a href="https://unsplash.com/?utm_source=code_odysseys_112&utm_medium=referral" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
