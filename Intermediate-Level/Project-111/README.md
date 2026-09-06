@@ -7,6 +7,8 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![API](https://img.shields.io/badge/API-Imgflip-8e44ad)
 
+## Live Demo :- [Link](https://meme-generator-beta-lac.vercel.app/)
+
 ## ⚠️ A Heads-Up on Exporting Templates (Tainted Canvas)
 
 This app draws memes onto an HTML `<canvas>` so it can export a real PNG file — not just a
