@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>111 | Meme Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">😂 Meme<span>Gen</span></h1>
+
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="dark" title="Dark theme">🌙</button>
+        <button class="theme-btn" data-theme="light" title="Light theme">☀️</button>
+        <button class="theme-btn" data-theme="retro" title="Retro theme">📼</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <section class="template-section">
+      <div class="template-header">
+        <input type="text" id="template-search" class="template-search" placeholder="Search templates... (e.g. drake, doge)" />
+        <label class="upload-btn">
+          📁 Upload Image
+          <input type="file" id="upload-input" accept="image/*" hidden />
+        </label>
+      </div>
+      <div class="template-grid" id="template-grid"></div>
+    </section>
+
+    <section class="editor-section" id="editor-section" hidden>
+      <div class="editor-layout">
+
+        <div class="stage-wrapper">
+          <div class="meme-stage" id="meme-stage">
+            <img id="meme-image" class="meme-image" alt="Meme template" />
+          </div>
+          <div class="stage-actions">
+            <button class="stage-btn" id="add-text-btn">➕ Add Text</button>
+            <button class="stage-btn download-btn" id="download-btn">⬇️ Download PNG</button>
+          </div>
+        </div>
+
+        <div class="controls-panel" id="controls-panel">
+          <p class="controls-empty" id="controls-empty">Select a text box on the meme to edit its style, or add a new one.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p> Meme Generator | Templates from Imgflip</p>
+  </footer>
+
+  <!-- Hidden canvas used only to compose the final downloadable image -->
+  <canvas id="export-canvas" hidden></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

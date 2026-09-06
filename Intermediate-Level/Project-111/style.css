@@ -1,0 +1,389 @@
+/* ==========================================================
+   THEME VARIABLES
+========================================================== */
+
+body[data-theme="dark"] {
+    --bg: #121212;
+    --bg-elevated: #1e1e1e;
+    --text: #f2f2f2;
+    --text-muted: #a0a0a0;
+    --accent: #ffd23f;
+    --accent-text: #121212;
+    --border: #2c2c2c;
+    --shadow: rgba(0, 0, 0, 0.5);
+  }
+  
+  body[data-theme="light"] {
+    --bg: #f7f7f9;
+    --bg-elevated: #ffffff;
+    --text: #1a1a1a;
+    --text-muted: #5f5f5f;
+    --accent: #d99a00;
+    --accent-text: #ffffff;
+    --border: #e0e0e5;
+    --shadow: rgba(0, 0, 0, 0.12);
+  }
+  
+  body[data-theme="retro"] {
+    --bg: #2b1b3d;
+    --bg-elevated: #3f2a5c;
+    --text: #ffe9a8;
+    --text-muted: #cbb3e8;
+    --accent: #ff5da2;
+    --accent-text: #2b1b3d;
+    --border: #5b3d80;
+    --shadow: rgba(255, 93, 162, 0.25);
+  }
+  
+  /* ==========================================================
+     RESET & BASE
+  ========================================================== */
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+  
+  /* ==========================================================
+     HEADER
+  ========================================================== */
+  
+  .site-header {
+    background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.4rem;
+  }
+  
+  .logo span {
+    color: var(--accent);
+  }
+  
+  .theme-switcher {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .theme-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--text);
+  }
+  
+  .theme-btn:hover {
+    border-color: var(--accent);
+  }
+  
+  .theme-btn.active {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent);
+  }
+  
+  /* ==========================================================
+     MAIN / TEMPLATE GALLERY
+  ========================================================== */
+  
+  .app-main {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    flex: 1;
+  }
+  
+  .template-header {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
+  
+  .template-search {
+    flex: 1;
+    min-width: 220px;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+  
+  .template-search:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  
+  .upload-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1.1rem;
+    border-radius: 8px;
+    border: 1px dashed var(--border);
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .upload-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  
+  .template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+    max-height: 420px;
+    overflow-y: auto;
+    padding-right: 0.3rem;
+  }
+  
+  .template-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  
+  .template-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+  
+  .template-card.active {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+  
+  .template-thumb {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: var(--border);
+  }
+  
+  .template-name {
+    font-size: 0.72rem;
+    padding: 0.4rem 0.5rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .template-skeleton {
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--border) 25%, var(--bg) 50%, var(--border) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  
+  /* ==========================================================
+     EDITOR
+  ========================================================== */
+  
+  .editor-section {
+    margin-top: 2rem;
+  }
+  
+  .editor-layout {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 1.5rem;
+    align-items: start;
+  }
+  
+  .stage-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .meme-stage {
+    position: relative;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    user-select: none;
+    max-width: 100%;
+  }
+  
+  .meme-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-box {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    -webkit-text-stroke: 2px #000000;
+    paint-order: stroke fill;
+    font-family: Impact, "Arial Narrow Bold", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: move;
+    min-width: 40px;
+    outline: none;
+    white-space: pre-wrap;
+    line-height: 1.1;
+  }
+  
+  .text-box.selected {
+    outline: 1px dashed var(--accent);
+    outline-offset: 4px;
+  }
+  
+  .stage-actions {
+    display: flex;
+    gap: 0.6rem;
+  }
+  
+  .stage-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 0.88rem;
+  }
+  
+  .stage-btn:hover {
+    border-color: var(--accent);
+  }
+  
+  .download-btn {
+    background: var(--accent);
+    color: var(--accent-text);
+    border-color: var(--accent);
+    font-weight: 700;
+    margin-left: auto;
+  }
+  
+  /* ==========================================================
+     CONTROLS PANEL
+  ========================================================== */
+  
+  .controls-panel {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.2rem;
+  }
+  
+  .controls-empty {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .control-group {
+    margin-bottom: 1rem;
+  }
+  
+  .control-group:last-child {
+    margin-bottom: 0;
+  }
+  
+  .control-group label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.3rem;
+  }
+  
+  .control-group input[type="range"] {
+    width: 100%;
+  }
+  
+  .control-group input[type="color"] {
+    width: 100%;
+    height: 34px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    cursor: pointer;
+  }
+  
+  .remove-text-btn {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.82rem;
+  }
+  
+  .remove-text-btn:hover {
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+  }
+  
+  /* ==========================================================
+     FOOTER
+  ========================================================== */
+  
+  .site-footer {
+    text-align: center;
+    padding: 1.2rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+  
+  /* ==========================================================
+     RESPONSIVE
+  ========================================================== */
+  
+  @media (max-width: 700px) {
+    .editor-layout {
+      grid-template-columns: 1fr;
+    }
+  }
