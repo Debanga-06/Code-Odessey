@@ -109,8 +109,8 @@ Several projects call external APIs — you may need to grab a free API key (Ope
 
 ## 🤝 Contributing to This Level
 
-This level has the most room to grow — only 8/100 done. Good first contributions:
-- Pick up any ❌ **Not Started** project (109–120, or propose a new one for 121+)
+This level has the most room to grow — only 20/100 done. Good first contributions:
+- Pick up any ❌ **Not Started** project (141–200, or propose a new one for 121+)
 - Improve error handling / loading states on an existing project
 - Add a proper `.env.example` where an API key is required
 
