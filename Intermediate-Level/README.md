@@ -63,8 +63,29 @@ pie showData
 | 118 | Budget Planner | Budget categories, spending limits, tracking | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-118) |
 | 119 | Notes App (CRUD) | Full CRUD operations, categories, search | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-119) |
 | 120 | To-Do App (Advanced) | Categories, filters, due dates, priorities | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/Debanga-06/Code-Odessey/tree/main/Intermediate-Level/Project-120) |
+| 121 | Quiz App (Timer + Score) | Timed questions, scoring system, results | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-121) |
+| 122 | Polling App | Create polls, vote, view results, charts | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-122) |
+| 123 | Online Voting System | Voting logic, authentication, results display | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-123) |
+| 124 | Feedback Dashboard | Collect feedback, display analytics, ratings | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-124) |
+| 125 | Live Search App | Debouncing, instant search, API calls | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-125) |
+| 126 | Pagination Component | Page navigation, data slicing, UI controls | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-126) |
+| 127 | Infinite Scroll App | Scroll detection, lazy loading, performance | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-127) |
+| 128 | Multi-Step Form | Form steps, progress indicator, validation | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-128) |
+| 129 | File Upload UI | File handling, drag-drop, preview, progress | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-129) |
+| 130 | Drag-Drop Kanban Board | Drag API, column management, task cards | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-130) |
+| 131 | Chat UI with Logic | Message handling, real-time updates, UI | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-131) |
+| 132 | Login Auth UI Flow | Login/signup flow, validation, redirects | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-132) |
+| 133 | OTP Verification UI | OTP input, timer, resend logic | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-133) |
+| 134 | Comment System | Nested comments, replies, voting | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-134) |
+| 135 | Like/Dislike System | User interactions, count updates, feedback | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-135) |
+| 136 | Rating & Review App | Star ratings, reviews, average calculation | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-136) |
+| 137 | Notification System | Toast notifications, queue, dismissal | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-137) |
+| 138 | Theme Customizer | Custom colors, fonts, layout preferences | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-138) |
+| 139 | Form Builder | Dynamic form creation, field types, validation | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-139) |
+| 140 | Table CRUD App | Editable tables, inline editing, data management | [![Not Started](https://img.shields.io/badge/Status-Not%20Started-red)](https://github.com/yourusername/project-140) |
 
-*Projects 121–200 are planned and will be added as they're built — see [Contributing](#-contributing-to-this-level) if you'd like to help fill them in.*
+
+*Projects 141–200 are planned and will be added as they're built — see [Contributing](#-contributing-to-this-level) if you'd like to help fill them in.*
 
 ---
 
